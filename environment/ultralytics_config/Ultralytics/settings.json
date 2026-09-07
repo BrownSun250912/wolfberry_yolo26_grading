@@ -1,0 +1,20 @@
+{
+  "settings_version": "0.0.7",
+  "datasets_dir": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\datasets",
+  "weights_dir": "weights",
+  "runs_dir": "runs",
+  "uuid": "cce277bc092a141ede5ca8177d147469effc2dee45a5cb045667a54318537461",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "mlflow": true,
+  "neptune": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

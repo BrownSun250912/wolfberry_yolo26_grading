@@ -1,0 +1,61 @@
+{
+  "input_images": 519,
+  "image_status_counts": {
+    "EXPORT": 483,
+    "HOLD": 36
+  },
+  "hold_reasons": {
+    "original_polygon_count_differs_from_graded_instances": 35,
+    "json_txt_geometry_mismatch": 1
+  },
+  "export_split_counts": {
+    "train": 424,
+    "val": 59
+  },
+  "near_duplicate_pairs": 0,
+  "exact_duplicate_polygons": 1,
+  "original_test_images_reserved": 129,
+  "test_available": false,
+  "built": true,
+  "validated": false,
+  "created_utc": "2026-09-04T09:33:26.921589+00:00",
+  "instances": 2041,
+  "class_counts": {
+    "grade_3": 772,
+    "grade_2": 603,
+    "grade_1": 470,
+    "unqualified": 196
+  },
+  "split_instance_counts": {
+    "train": 1788,
+    "val": 253
+  },
+  "qc_images": 36,
+  "inputs": {
+    "candidate_manifest": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\four_class_instance_manifest.csv",
+      "sha256": "9d3d8b6e188d2a58a46f9e6a7dda3dd0f1d1b2d6ad7248ca5d9a908e9b77a18c"
+    },
+    "all_features": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\strict_rot_exclusion_v2\\features_with_manual_rot.csv",
+      "sha256": "43b4f0d13dbd188c6e690f1e0d46f878d1f218cf535f9d0b17e5edd33eb5fc91"
+    },
+    "source_manifest": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\manifests\\dataset_manifest.csv",
+      "sha256": "65d6e4cc403e542ae9301420d56867ec4628440d8829bcb01ec26d99e1059a61"
+    },
+    "boundary_audit": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\audit\\boundary_review_audit.csv",
+      "sha256": "65687aea9e4f916b8c42fa06c103a1c274effe63d95a6895217a0e2ba0a84879"
+    },
+    "export_config": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\configs\\grading_dataset_v2.yaml",
+      "sha256": "1be5bec361cf4578f0760edb3a929ad8da275aee4d470eaa7f85401a28b32519"
+    },
+    "grading_standard": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\grading_standard_config.json",
+      "sha256": "ab6cd472737c9cf5706ec0878eb5e92fee697311e222a380917bfa1a99affa3f"
+    }
+  },
+  "label_policy": "human polygons + manual/rule-derived candidate grades"
+}

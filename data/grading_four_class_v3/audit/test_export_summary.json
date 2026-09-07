@@ -1,0 +1,13 @@
+{
+  "images": 129,
+  "instances": 576,
+  "class_counts": {
+    "grade_1": 126,
+    "grade_2": 167,
+    "grade_3": 258,
+    "unqualified": 25
+  },
+  "duplicate_polygons_removed": 6,
+  "source_coordinates_preserved_for_retained_polygons": true,
+  "source_images_copied_byte_identically": true
+}

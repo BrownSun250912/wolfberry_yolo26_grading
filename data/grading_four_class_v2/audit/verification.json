@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "image_pairs": 483,
+  "instances": 2041,
+  "source_and_copy_hashes_unchanged": true,
+  "original_polygon_coordinates_preserved": true,
+  "labels_dropped_by_ultralytics": 0,
+  "test_graded": false,
+  "sample_visual_review_is_not_all_images_human_qc": true,
+  "loader_smoke": {
+    "train": {
+      "images": 424,
+      "instances": 1788,
+      "sample_image_shape": [
+        3,
+        640,
+        640
+      ],
+      "sample_mask_shape": [
+        1,
+        160,
+        160
+      ]
+    },
+    "val": {
+      "images": 59,
+      "instances": 253,
+      "sample_image_shape": [
+        3,
+        640,
+        640
+      ],
+      "sample_mask_shape": [
+        1,
+        160,
+        160
+      ]
+    }
+  }
+}

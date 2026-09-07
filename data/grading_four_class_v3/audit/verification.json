@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "image_pairs": 1211,
+  "instances": 5371,
+  "strict_provenance": false,
+  "build_inputs_checked": [
+    "candidate_manifest",
+    "all_features",
+    "source_manifest",
+    "boundary_audit",
+    "export_config",
+    "grading_standard",
+    "test_final_labels",
+    "test_polygon_deduplication"
+  ],
+  "build_inputs_unavailable": [],
+  "original_polygon_coordinates_preserved": true,
+  "labels_dropped_by_ultralytics": 0,
+  "test_graded": true,
+  "sample_visual_review_is_not_all_images_human_qc": true,
+  "loader_smoke": {
+    "train": {
+      "images": 966,
+      "instances": 4277,
+      "sample_image_shape": [
+        3,
+        640,
+        640
+      ],
+      "sample_mask_shape": [
+        1,
+        160,
+        160
+      ]
+    },
+    "val": {
+      "images": 116,
+      "instances": 518,
+      "sample_image_shape": [
+        3,
+        640,
+        640
+      ],
+      "sample_mask_shape": [
+        1,
+        160,
+        160
+      ]
+    },
+    "test": {
+      "images": 129,
+      "instances": 576,
+      "sample_image_shape": [
+        3,
+        640,
+        640
+      ],
+      "sample_mask_shape": [
+        1,
+        160,
+        160
+      ]
+    }
+  }
+}

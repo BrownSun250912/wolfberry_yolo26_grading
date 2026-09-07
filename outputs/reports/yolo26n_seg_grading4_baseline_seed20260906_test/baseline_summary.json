@@ -1,0 +1,72 @@
+{
+  "status": "completed",
+  "experiment_id": "yolo26n_seg_grading4_baseline_seed20260906",
+  "task": "four-class instance segmentation",
+  "date": "2026-09-06",
+  "dataset": {
+    "version": "grading_four_class_v3",
+    "train_images": 966,
+    "val_images": 116,
+    "test_images": 129,
+    "train_instances": 4277,
+    "val_instances": 518,
+    "test_instances": 576,
+    "classes": ["unqualified", "grade_1", "grade_2", "grade_3"]
+  },
+  "training": {
+    "model": "yolo26n-seg.pt",
+    "epochs_completed": 100,
+    "imgsz": 640,
+    "batch": 8,
+    "device": 0,
+    "seed": 20260906,
+    "patience": 30,
+    "deterministic": true,
+    "end2end": true,
+    "optimizer_selected_by_auto": "AdamW",
+    "recorded_training_seconds": 1865.01,
+    "per_epoch_log_best_mask_map50_95_epoch": 90,
+    "per_epoch_log_best_mask_map50_95": 0.66705,
+    "interruption_note": "Training was interrupted after epoch 21 by loss of the monitoring session and resumed from last.pt at epoch 22 with optimizer state restored."
+  },
+  "software": {
+    "python": "3.12.13",
+    "ultralytics": "8.4.117",
+    "torch": "2.13.0+cu130",
+    "opencv": "5.0.0",
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU 8GB"
+  },
+  "final_best_weight_validation": {
+    "box_precision": 0.696,
+    "box_recall": 0.794,
+    "box_map50": 0.813,
+    "box_map50_95": 0.659,
+    "mask_precision": 0.696,
+    "mask_recall": 0.794,
+    "mask_map50": 0.813,
+    "mask_map50_95": 0.676
+  },
+  "frozen_test": {
+    "box_precision": 0.730,
+    "box_recall": 0.838,
+    "box_map50": 0.821,
+    "box_map50_95": 0.669,
+    "mask_precision": 0.730,
+    "mask_recall": 0.838,
+    "mask_map50": 0.821,
+    "mask_map50_95": 0.678,
+    "inference_ms_per_image": 4.6,
+    "preprocess_ms_per_image": 1.4,
+    "postprocess_ms_per_image": 0.7
+  },
+  "model_artifact": {
+    "path": "models/experiments/yolo26n_seg_grading4_baseline_seed20260906/weights/best.pt",
+    "bytes": 6529949,
+    "sha256": "0A6DE467B53FCF5E6F65AE0DF6CB5196590BB5C25C2E218EB14452CDF5D28623"
+  },
+  "interpretation": {
+    "primary_strength": "High overall mask AP and high recall for unqualified fruit on the frozen test split.",
+    "primary_weakness": "Unqualified precision is low (0.355), indicating many false-positive unqualified predictions.",
+    "use_constraint": "This is one seed and one baseline run. It is not sufficient by itself to claim superiority over another method."
+  }
+}

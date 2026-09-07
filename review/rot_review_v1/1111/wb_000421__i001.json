@@ -1,0 +1,32 @@
+{
+  "version": "4.0.2",
+  "flags": {},
+  "checked": false,
+  "shapes": [
+    {
+      "label": "rot",
+      "score": null,
+      "points": [
+        [
+          64.11309523809523,
+          76.04166666666667
+        ],
+        [
+          83.60714285714285,
+          87.79761904761905
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "circle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "wb_000421__i001.png",
+  "imageData": null,
+  "imageHeight": 135,
+  "imageWidth": 94
+}

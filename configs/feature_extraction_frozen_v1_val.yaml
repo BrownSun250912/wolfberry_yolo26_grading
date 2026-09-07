@@ -1,0 +1,105 @@
+config_version: feature_extraction_frozen_v1
+run_type: full_split
+minimum_required_instances: 30
+
+model:
+  path: ../models/experiments/yolo26n_seg_baseline_seed20260823/weights/best.pt
+  imgsz: 640
+  confidence_threshold: 0.25
+  iou_threshold: 0.70
+  device: 0
+  retina_masks: true
+
+data:
+  manifest: ../data/manifests/dataset_manifest.csv
+  dataset_root: ../data/split_v1
+  split: val
+  random_seed: 20260823
+  # null means process the complete split.
+  max_images: null
+  target_instances: null
+
+output:
+  root: ../outputs/features_frozen_v1/val
+  features_filename: features_val.csv
+  roi_padding_px: 12
+
+deduplication:
+  mask_iou_threshold: 0.90
+
+analysis_mask:
+  min_instance_area_px: 80
+  min_component_area_px: 20
+  keep_largest_component: true
+
+geometry_refinement:
+  enabled: true
+  max_boundary_depth_px: 8
+  saturation_max: 0.35
+  value_min: 0.45
+  lab_chroma_max: 18.0
+  min_component_area_px: 80
+  min_remaining_area_px: 200
+  max_removed_fraction: 0.45
+
+calibration:
+  # No fruit or same-plane physical reference remains, so mm conversion is unavailable.
+  px_per_mm: null
+  calibration_id: unavailable_no_physical_reference
+  note: Original fruit discarded; retain px and px2 only.
+
+highlight_filter:
+  enabled: true
+  boundary_erosion_px: 2
+  saturation_max: 0.25
+  value_min: 0.65
+  relative_enabled: true
+  relative_L_percentile: 90
+  relative_L_robust_z_min: 2.0
+  relative_min_L_mad: 1.5
+  relative_saturation_drop_min: 0.12
+  morphology_open_kernel: 1
+  morphology_close_kernel: 3
+  min_component_area_px: 5
+  min_valid_color_pixels: 80
+
+calyx_detection:
+  enabled: true
+  tip_fraction: 0.62
+  max_boundary_depth_px: 18
+  absolute_a_max: 14.0
+  relative_a_z_min: 2.0
+  min_a_mad: 2.0
+  value_max: 0.70
+  morphology_open_kernel: 3
+  morphology_close_kernel: 3
+  min_component_area_px: 10
+  exclude_from_color: true
+  exclude_from_damage: true
+
+damage_detection:
+  boundary_exclusion_px: 6
+  dark_method: robust_L
+  dark_L_absolute_max: 35.0
+  dark_robust_z_min: 2.5
+  min_L_mad: 2.0
+  abnormal_method: robust_ab
+  robust_ab_z_min: 4.0
+  min_channel_mad: 2.0
+  min_component_area_px: 20
+  morphology_open_kernel: 3
+  morphology_close_kernel: 5
+
+edge_abnormal_detection:
+  morphology_open_kernel: 3
+  morphology_close_kernel: 3
+  min_component_area_px: 10
+
+qc:
+  random_sample_size: 30
+  random_seed: 20260823
+  extra_low_confidence: 8
+  extra_high_damage: 8
+  extra_high_highlight: 8
+  extra_high_edge_abnormal: 8
+  extra_high_calyx: 8

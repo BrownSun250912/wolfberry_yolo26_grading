@@ -1,0 +1,54 @@
+config_version: rot_triage_pilot_v1
+
+input:
+  feature_tables:
+    train: ../outputs/features_frozen_v1/train/features_train.csv
+    val: ../outputs/features_frozen_v1/val/features_val.csv
+  artifact_roots:
+    train: ../outputs/features_frozen_v1/train
+    val: ../outputs/features_frozen_v1/val
+  review_candidates: ../outputs/grade_candidate_audit_v1/candidate_samples_with_scores.csv
+  review_labels_json: ../data/reviews/filled_grade_review.json
+  scope: reviewed_240
+
+output:
+  root: ../outputs/rot_triage_pilot_v1
+  visualization_limit_per_decision: 30
+  contact_sheet_columns: 4
+
+# Only a conservative subset is automatically proposed as rotten.
+# These are candidate-labeling thresholds, not final commercial grading limits.
+auto_internal_rot:
+  b_std_min: 7.0
+  dark_ratio_min: 0.025
+  max_damage_ratio_min: 0.015
+  min_far_from_calyx_component_ratio: 0.015
+  min_internal_candidate_area_px: 20
+  min_largest_component_dark_overlap_fraction: 0.50
+  max_calyx_overlap_fraction: 0.25
+
+# The stored calyx candidate is dilated, then intersected with the stored
+# edge-abnormal mask. This captures suspicious regions next to the calyx
+# without automatically rejecting the fruit.
+manual_calyx_review:
+  enabled: true
+  neighborhood_radius_px: 12
+  # Protect both longitudinal tips even when color-based calyx detection picks the wrong end.
+  tip_fraction: 0.70
+  min_adjacent_abnormal_area_px: 15
+  min_adjacent_abnormal_ratio: 0.015
+  require_auto_signal_thresholds: true
+
+# Non-calyx edge abnormalities can be caused by mask borders or bowl contact.
+# They remain a separate optional review queue and never trigger auto rejection.
+manual_edge_review:
+  enabled: true
+  edge_abnormal_ratio_min: 0.020
+  heterogeneity_any:
+    L_std_min: 3.5
+    b_std_min: 6.0
+
+evaluation:
+  require_segmentation_usable: true
+  positive_rot_value: "YES"
+  negative_policy: qualified_blank_means_no_rot

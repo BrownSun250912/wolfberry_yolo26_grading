@@ -1,0 +1,10 @@
+# Install PyTorch first from the official CUDA index:
+# python -m pip install torch==2.13.0 torchvision==0.28.0 --index-url https://download.pytorch.org/whl/cu130
+
+ultralytics==8.4.117
+opencv-python
+pandas
+scikit-learn
+scikit-image
+openpyxl
+

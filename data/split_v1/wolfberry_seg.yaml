@@ -1,0 +1,8 @@
+# Ultralytics YOLO instance-segmentation dataset
+path: F:/wolfberry/photo_library/wolfberry_yolo26_cv/data/split_v1
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: wolfberry

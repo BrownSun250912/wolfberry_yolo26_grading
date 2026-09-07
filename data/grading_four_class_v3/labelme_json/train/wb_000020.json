@@ -1,0 +1,197 @@
+{
+  "version": "4.0.0-beta.13",
+  "flags": {},
+  "checked": false,
+  "shapes": [
+    {
+      "label": "grade_3",
+      "score": null,
+      "points": [
+        [
+          672.5471698113208,
+          302.13836477987417
+        ],
+        [
+          637.3270440251572,
+          336.10062893081755
+        ],
+        [
+          633.5534591194969,
+          404.6540880503143
+        ],
+        [
+          670.6603773584906,
+          439.87421383647785
+        ],
+        [
+          714.6855345911949,
+          398.9937106918237
+        ],
+        [
+          709.0251572327044,
+          333.5849056603774
+        ]
+      ],
+      "group_id": null,
+      "description": "instance_id=wb_000020__i002; source_row=1; original_label=wolfberry",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "grade_3",
+      "score": null,
+      "points": [
+        [
+          537.3270440251572,
+          232.95597484276726
+        ],
+        [
+          592.6729559748427,
+          212.2012578616352
+        ],
+        [
+          624.7484276729559,
+          132.32704402515716
+        ],
+        [
+          603.9937106918238,
+          77.61006289308176
+        ],
+        [
+          547.3899371069182,
+          105.28301886792448
+        ],
+        [
+          520.3459119496855,
+          189.55974842767296
+        ]
+      ],
+      "group_id": null,
+      "description": "instance_id=wb_000020__i001; source_row=2; original_label=wolfberry",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "grade_1",
+      "score": null,
+      "points": [
+        [
+          650.5345911949686,
+          535.4716981132076
+        ],
+        [
+          692.0440251572327,
+          509.6855345911949
+        ],
+        [
+          755.5660377358491,
+          537.9874213836479
+        ],
+        [
+          765.0,
+          589.559748427673
+        ],
+        [
+          707.1383647798742,
+          610.9433962264152
+        ],
+        [
+          653.6792452830189,
+          568.8050314465409
+        ]
+      ],
+      "group_id": null,
+      "description": "instance_id=wb_000020__i005; source_row=3; original_label=wolfberry",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "grade_1",
+      "score": null,
+      "points": [
+        [
+          459.3396226415095,
+          429.18238993710673
+        ],
+        [
+          419.7169811320755,
+          394.59119496855334
+        ],
+        [
+          358.0817610062893,
+          399.62264150943395
+        ],
+        [
+          339.21383647798746,
+          436.1006289308175
+        ],
+        [
+          358.7106918238994,
+          485.15723270440236
+        ],
+        [
+          436.06918238993705,
+          473.20754716981133
+        ]
+      ],
+      "group_id": null,
+      "description": "instance_id=wb_000020__i003; source_row=4; original_label=wolfberry",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "grade_1",
+      "score": null,
+      "points": [
+        [
+          531.0377358490566,
+          461.8867924528302
+        ],
+        [
+          519.7169811320755,
+          505.9119496855346
+        ],
+        [
+          534.811320754717,
+          555.5974842767296
+        ],
+        [
+          588.2704402515724,
+          578.867924528302
+        ],
+        [
+          622.8616352201258,
+          559.3710691823899
+        ],
+        [
+          618.4591194968554,
+          490.8176100628929
+        ]
+      ],
+      "group_id": null,
+      "description": "instance_id=wb_000020__i004; source_row=5; original_label=wolfberry",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "../../images/train/wb_000020.png",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280,
+  "description": ""
+}

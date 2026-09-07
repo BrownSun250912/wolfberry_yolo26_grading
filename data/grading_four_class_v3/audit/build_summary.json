@@ -1,0 +1,81 @@
+{
+  "input_images": 1156,
+  "image_status_counts": {
+    "EXPORT": 1082,
+    "HOLD": 74
+  },
+  "hold_reasons": {
+    "original_polygon_count_differs_from_graded_instances": 73,
+    "json_txt_geometry_mismatch": 1
+  },
+  "export_split_counts": {
+    "train": 966,
+    "val": 116
+  },
+  "near_duplicate_pairs": 0,
+  "exact_duplicate_polygons": 1,
+  "original_test_images_reserved": 129,
+  "test_available": true,
+  "built": true,
+  "validated": true,
+  "created_utc": "2026-09-06T08:27:39.227993+00:00",
+  "instances": 4795,
+  "class_counts": {
+    "grade_3": 2020,
+    "grade_2": 1289,
+    "grade_1": 1060,
+    "unqualified": 426
+  },
+  "split_instance_counts": {
+    "train": 4277,
+    "val": 518
+  },
+  "qc_images": 36,
+  "inputs": {
+    "candidate_manifest": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_post_review_v5\\four_class_instance_manifest.csv",
+      "sha256": "9281920dd2ab1e6337668f083cfd2da7b2c4b86d0c3cfb0b6b3c35a19f121880"
+    },
+    "all_features": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\strict_rot_exclusion_v2\\features_with_manual_rot.csv",
+      "sha256": "43b4f0d13dbd188c6e690f1e0d46f878d1f218cf535f9d0b17e5edd33eb5fc91"
+    },
+    "source_manifest": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\manifests\\dataset_manifest.csv",
+      "sha256": "65d6e4cc403e542ae9301420d56867ec4628440d8829bcb01ec26d99e1059a61"
+    },
+    "boundary_audit": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\audit\\boundary_review_audit.csv",
+      "sha256": "65687aea9e4f916b8c42fa06c103a1c274effe63d95a6895217a0e2ba0a84879"
+    },
+    "export_config": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\configs\\grading_dataset_v3.yaml",
+      "sha256": "1e08c0026b74eada506d08d91d85c44f97b900a31db5ec25a4dd549c6543168c"
+    },
+    "grading_standard": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\grading_standard_config.json",
+      "sha256": "ab6cd472737c9cf5706ec0878eb5e92fee697311e222a380917bfa1a99affa3f"
+    },
+    "test_final_labels": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\review\\three_person_audit_v1\\04_审核结果汇总\\test_final_labels.json",
+      "sha256": "eed46bf057120b121359394fb42f383a5d08b836987cc9d28db870f55883d240"
+    },
+    "test_polygon_deduplication": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3\\audit\\test_polygon_deduplication.json",
+      "sha256": "af5a7f1c6a254d488c6a05167131b24577c144186cf686d5c4809bcc5dac08fa"
+    }
+  },
+  "label_policy": "human polygons + manual rot/stem review + frozen interpretable grade rule + double-reviewed test",
+  "test_graded": true,
+  "test_images": 129,
+  "test_instances": 576,
+  "total_images_with_test": 1211,
+  "total_instances_with_test": 5371,
+  "test_class_counts": {
+    "grade_1": 126,
+    "grade_2": 167,
+    "grade_3": 258,
+    "unqualified": 25
+  },
+  "test_duplicate_polygons_removed": 6
+}

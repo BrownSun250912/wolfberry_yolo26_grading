@@ -1,0 +1,170 @@
+{
+  "reviewer_roots": {
+    "lead": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\review\\three_person_audit_v1\\01_总负责人",
+    "reviewer_a": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\review\\three_person_audit_v1\\02_审核员Aok\\02_审核员A",
+    "reviewer_b": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\review\\three_person_audit_v1\\03_审核员Bok\\03_审核员B"
+  },
+  "task_audits": [
+    {
+      "reviewer": "lead",
+      "expected": 280,
+      "unique_result_ids": 280,
+      "result_files": 280,
+      "pending_files": 0,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "duplicate_or_conflicting_ids": [],
+      "complete_unique_coverage": true
+    },
+    {
+      "reviewer": "lead",
+      "expected": 10,
+      "unique_result_ids": 10,
+      "result_files": 10,
+      "pending_files": 0,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "duplicate_or_conflicting_ids": [],
+      "complete_unique_coverage": true
+    },
+    {
+      "reviewer": "lead",
+      "expected": 0,
+      "unique_result_ids": 0,
+      "result_files": 0,
+      "pending_files": 0,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "duplicate_or_conflicting_ids": [],
+      "complete_unique_coverage": true
+    },
+    {
+      "reviewer": "reviewer_a",
+      "expected": 325,
+      "unique_result_ids": 325,
+      "result_files": 325,
+      "pending_files": 0,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "duplicate_or_conflicting_ids": [],
+      "complete_unique_coverage": true
+    },
+    {
+      "reviewer": "reviewer_a",
+      "expected": 13,
+      "unique_result_ids": 13,
+      "result_files": 13,
+      "pending_files": 0,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "duplicate_or_conflicting_ids": [],
+      "complete_unique_coverage": true
+    },
+    {
+      "reviewer": "reviewer_a",
+      "expected": 582,
+      "unique_result_ids": 582,
+      "result_files": 582,
+      "pending_files": 0,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "duplicate_or_conflicting_ids": [],
+      "complete_unique_coverage": true
+    },
+    {
+      "reviewer": "reviewer_b",
+      "expected": 325,
+      "unique_result_ids": 325,
+      "result_files": 325,
+      "pending_files": 0,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "duplicate_or_conflicting_ids": [],
+      "complete_unique_coverage": true
+    },
+    {
+      "reviewer": "reviewer_b",
+      "expected": 13,
+      "unique_result_ids": 13,
+      "result_files": 13,
+      "pending_files": 0,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "duplicate_or_conflicting_ids": [],
+      "complete_unique_coverage": true
+    },
+    {
+      "reviewer": "reviewer_b",
+      "expected": 582,
+      "unique_result_ids": 582,
+      "result_files": 614,
+      "pending_files": 0,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "duplicate_or_conflicting_ids": [
+        "wb_000001__i002",
+        "wb_000001__i005",
+        "wb_000007__i001",
+        "wb_000007__i004",
+        "wb_000011__i001",
+        "wb_000011__i002",
+        "wb_000011__i004",
+        "wb_000012__i001",
+        "wb_000012__i002",
+        "wb_000012__i003",
+        "wb_000032__i001",
+        "wb_000032__i002",
+        "wb_000032__i003",
+        "wb_000045__i001",
+        "wb_000045__i002",
+        "wb_000053__i003",
+        "wb_000071__i002",
+        "wb_000097__i001",
+        "wb_000097__i002",
+        "wb_000100__i005",
+        "wb_000106__i005",
+        "wb_000110__i002",
+        "wb_000110__i003",
+        "wb_000121__i001",
+        "wb_000121__i002",
+        "wb_000121__i004",
+        "wb_000148__i001",
+        "wb_000148__i002",
+        "wb_000148__i003",
+        "wb_000166__i001",
+        "wb_000205__i002",
+        "wb_000218__i005"
+      ],
+      "complete_unique_coverage": true
+    }
+  ],
+  "stem": {
+    "instances": 930,
+    "distribution": {
+      "MISSING": 287,
+      "PRESENT": 643
+    }
+  },
+  "geometry": {
+    "images": 36,
+    "distribution": {
+      "KEEP_FIX": 36
+    }
+  },
+  "test": {
+    "expected_instances": 582,
+    "agreements": 303,
+    "agreement_rate": 0.520618556701031,
+    "agreement_distribution": {
+      "GRADE1": 33,
+      "GRADE2": 86,
+      "GRADE3": 161,
+      "UNQUALIFIED": 23
+    },
+    "needs_adjudication": 279,
+    "reviewer_a_result_files": 582,
+    "reviewer_b_result_files": 614,
+    "reviewer_b_duplicate_or_conflicting_ids": 32
+  },
+  "ready_to_rebuild_dataset": false
+}

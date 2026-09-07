@@ -1,0 +1,38 @@
+config_version: rot_screening_tiers_v2
+
+input:
+  reviewed_results: ../data/reviews/rot_screening_reviewed_240_source.csv
+  full_results: ../outputs/rot_triage_full_v1/rot_triage_results.csv
+
+output:
+  root: ../outputs/rot_screening_tiers_v2
+
+# Thresholds were calculated from the non-rot subset of the 226 reviewed masks
+# marked segmentation_usable=YES. They are screening thresholds, not grading standards.
+signals:
+  L_std:
+    broad: 2.8843618631
+    medium: 3.3754185438
+  a_std:
+    broad: 6.8299486637
+    medium: 8.1620566845
+  b_std:
+    broad: 4.9686419964
+    medium: 5.7152714729
+  abnormal_color_ratio:
+    broad: 0.0704133635
+    medium: 0.1013671639
+  max_damage_ratio:
+    broad: 0.0414921218
+    medium: 0.0600529486
+
+minimum_signals:
+  # High-recall exclusion set used only to purify the later grade-standard analysis pool.
+  exclusion: 1
+  broad: 2
+  medium: 2
+
+location_flags:
+  calyx_adjacent_min_px: 15
+  calyx_adjacent_min_ratio: 0.015
+  edge_abnormal_min_ratio: 0.020

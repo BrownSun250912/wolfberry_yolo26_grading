@@ -1,0 +1,18 @@
+{
+  "input_candidate_instances": 4643,
+  "resolved_human_stem_instances": 930,
+  "resolved_stem_distribution": {
+    "MISSING": 287,
+    "PRESENT": 643
+  },
+  "manual_rot_unqualified_instances": 445,
+  "excluded_measurement_error_instances": 4,
+  "output_instances": 5084,
+  "output_images": 1156,
+  "class_distribution": {
+    "GRADE_1": 1143,
+    "GRADE_2": 1376,
+    "GRADE_3": 2120,
+    "UNQUALIFIED": 445
+  }
+}

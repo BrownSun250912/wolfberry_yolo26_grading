@@ -1,0 +1,44 @@
+config_version: rot_triage_full_v1
+
+input:
+  feature_tables:
+    train: ../outputs/features_frozen_v1/train/features_train.csv
+    val: ../outputs/features_frozen_v1/val/features_val.csv
+  artifact_roots:
+    train: ../outputs/features_frozen_v1/train
+    val: ../outputs/features_frozen_v1/val
+  scope: all_instances
+
+output:
+  root: ../outputs/rot_triage_full_v1
+  visualization_limit_per_decision: 60
+  contact_sheet_columns: 4
+
+auto_internal_rot:
+  b_std_min: 7.0
+  dark_ratio_min: 0.025
+  max_damage_ratio_min: 0.015
+  min_far_from_calyx_component_ratio: 0.015
+  min_internal_candidate_area_px: 20
+  min_largest_component_dark_overlap_fraction: 0.50
+  max_calyx_overlap_fraction: 0.25
+
+manual_calyx_review:
+  enabled: true
+  neighborhood_radius_px: 12
+  tip_fraction: 0.70
+  min_adjacent_abnormal_area_px: 15
+  min_adjacent_abnormal_ratio: 0.015
+  require_auto_signal_thresholds: true
+
+manual_edge_review:
+  enabled: true
+  edge_abnormal_ratio_min: 0.020
+  heterogeneity_any:
+    L_std_min: 3.5
+    b_std_min: 6.0
+
+evaluation:
+  require_segmentation_usable: false
+  positive_rot_value: "YES"
+  negative_policy: no_ground_truth_in_full_run

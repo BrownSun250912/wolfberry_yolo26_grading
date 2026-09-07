@@ -1,0 +1,200 @@
+{
+  "version": "4.0.0-beta.13",
+  "flags": {},
+  "checked": false,
+  "shapes": [
+    {
+      "label": "grade_1",
+      "score": null,
+      "points": [
+        [
+          461.22641509433964,
+          543.0188679245282
+        ],
+        [
+          510.2830188679245,
+          524.1509433962265
+        ],
+        [
+          530.4088050314465,
+          466.2893081761005
+        ],
+        [
+          503.9937106918239,
+          431.06918238993694
+        ],
+        [
+          458.0817610062893,
+          448.05031446540863
+        ],
+        [
+          446.76100628930817,
+          495.8490566037736
+        ]
+      ],
+      "group_id": null,
+      "description": "instance_id=wb_000031__i005; source_row=1; original_label=wolfberry",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "grade_2",
+      "score": null,
+      "points": [
+        [
+          585.125786163522,
+          261.25786163522014
+        ],
+        [
+          573.8050314465409,
+          222.89308176100627
+        ],
+        [
+          500.22012578616346,
+          205.28301886792457
+        ],
+        [
+          475.062893081761,
+          232.3270440251572
+        ],
+        [
+          495.1886792452831,
+          270.69182389937106
+        ],
+        [
+          565.0,
+          285.78616352201254
+        ]
+      ],
+      "group_id": null,
+      "description": "instance_id=wb_000031__i001; source_row=2; original_label=wolfberry",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "grade_2",
+      "score": null,
+      "points": [
+        [
+          609.6540880503144,
+          206.54088050314465
+        ],
+        [
+          607.1383647798742,
+          251.82389937106916
+        ],
+        [
+          642.9874213836478,
+          290.81761006289304
+        ],
+        [
+          692.0440251572327,
+          293.9622641509434
+        ],
+        [
+          699.5911949685534,
+          247.42138364779873
+        ],
+        [
+          651.7924528301887,
+          201.50943396226415
+        ]
+      ],
+      "group_id": null,
+      "description": "instance_id=wb_000031__i002; source_row=3; original_label=wolfberry",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "grade_2",
+      "score": null,
+      "points": [
+        [
+          830.4088050314465,
+          321.00628930817606
+        ],
+        [
+          842.3584905660377,
+          376.35220125786145
+        ],
+        [
+          892.0440251572327,
+          404.02515723270426
+        ],
+        [
+          941.1006289308175,
+          409.0566037735849
+        ],
+        [
+          950.5345911949685,
+          383.8993710691822
+        ],
+        [
+          906.5094339622642,
+          335.47169811320754
+        ],
+        [
+          863.1132075471698,
+          321.00628930817606
+        ]
+      ],
+      "group_id": null,
+      "description": "instance_id=wb_000031__i003; source_row=4; original_label=wolfberry",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "grade_1",
+      "score": null,
+      "points": [
+        [
+          838.5849056603773,
+          495.22012578616346
+        ],
+        [
+          893.9308176100628,
+          497.1069182389936
+        ],
+        [
+          930.4088050314465,
+          446.79245283018867
+        ],
+        [
+          913.4276729559748,
+          407.1698113207547
+        ],
+        [
+          877.5786163522012,
+          399.62264150943395
+        ],
+        [
+          839.8427672955975,
+          447.4213836477986
+        ]
+      ],
+      "group_id": null,
+      "description": "instance_id=wb_000031__i004; source_row=5; original_label=wolfberry",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "../../images/val/wb_000031.png",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

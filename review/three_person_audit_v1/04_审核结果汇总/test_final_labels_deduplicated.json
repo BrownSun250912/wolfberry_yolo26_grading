@@ -1,0 +1,2882 @@
+[
+  {
+    "instance_id": "wb_000001__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000001__i002",
+    "final_label": "GRADE1",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000001__i003",
+    "final_label": "GRADE2",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000001__i004",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000001__i005",
+    "final_label": "GRADE1",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000007__i001",
+    "final_label": "GRADE2",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000007__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000007__i003",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000007__i004",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000011__i001",
+    "final_label": "GRADE1",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000011__i002",
+    "final_label": "GRADE1",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000011__i003",
+    "final_label": "GRADE2",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000011__i004",
+    "final_label": "GRADE1",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000012__i001",
+    "final_label": "GRADE1",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000012__i002",
+    "final_label": "GRADE1",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000012__i003",
+    "final_label": "GRADE2",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000032__i001",
+    "final_label": "GRADE2",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000032__i002",
+    "final_label": "GRADE2",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000032__i003",
+    "final_label": "GRADE2",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000045__i001",
+    "final_label": "GRADE1",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000045__i002",
+    "final_label": "GRADE2",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000045__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000045__i004",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000053__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000053__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000053__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000071__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000071__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000071__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000071__i004",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000097__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000097__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000097__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000100__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000100__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000100__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000100__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000100__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000106__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000106__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000106__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000106__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000106__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000110__i001",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000110__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000110__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000121__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000121__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000121__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000121__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000121__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000148__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000148__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000148__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000166__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000166__i002",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000166__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000205__i001",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000205__i002",
+    "final_label": "GRADE1",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000205__i003",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000218__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000218__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000218__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000218__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000218__i005",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000225__i001",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000225__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000225__i003",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000232__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000232__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000232__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000232__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000233__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000233__i002",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000233__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000233__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000233__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000237__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000237__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000237__i003",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000240__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000240__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000240__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000257__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000257__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000257__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000257__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000293__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000293__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000293__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000293__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000298__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000298__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000298__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000298__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000305__i001",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000305__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000305__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000307__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000307__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000307__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000307__i004",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000307__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000311__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000311__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000311__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000311__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000311__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000313__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000313__i002",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000313__i003",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000314__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000314__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000314__i003",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000314__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000314__i005",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000317__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000317__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000317__i003",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000317__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000318__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000318__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000318__i003",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000318__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000318__i005",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000321__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000321__i002",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000321__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000321__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000321__i005",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000325__i001",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000325__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000325__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000325__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000326__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000326__i002",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000326__i003",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000331__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000331__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000331__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000331__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000347__i001",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000347__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000347__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000356__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000356__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000356__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000356__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000356__i006",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000370__i001",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000370__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000370__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000370__i004",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000390__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000390__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000390__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000390__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000411__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000411__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000411__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000411__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000411__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000412__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000412__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000412__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000412__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000412__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000415__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000415__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000415__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000415__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000422__i001",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000422__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000422__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000422__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000422__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000424__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000424__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000424__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000424__i004",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000424__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000431__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000431__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000431__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000431__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000434__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000434__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000434__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000434__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000452__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000452__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000452__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000452__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000452__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000457__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000457__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000457__i003",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000457__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000457__i005",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000457__i006",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000498__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000498__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000498__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000498__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000507__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000507__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000507__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000507__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000507__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000517__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000517__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000517__i003",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000518__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000518__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000518__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000518__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000522__i001",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000522__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000522__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000522__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000522__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000528__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000528__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000528__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000528__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000538__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000538__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000538__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000538__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000538__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000564__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000564__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000564__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000564__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000564__i005",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000564__i006",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000569__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000569__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000569__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000569__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000571__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000571__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000571__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000571__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000571__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000572__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000572__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000572__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000572__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000572__i005",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000579__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000579__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000579__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000579__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000604__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000604__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000604__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000604__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000604__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000604__i006",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000624__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000624__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000624__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000624__i004",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000624__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000624__i006",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000627__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000627__i002",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000627__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000627__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000627__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000654__i001",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000654__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000654__i003",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000654__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000654__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000662__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000662__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000662__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000662__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000666__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000666__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000666__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000666__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000666__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000708__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000708__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000708__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000708__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000708__i005",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000708__i006",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000711__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000711__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000711__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000711__i004",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000711__i005",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000731__i001",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000731__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000731__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000731__i004",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000731__i005",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000732__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000732__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000732__i003",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000732__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000732__i005",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000732__i006",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000733__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000733__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000733__i003",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000733__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000733__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000733__i006",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000733__i007",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000743__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000743__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000743__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000743__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000743__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000743__i006",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000756__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000756__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000756__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000756__i004",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000756__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000756__i006",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000765__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000765__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000765__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000765__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000765__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000765__i006",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000770__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000770__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000770__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000770__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000770__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000774__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000774__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000774__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000774__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000774__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000784__i001",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000784__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000784__i003",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000784__i004",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000787__i001",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000787__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000787__i003",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000789__i001",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000789__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000789__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000807__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000807__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000807__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000810__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000810__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000810__i003",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000810__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000815__i001",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000815__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000815__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000815__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000815__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000832__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000832__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000832__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000842__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000842__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000842__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000842__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000846__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000846__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000846__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000846__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000846__i005",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000852__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000852__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000852__i003",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000852__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000852__i005",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000892__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000892__i002",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000892__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000910__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000910__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000910__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000910__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000911__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000911__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000911__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000915__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000915__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000915__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000915__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000917__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000917__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000917__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000917__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000917__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000917__i006",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000935__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000935__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000935__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000935__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000935__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000940__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000940__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000940__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000940__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000945__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000945__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000945__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000945__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000961__i001",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000961__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000961__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000961__i004",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000961__i005",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000963__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000963__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000963__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000974__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000974__i002",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000974__i003",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000974__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000974__i005",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000974__i006",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000975__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000975__i002",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_000975__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000975__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000975__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000978__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000978__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000978__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000978__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000981__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000981__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000981__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000981__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000996__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000996__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_000996__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000996__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_000996__i005",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001019__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001019__i002",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001019__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001019__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001024__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001024__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001024__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001024__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001024__i005",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001074__i001",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001074__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001074__i003",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001074__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001074__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001082__i001",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001082__i002",
+    "final_label": "GRADE1",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001082__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001082__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001082__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001083__i001",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_001083__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001083__i003",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001083__i004",
+    "final_label": "GRADE1",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001083__i005",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001088__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001088__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001088__i003",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001088__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001090__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001090__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001090__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001090__i004",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001090__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001098__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001098__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001098__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001098__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001098__i005",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_001100__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001100__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001100__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001100__i004",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_001121__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001121__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001121__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001121__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001142__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001142__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001142__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001142__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001166__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001166__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001166__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001166__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001166__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001177__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001177__i002",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_001177__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001177__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001177__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001185__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001185__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001185__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001185__i004",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001185__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001192__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001192__i002",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001192__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001192__i004",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001192__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001199__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001199__i002",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_001199__i003",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001199__i004",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001199__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001199__i006",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001209__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001209__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001209__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001209__i004",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_001209__i005",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001209__i006",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001211__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001211__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001211__i003",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_001211__i004",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001211__i005",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001214__i001",
+    "final_label": "GRADE2",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001214__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001214__i003",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001214__i004",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001226__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001226__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001226__i003",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001226__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001226__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001226__i006",
+    "final_label": "GRADE3",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_001227__i001",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001227__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001227__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001227__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001227__i005",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001232__i001",
+    "final_label": "GRADE2",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001232__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001232__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001232__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001232__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001234__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001234__i002",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001234__i003",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001234__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001234__i005",
+    "final_label": "UNQUALIFIED",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001237__i001",
+    "final_label": "UNQUALIFIED",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_001237__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001237__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001237__i004",
+    "final_label": "GRADE3",
+    "label_source": "frozen_base_rule_per_user_instruction"
+  },
+  {
+    "instance_id": "wb_001237__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001241__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001241__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001241__i003",
+    "final_label": "UNQUALIFIED",
+    "label_source": "lead_manual_adjudication_missing_stem_or_other_manual_decision"
+  },
+  {
+    "instance_id": "wb_001241__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001266__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001266__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001266__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001266__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001266__i005",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001274__i001",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001274__i002",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001274__i003",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  },
+  {
+    "instance_id": "wb_001274__i004",
+    "final_label": "GRADE3",
+    "label_source": "double_review_agreement"
+  }
+]

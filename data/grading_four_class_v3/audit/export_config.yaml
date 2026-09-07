@@ -1,0 +1,31 @@
+version: grading_four_class_v3_post_review
+candidate_manifest: outputs/grading_standard_post_review_v5/four_class_instance_manifest.csv
+all_features: outputs/strict_rot_exclusion_v2/features_with_manual_rot.csv
+source_manifest: data/manifests/dataset_manifest.csv
+source_dataset: data/split_v1
+boundary_audit: outputs/grading_standard_manual_v4_final/audit/boundary_review_audit.csv
+grading_standard: outputs/grading_standard_manual_v4_final/grading_standard_config.json
+output: data/grading_four_class_v3
+classes:
+  UNQUALIFIED: 0
+  GRADE_1: 1
+  GRADE_2: 2
+  GRADE_3: 3
+names:
+  0: unqualified
+  1: grade_1
+  2: grade_2
+  3: grade_3
+matching:
+  minimum_iou: 0.50
+  minimum_ambiguity_margin: 0.10
+  json_txt_pixel_tolerance: 0.001
+  minimum_polygon_area_px2: 16
+duplicates:
+  phash_max_distance: 8
+  foreground_layout_iou_min: 0.80
+  gray_ssim_min: 0.95
+split_policy: preserve_original_train_val_move_boundary_review_val_to_train_and_hold_near_duplicates
+test_policy: append_completed_double_review_and_adjudicated_original_test_after_train_val_build
+qc_seed: 20260906
+qc_images: 30

@@ -1,0 +1,9 @@
+﻿dataset_split,class_id,class_name,instances
+train,0,unqualified,168
+train,1,grade_1,415
+train,2,grade_2,523
+train,3,grade_3,682
+val,0,unqualified,28
+val,1,grade_1,55
+val,2,grade_2,80
+val,3,grade_3,90

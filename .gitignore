@@ -1,0 +1,71 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local editor, OS and secret files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+.env
+.env.*
+*.key
+*.pem
+~$*.xlsx
+
+# Runtime logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Archives are distributed outside Git
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Dataset images stay in the separately distributed data package.
+# Labels, LabelMe JSON, manifests, YAML and README files remain versioned.
+data/**/images/
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+data/**/*.bmp
+data/**/*.tif
+data/**/*.tiff
+data/**/*.webp
+
+# Human-review image packages are reproducible and are not versioned.
+review/**/images/
+review/**/*.jpg
+review/**/*.jpeg
+review/**/*.png
+review/**/*.bmp
+review/**/*.tif
+review/**/*.tiff
+review/**/*.webp
+
+# Large/generated analysis outputs are excluded. Keep only the frozen grading
+# manifest and compact baseline evaluation reports needed for the paper.
+outputs/*
+!outputs/reports/
+!outputs/reports/**
+!outputs/grading_standard_post_review_v5/
+!outputs/grading_standard_post_review_v5/**
+
+# Keep only the weights required to reproduce the two baselines.
+models/**/*.pt
+!models/pretrained/yolo26n-seg.pt
+!models/experiments/yolo26n_seg_baseline_seed20260823/weights/best.pt
+!models/experiments/yolo26n_seg_grading4_baseline_seed20260906/weights/best.pt

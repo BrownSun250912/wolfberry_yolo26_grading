@@ -1,0 +1,49 @@
+{
+  "package_version": "three_person_audit_v1",
+  "review_policy": {
+    "stem": "single review; grouped by image",
+    "geometry": "single review",
+    "test": "Reviewer A and Reviewer B independently review all test instances; lead adjudicates disagreements",
+    "lead_workload": "lead has no initial test-set review assignment"
+  },
+  "source_totals": {
+    "uncertain_stem_instances": 930,
+    "uncertain_stem_images": 633,
+    "geometry_hold_images": 36,
+    "test_images": 129,
+    "test_instances": 582,
+    "test_review_assignments": 1164
+  },
+  "reviewer_counts": {
+    "lead": {
+      "folder": "01_总负责人",
+      "stem_instances": 280,
+      "geometry_images": 10,
+      "test_images": 0,
+      "test_instances": 0
+    },
+    "reviewer_a": {
+      "folder": "02_审核员A",
+      "stem_instances": 325,
+      "geometry_images": 13,
+      "test_images": 129,
+      "test_instances": 582
+    },
+    "reviewer_b": {
+      "folder": "03_审核员B",
+      "stem_instances": 325,
+      "geometry_images": 13,
+      "test_images": 129,
+      "test_instances": 582
+    }
+  },
+  "input_hashes": {
+    "outputs/grading_standard_manual_v4_final/held_or_excluded_instances.csv": "2bff894f464355599d2375c0144070d7d7158306de978d38b71dd6be2a9a189f",
+    "data/grading_four_class_v2/audit/image_audit.csv": "ba8c0e27bc2be99b850710dbf68132a3ea9d2f9738172f2fdf3aa6d846a467d7",
+    "data/manifests/dataset_manifest.csv": "65d6e4cc403e542ae9301420d56867ec4628440d8829bcb01ec26d99e1059a61",
+    "outputs/grading_standard_manual_v4_final/four_class_instance_manifest.csv": "9d3d8b6e188d2a58a46f9e6a7dda3dd0f1d1b2d6ad7248ca5d9a908e9b77a18c",
+    "outputs/strict_rot_exclusion_v2/features_with_manual_rot.csv": "43b4f0d13dbd188c6e690f1e0d46f878d1f218cf535f9d0b17e5edd33eb5fc91",
+    "outputs/size_priority_v1/scoring_reference_values.csv": "a9287fa1a1d8ffd2adcfcf95f30288b7744127661ad3259596457725cab14229",
+    "outputs/grading_standard_manual_v4_final/grading_standard_config.json": "ab6cd472737c9cf5706ec0878eb5e92fee697311e222a380917bfa1a99affa3f"
+  }
+}

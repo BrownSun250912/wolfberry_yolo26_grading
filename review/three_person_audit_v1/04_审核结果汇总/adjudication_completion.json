@@ -1,0 +1,15 @@
+{
+  "expected_test_instances": 582,
+  "double_review_agreements": 303,
+  "manual_adjudications_preserved": 51,
+  "pending_assigned_by_frozen_base_rule": 228,
+  "remaining_pending": 0,
+  "final_unique_labels": 582,
+  "final_distribution": {
+    "GRADE1": 131,
+    "GRADE2": 168,
+    "GRADE3": 258,
+    "UNQUALIFIED": 25
+  },
+  "ready_for_test_dataset_export": true
+}

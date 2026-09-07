@@ -1,0 +1,74 @@
+schema_version: 1
+status: candidate_detection_requires_human_qc
+
+stem_detection:
+  # Search outside both longitudinal fruit tips. If a reliable calyx candidate
+  # exists, prefer the tip containing it.
+  search_length_px: 75
+  attach_depth_px: 14
+  corridor_half_width_min_px: 10
+  corridor_half_width_fraction_minor_axis: 0.28
+  corridor_half_width_max_px: 22
+  tip_seed_depth_px: 8
+  tip_seed_radius_px: 13
+
+  # A lying or rounded fruit can have a curved stalk that is not aligned with
+  # the fitted major axis. Search the complete fruit boundary as the primary
+  # detector and retain the two axial corridors only as supplementary evidence.
+  full_boundary_search: true
+  boundary_attachment_radius_px: 6
+  boundary_display_band_px: 11
+
+  # Stalk colors in these images range from deep green through yellow-brown to
+  # brown. OpenCV HSV hue uses [0,179]: this range excludes the red fruit hue
+  # near 0/179 while retaining green-brown stalk pixels.
+  hsv_hue_min: 4
+  hsv_hue_max: 100
+
+  # The stalk must also be less red than the fruit body and darker than the
+  # local paper/bowl background. Lab is converted to L* [0,100] and a* centered
+  # around zero. The higher absolute a* ceiling allows reddish-brown stalks,
+  # while the relative condition still separates them from red fruit flesh.
+  absolute_a_max: 28.0
+  relative_a_z_min: 1.0
+  relative_a_delta_min: 5.0
+  min_a_mad: 2.0
+  local_background_L_delta_min: 4.0
+  absolute_L_max: 78.0
+  # Median filtering and a modest saturation floor suppress colored sensor
+  # speckles on the white bowl while retaining green/brown plant tissue.
+  median_blur_kernel: 3
+  saturation_min: 0.10
+  value_max: 0.86
+
+  morphology_close_kernel: 3
+  morphology_dilate_kernel: 1
+  minimum_component_area_px: 10
+
+  # Strong evidence => PRESENT; very weak evidence => MISSING; the middle band
+  # remains UNCERTAIN and must be reviewed rather than silently downgraded.
+  present_min_outward_length_px: 14.0
+  present_min_outside_area_px: 16
+  present_min_axis_alignment_cosine: 0.45
+  present_min_slenderness: 1.6
+  # Tiny color fragments can remain on the mask edge. Missing-stalk triage is
+  # therefore driven by outward extension length; fragment area is recorded but
+  # is not accepted as stalk evidence by itself.
+  missing_max_outward_length_px: 5.0
+
+grading_rule:
+  base_scheme: size_priority_v1
+  missing_stem_grade: 3
+  present_stem_action: keep_base_grade
+  uncertain_stem_action: keep_base_grade_and_require_review
+  label_status: candidate_only_not_training_truth
+
+review_sampling:
+  # Every automatic missing-stalk candidate must be reviewed before the
+  # provisional Grade-3 override becomes a confirmed label.
+  missing_candidates: 100000
+  uncertain_candidates: 40
+  weakest_present_candidates: 20
+  strongest_present_candidates: 20
+  unique_image_preference: true
+  random_seed: 20260902
