@@ -68,13 +68,15 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
   -File ".\scripts\train_grading_baseline.ps1"
 ```
 
-若意外中断，可从最后检查点恢复：
+新实验训练期间若意外中断，可在清理检查点前从该实验自动生成的 `last.pt` 恢复：
 
 ```powershell
 $env:YOLO_CONFIG_DIR = ".\environment\ultralytics_config"
 & ".\.venv\Scripts\yolo.exe" segment train resume `
-  "model=.\models\experiments\yolo26n_seg_grading4_baseline_seed20260906\weights\last.pt"
+  "model=.\models\experiments\新实验名\weights\last.pt"
 ```
+
+已完成的基线为控制项目体积只长期保留 `best.pt`，其 `last.pt` 已在项目交接清理时删除。
 
 冻结测试集的评估命令：
 

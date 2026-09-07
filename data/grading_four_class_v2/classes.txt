@@ -1,4 +1,0 @@
-unqualified
-grade_1
-grade_2
-grade_3

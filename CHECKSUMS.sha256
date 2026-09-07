@@ -1,3 +1,2 @@
 361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f  models/pretrained/yolo26n-seg.pt
-1c8d947f65d68b756e4c25a9208b5d75764a10312687b492d19ad7046a17d471  models/reference_previous/best_previous_1285.pt
 65d6e4cc403e542ae9301420d56867ec4628440d8829bcb01ec26d99e1059a61  data/manifests/dataset_manifest.csv
