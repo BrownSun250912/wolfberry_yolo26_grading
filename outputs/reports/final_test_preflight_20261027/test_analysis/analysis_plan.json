@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-10-27T11:57:27.988558+00:00",
+  "iterations": 2000,
+  "seed": 20261027,
+  "registered_before_test": false,
+  "timing": "Analysis details fixed after viewing point estimates, before drawing bootstrap samples. Arm identities and primary endpoint were frozen before test.",
+  "primary_comparison": [
+    "original_defect_rank",
+    "RR22_reference"
+  ],
+  "primary_endpoint": "Mask_AP50",
+  "all_comparisons": [
+    [
+      "raw_YOLO_realNMS",
+      "raw_YOLO"
+    ],
+    [
+      "RR22_reference",
+      "raw_YOLO_realNMS"
+    ],
+    [
+      "original_defect_rank",
+      "RR22_reference"
+    ],
+    [
+      "original_defect_rank",
+      "raw_YOLO"
+    ],
+    [
+      "original_defect_rank",
+      "raw_YOLO_realNMS"
+    ],
+    [
+      "original_defect_rank_prototype",
+      "original_defect_rank"
+    ]
+  ],
+  "endpoints": [
+    "Mask_AP50",
+    "Mask_AP50_95",
+    "conditional_grade_accuracy",
+    "correct_per_all_GT",
+    "operating_macro_F1_rawscope",
+    "operating_macro_recall_rawscope",
+    "UQ_escape_per_all_UQ_GT",
+    "qualified_rejected_per_qualified_GT",
+    "new_UQ_escape_per_all_UQ_GT",
+    "UQ_any_qualified_emission_per_all_UQ_GT"
+  ],
+  "unit": "Original image, all GT and predictions kept together; paired multiplicities shared across all five arms.",
+  "strata": "Four pre-existing filename/source ranges, preserving each range size. These are not verified independent harvest batches.",
+  "interval": "Pointwise percentile 95%, descriptive; no p-values or multiplicity-adjusted simultaneous inference. No threshold/checkpoint selection.",
+  "tie_handling": "Sort sampled image indices to preserve original order of tied scores; use unchanged official AP implementation.",
+  "missing_class": "AP undefined if a draw lacks a GT class; retain draw and report valid counts, do not redraw.",
+  "test_model_inference_this_analysis": 0,
+  "sources": {
+    "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\replay_report.json": "22bfd6be6857f8a5c53e4ba0f7200d31d8f24f41f423d5e2fe4db48333a226af",
+    "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\metrics.csv": "16a9494bca9e85b8cb8115522520b16999b0830bc408a7f40e2c78cd570a3a2e",
+    "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\analyze_final_test_20261027.py": "5952fd068481bdea9b987bd039be53e57cba751d3275c43b9b6eb41a10e552a4"
+  }
+}

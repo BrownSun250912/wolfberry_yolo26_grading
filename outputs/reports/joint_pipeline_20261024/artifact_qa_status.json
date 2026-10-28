@@ -1,0 +1,541 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "nine_figures",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure01_nms_protocol_source_p0_baseline_matrix.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure01_nms_protocol_raster",
+      "PASS": true,
+      "details": {
+        "size": [
+          2130,
+          1020
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      }
+    },
+    {
+      "check": "figure01_nms_protocol_dpi",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure01_nms_protocol_svg",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure01_nms_protocol_pdf",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure02_decision_evidence_source_p2_decision_matrix.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure02_decision_evidence_raster",
+      "PASS": true,
+      "details": {
+        "size": [
+          2130,
+          1200
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      }
+    },
+    {
+      "check": "figure02_decision_evidence_dpi",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure02_decision_evidence_svg",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure02_decision_evidence_pdf",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure03_stress_and_uncertainty_source_p3_stress_matrix.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure03_stress_and_uncertainty_source_arbitration_fixed_candidate.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure03_stress_and_uncertainty_source_bootstrap_intervals.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure03_stress_and_uncertainty_source_normalization_control_metrics.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure03_stress_and_uncertainty_raster",
+      "PASS": true,
+      "details": {
+        "size": [
+          2250,
+          1140
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      }
+    },
+    {
+      "check": "figure03_stress_and_uncertainty_dpi",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure03_stress_and_uncertainty_svg",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure03_stress_and_uncertainty_pdf",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure04_ranking_generalization_source_rank_fit_metrics.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure04_ranking_generalization_raster",
+      "PASS": true,
+      "details": {
+        "size": [
+          2130,
+          930
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      }
+    },
+    {
+      "check": "figure04_ranking_generalization_dpi",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure04_ranking_generalization_svg",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure04_ranking_generalization_pdf",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_source_runtime_final_summary.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_source_runtime_final_image_means.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_source_p0_baseline_matrix.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_source_p3_stress_matrix.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_source_arbitration_fixed_candidate.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_source_normalization_control_metrics.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_source_spatial_arbitration_fixed_candidate.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_raster",
+      "PASS": true,
+      "details": {
+        "size": [
+          2280,
+          1230
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      }
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_dpi",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_svg",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure05_current_runtime_tradeoffs_pdf",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure06_object_consistency_tradeoff_source_object_grouping_metrics.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure06_object_consistency_tradeoff_raster",
+      "PASS": true,
+      "details": {
+        "size": [
+          2130,
+          870
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      }
+    },
+    {
+      "check": "figure06_object_consistency_tradeoff_dpi",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure06_object_consistency_tradeoff_svg",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure06_object_consistency_tradeoff_pdf",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure07_spatial_transfer_source_spatial_arbitration_fixed_candidate.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure07_spatial_transfer_source_spatial_arbitration_development.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure07_spatial_transfer_source_spatial_combination_baselines.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure07_spatial_transfer_raster",
+      "PASS": true,
+      "details": {
+        "size": [
+          2250,
+          1320
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      }
+    },
+    {
+      "check": "figure07_spatial_transfer_dpi",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure07_spatial_transfer_svg",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure07_spatial_transfer_pdf",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure08_source_head_audit_source_source_nested_metrics.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure08_source_head_audit_raster",
+      "PASS": true,
+      "details": {
+        "size": [
+          2280,
+          1110
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      }
+    },
+    {
+      "check": "figure08_source_head_audit_dpi",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure08_source_head_audit_svg",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure08_source_head_audit_pdf",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure09_output_ambiguity_source_output_risk_metrics.csv",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure09_output_ambiguity_raster",
+      "PASS": true,
+      "details": {
+        "size": [
+          2280,
+          1110
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      }
+    },
+    {
+      "check": "figure09_output_ambiguity_dpi",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure09_output_ambiguity_svg",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "figure09_output_ambiguity_pdf",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "实验报告.md_no_placeholder",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "实验报告.md_link_split_similarity_contact_sheet.png",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\split_similarity_contact_sheet.png"
+    },
+    {
+      "check": "实验报告.md_link_figure01_nms_protocol.png",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\figures\\figure01_nms_protocol.png"
+    },
+    {
+      "check": "实验报告.md_link_figure02_decision_evidence.png",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\figures\\figure02_decision_evidence.png"
+    },
+    {
+      "check": "实验报告.md_link_figure03_stress_and_uncertainty.png",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\figures\\figure03_stress_and_uncertainty.png"
+    },
+    {
+      "check": "实验报告.md_link_figure04_ranking_generalization.png",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\figures\\figure04_ranking_generalization.png"
+    },
+    {
+      "check": "实验报告.md_link_figure05_current_runtime_tradeoffs.png",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\figures\\figure05_current_runtime_tradeoffs.png"
+    },
+    {
+      "check": "实验报告.md_link_figure06_object_consistency_tradeoff.png",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\figures\\figure06_object_consistency_tradeoff.png"
+    },
+    {
+      "check": "实验报告.md_link_figure07_spatial_transfer.png",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\figures\\figure07_spatial_transfer.png"
+    },
+    {
+      "check": "实验报告.md_link_figure08_source_head_audit.png",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\figures\\figure08_source_head_audit.png"
+    },
+    {
+      "check": "实验报告.md_link_figure09_output_ambiguity.png",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\figures\\figure09_output_ambiguity.png"
+    },
+    {
+      "check": "实验报告.md_link_README.md",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\README.md"
+    },
+    {
+      "check": "README.md_no_placeholder",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "README.md_link_实验报告.md",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\docs\\experiments\\joint_pipeline_20261024\\实验报告.md"
+    },
+    {
+      "check": "README.md_link_report_main_table.csv",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\report_main_table.csv"
+    },
+    {
+      "check": "README.md_link_report_stress_table.csv",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\report_stress_table.csv"
+    },
+    {
+      "check": "README.md_link_delivery_audit.json",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\delivery_audit.json"
+    },
+    {
+      "check": "README.md_link_delivery_metric_replay.csv",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\delivery_metric_replay.csv"
+    },
+    {
+      "check": "README.md_link_reproduction_environment.json",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\reproduction_environment.json"
+    },
+    {
+      "check": "README.md_link_reproduction_manifest.json",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\reproduction_manifest.json"
+    },
+    {
+      "check": "README.md_link_joint_pipeline_20261024_reproduction.zip",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\joint_pipeline_20261024_reproduction.zip"
+    },
+    {
+      "check": "README.md_link_artifact_qa_status.json",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\artifact_qa_status.json"
+    },
+    {
+      "check": "README.md_link_inference_examples_status.json",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\inference_examples_status.json"
+    },
+    {
+      "check": "JOINT_PIPELINE_EXPERIMENTS_20261024.md_no_placeholder",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "JOINT_PIPELINE_EXPERIMENTS_20261024.md_link_实验报告.md",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\docs\\experiments\\joint_pipeline_20261024\\实验报告.md"
+    },
+    {
+      "check": "JOINT_PIPELINE_EXPERIMENTS_20261024.md_link_README.md",
+      "PASS": true,
+      "details": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\README.md"
+    },
+    {
+      "check": "archive_hash",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "archive_crc",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "archive_no_duplicate_names",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "archive_safe_relative_names",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "archive_contains_report",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "archive_contains_final_code",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "archive_nine_figure_png",
+      "PASS": true,
+      "details": null
+    }
+  ],
+  "figures": 9,
+  "manual_visual_review": "All9PNG plots and2CLIoverlays plus fixed6pair similarity contact sheet reviewed; label overlap/clipped titles repaired.",
+  "archive_bytes": 3303772,
+  "limits": "Valid encodings/links/source hashes and inspected visual layout, not journal certification or external scientific validation.",
+  "test_accessed": false
+}

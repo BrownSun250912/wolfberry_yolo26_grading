@@ -1,0 +1,88 @@
+{
+  "status": "completed",
+  "metadata_split_counts": {
+    "train": 4277,
+    "val": 518
+  },
+  "thresholds": {
+    "LOW": 37.40298225745565,
+    "HIGH": 65.62684031710077
+  },
+  "summary": [
+    {
+      "split": "train",
+      "source_group": "001-150",
+      "instances": 457,
+      "complete": 457,
+      "current_threshold_disagreements": 0,
+      "provided_rule_disagreements": 0,
+      "manual_boundary_overrides": 0
+    },
+    {
+      "split": "train",
+      "source_group": "151-500",
+      "instances": 1016,
+      "complete": 1016,
+      "current_threshold_disagreements": 3,
+      "provided_rule_disagreements": 3,
+      "manual_boundary_overrides": 3
+    },
+    {
+      "split": "train",
+      "source_group": "501-900",
+      "instances": 1383,
+      "complete": 1383,
+      "current_threshold_disagreements": 0,
+      "provided_rule_disagreements": 0,
+      "manual_boundary_overrides": 0
+    },
+    {
+      "split": "train",
+      "source_group": "901-1300",
+      "instances": 1421,
+      "complete": 1421,
+      "current_threshold_disagreements": 1,
+      "provided_rule_disagreements": 1,
+      "manual_boundary_overrides": 1
+    },
+    {
+      "split": "val",
+      "source_group": "001-150",
+      "instances": 55,
+      "complete": 55,
+      "current_threshold_disagreements": 0,
+      "provided_rule_disagreements": 0,
+      "manual_boundary_overrides": 0
+    },
+    {
+      "split": "val",
+      "source_group": "151-500",
+      "instances": 118,
+      "complete": 118,
+      "current_threshold_disagreements": 0,
+      "provided_rule_disagreements": 0,
+      "manual_boundary_overrides": 0
+    },
+    {
+      "split": "val",
+      "source_group": "501-900",
+      "instances": 162,
+      "complete": 162,
+      "current_threshold_disagreements": 0,
+      "provided_rule_disagreements": 0,
+      "manual_boundary_overrides": 0
+    },
+    {
+      "split": "val",
+      "source_group": "901-1300",
+      "instances": 183,
+      "complete": 183,
+      "current_threshold_disagreements": 0,
+      "provided_rule_disagreements": 0,
+      "manual_boundary_overrides": 0
+    }
+  ],
+  "labels_changed": false,
+  "interpretation": "Disagreements with fixed proxy thresholds are not automatically wrong final labels; retain intentional manual overrides and originalsource lineage.",
+  "test_accessed": false
+}

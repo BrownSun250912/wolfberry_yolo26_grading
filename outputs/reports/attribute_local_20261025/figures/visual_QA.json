@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-24T20:09:40.512272+00:00",
+  "figures": [
+    {
+      "name": "01_paired_main_results",
+      "PNG_manual_review": "PASS",
+      "text_inside_canvas": true,
+      "sources_and_exports_hashes_match": true,
+      "formats": "PNGdecode,SVG_XML,PDFheader; PNGvisualreview, not a journalcertification"
+    },
+    {
+      "name": "02_attribute_factorial",
+      "PNG_manual_review": "PASS",
+      "text_inside_canvas": true,
+      "sources_and_exports_hashes_match": true,
+      "formats": "PNGdecode,SVG_XML,PDFheader; PNGvisualreview, not a journalcertification"
+    },
+    {
+      "name": "03_boundary_dose",
+      "PNG_manual_review": "PASS",
+      "text_inside_canvas": true,
+      "sources_and_exports_hashes_match": true,
+      "formats": "PNGdecode,SVG_XML,PDFheader; PNGvisualreview, not a journalcertification"
+    },
+    {
+      "name": "04_stress_all_conditions",
+      "PNG_manual_review": "PASS",
+      "text_inside_canvas": true,
+      "sources_and_exports_hashes_match": true,
+      "formats": "PNGdecode,SVG_XML,PDFheader; PNGvisualreview, not a journalcertification"
+    },
+    {
+      "name": "05_geometry_sensitivity",
+      "PNG_manual_review": "PASS",
+      "text_inside_canvas": true,
+      "sources_and_exports_hashes_match": true,
+      "formats": "PNGdecode,SVG_XML,PDFheader; PNGvisualreview, not a journalcertification"
+    },
+    {
+      "name": "06_defect_probability",
+      "PNG_manual_review": "PASS",
+      "text_inside_canvas": true,
+      "sources_and_exports_hashes_match": true,
+      "formats": "PNGdecode,SVG_XML,PDFheader; PNGvisualreview, not a journalcertification"
+    },
+    {
+      "name": "07_runtime",
+      "PNG_manual_review": "PASS",
+      "text_inside_canvas": true,
+      "sources_and_exports_hashes_match": true,
+      "formats": "PNGdecode,SVG_XML,PDFheader; PNGvisualreview, not a journalcertification"
+    },
+    {
+      "name": "08_rank_information_controls",
+      "PNG_manual_review": "PASS",
+      "text_inside_canvas": true,
+      "sources_and_exports_hashes_match": true,
+      "formats": "PNGdecode,SVG_XML,PDFheader; PNGvisualreview, not a journalcertification"
+    },
+    {
+      "name": "09_shape_score_tradeoff",
+      "PNG_manual_review": "PASS",
+      "text_inside_canvas": true,
+      "sources_and_exports_hashes_match": true,
+      "formats": "PNGdecode,SVG_XML,PDFheader; PNGvisualreview, not a journalcertification"
+    },
+    {
+      "name": "10_qualitative_best_and_worst",
+      "PNG_manual_review": "PASS",
+      "text_inside_canvas": true,
+      "sources_and_exports_hashes_match": true,
+      "formats": "PNGdecode,SVG_XML,PDFheader; PNGvisualreview, not a journalcertification"
+    }
+  ],
+  "manual_review": "All10PNGfigures inspected during currentturn; changedprobabilitylegend/rankcontrols re-inspected after finalrerender. Best/worstexamples retained, no data concealed.",
+  "journal_requirements": "No target journal specified; no journalcompliance claimed."
+}

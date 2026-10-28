@@ -1,0 +1,35 @@
+{
+  "original_correct": 481,
+  "refined_correct": 480,
+  "inference_labels_identical": true,
+  "explanation": "The same frozen per-candidate labels/ranks are used; refined geometry changes class-agnostic GT-to-prediction assignment. Do not describe as invariant end-to-end grading correctness.",
+  "changes": [
+    {
+      "instance_id": "wb_000911__i001",
+      "original_match": {
+        "image_id": "wb_000911",
+        "gt_index": 0,
+        "instance_id": "wb_000911__i001",
+        "prediction_index": 1,
+        "gt_class": 3,
+        "pred_class": 3,
+        "correct": true,
+        "mask_iou": 0.9125553369522095,
+        "raw_conf": 0.6427412033081055,
+        "rank_conf": 0.5773704051971436
+      },
+      "refined_match": {
+        "image_id": "wb_000911",
+        "gt_index": 0,
+        "instance_id": "wb_000911__i001",
+        "prediction_index": 2,
+        "gt_class": 3,
+        "pred_class": 0,
+        "correct": false,
+        "mask_iou": 0.9183771014213562,
+        "raw_conf": 0.4145902693271637,
+        "rank_conf": 0.4145902693271637
+      }
+    }
+  ]
+}

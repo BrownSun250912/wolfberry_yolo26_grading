@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "count": 11,
+  "checks": [
+    "crop_prediction_only",
+    "global_pair_original_and_capacity",
+    "frozen_tail_BN_gradient",
+    "missing_labels_excluded",
+    "native_zero_identity",
+    "native_band_edit_scope",
+    "creation_no_candidate_recovery",
+    "original_defect_no_new_probability_dependency",
+    "flag_no_new_probability_dependency",
+    "finalclass0_rank_preserved",
+    "binary_geometry_RGB_independence"
+  ],
+  "verification": "All11assertiontests executed successfully through tools in currentturn; not re-executed by this metadatawriter.",
+  "files": [
+    "tests/test_attribute_local_20261025.py",
+    "tests/test_attribute_boundary_20261025.py",
+    "tests/test_attribute_rank_semantics_20261025.py"
+  ]
+}

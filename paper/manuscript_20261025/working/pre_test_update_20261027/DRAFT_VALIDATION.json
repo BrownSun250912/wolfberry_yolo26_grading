@@ -1,0 +1,375 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "raw_YOLO AP50 source rounding",
+      "passed": true
+    },
+    {
+      "check": "raw_YOLO AP95 source rounding",
+      "passed": true
+    },
+    {
+      "check": "raw_YOLO grade count",
+      "passed": true
+    },
+    {
+      "check": "raw_YOLO printed AP both languages",
+      "passed": true
+    },
+    {
+      "check": "raw_YOLO_realNMS AP50 source rounding",
+      "passed": true
+    },
+    {
+      "check": "raw_YOLO_realNMS AP95 source rounding",
+      "passed": true
+    },
+    {
+      "check": "raw_YOLO_realNMS grade count",
+      "passed": true
+    },
+    {
+      "check": "raw_YOLO_realNMS printed AP both languages",
+      "passed": true
+    },
+    {
+      "check": "RR22_reference AP50 source rounding",
+      "passed": true
+    },
+    {
+      "check": "RR22_reference AP95 source rounding",
+      "passed": true
+    },
+    {
+      "check": "RR22_reference grade count",
+      "passed": true
+    },
+    {
+      "check": "RR22_reference printed AP both languages",
+      "passed": true
+    },
+    {
+      "check": "historical18_selected AP50 source rounding",
+      "passed": true
+    },
+    {
+      "check": "historical18_selected AP95 source rounding",
+      "passed": true
+    },
+    {
+      "check": "historical18_selected grade count",
+      "passed": true
+    },
+    {
+      "check": "historical18_selected printed AP both languages",
+      "passed": true
+    },
+    {
+      "check": "selected_new_defect_rank AP50 source rounding",
+      "passed": true
+    },
+    {
+      "check": "selected_new_defect_rank AP95 source rounding",
+      "passed": true
+    },
+    {
+      "check": "selected_new_defect_rank grade count",
+      "passed": true
+    },
+    {
+      "check": "selected_new_defect_rank printed AP both languages",
+      "passed": true
+    },
+    {
+      "check": "original_defect_rank AP50 source rounding",
+      "passed": true
+    },
+    {
+      "check": "original_defect_rank AP95 source rounding",
+      "passed": true
+    },
+    {
+      "check": "original_defect_rank grade count",
+      "passed": true
+    },
+    {
+      "check": "original_defect_rank printed AP both languages",
+      "passed": true
+    },
+    {
+      "check": "original_defect_rank_prototype AP50 source rounding",
+      "passed": true
+    },
+    {
+      "check": "original_defect_rank_prototype AP95 source rounding",
+      "passed": true
+    },
+    {
+      "check": "original_defect_rank_prototype grade count",
+      "passed": true
+    },
+    {
+      "check": "original_defect_rank_prototype printed AP both languages",
+      "passed": true
+    },
+    {
+      "check": "class0 raw_YOLO appendix values",
+      "passed": true
+    },
+    {
+      "check": "class0 RR22_reference appendix values",
+      "passed": true
+    },
+    {
+      "check": "class0 original_defect_rank appendix values",
+      "passed": true
+    },
+    {
+      "check": "class0 original_defect_rank_prototype appendix values",
+      "passed": true
+    },
+    {
+      "check": "class1 raw_YOLO appendix values",
+      "passed": true
+    },
+    {
+      "check": "class1 RR22_reference appendix values",
+      "passed": true
+    },
+    {
+      "check": "class1 original_defect_rank appendix values",
+      "passed": true
+    },
+    {
+      "check": "class1 original_defect_rank_prototype appendix values",
+      "passed": true
+    },
+    {
+      "check": "class2 raw_YOLO appendix values",
+      "passed": true
+    },
+    {
+      "check": "class2 RR22_reference appendix values",
+      "passed": true
+    },
+    {
+      "check": "class2 original_defect_rank appendix values",
+      "passed": true
+    },
+    {
+      "check": "class2 original_defect_rank_prototype appendix values",
+      "passed": true
+    },
+    {
+      "check": "class3 raw_YOLO appendix values",
+      "passed": true
+    },
+    {
+      "check": "class3 RR22_reference appendix values",
+      "passed": true
+    },
+    {
+      "check": "class3 original_defect_rank appendix values",
+      "passed": true
+    },
+    {
+      "check": "class3 original_defect_rank_prototype appendix values",
+      "passed": true
+    },
+    {
+      "check": "latency lean_RR22",
+      "passed": true
+    },
+    {
+      "check": "latency newrank_prefix_reuse",
+      "passed": true
+    },
+    {
+      "check": "latency newrank_strict_replay",
+      "passed": true
+    },
+    {
+      "check": "latency olddefect_rank",
+      "passed": true
+    },
+    {
+      "check": "latency olddefect_rank_proto",
+      "passed": true
+    },
+    {
+      "check": "latency raw_YOLO_API",
+      "passed": true
+    },
+    {
+      "check": "latency shared_reference",
+      "passed": true
+    },
+    {
+      "check": "stress original-defect source clean",
+      "passed": true
+    },
+    {
+      "check": "stress clean count",
+      "passed": true
+    },
+    {
+      "check": "stress clean AP50",
+      "passed": true
+    },
+    {
+      "check": "stress clean allGT",
+      "passed": true
+    },
+    {
+      "check": "stress original-defect source dark070",
+      "passed": true
+    },
+    {
+      "check": "stress dark070 count",
+      "passed": true
+    },
+    {
+      "check": "stress dark070 AP50",
+      "passed": true
+    },
+    {
+      "check": "stress dark070 allGT",
+      "passed": true
+    },
+    {
+      "check": "stress original-defect source colorcast",
+      "passed": true
+    },
+    {
+      "check": "stress colorcast count",
+      "passed": true
+    },
+    {
+      "check": "stress colorcast AP50",
+      "passed": true
+    },
+    {
+      "check": "stress colorcast allGT",
+      "passed": true
+    },
+    {
+      "check": "stress original-defect source background_colorcast",
+      "passed": true
+    },
+    {
+      "check": "stress background_colorcast count",
+      "passed": true
+    },
+    {
+      "check": "stress background_colorcast AP50",
+      "passed": true
+    },
+    {
+      "check": "stress background_colorcast allGT",
+      "passed": true
+    },
+    {
+      "check": "stress original-defect source foreground_colorcast",
+      "passed": true
+    },
+    {
+      "check": "stress foreground_colorcast count",
+      "passed": true
+    },
+    {
+      "check": "stress foreground_colorcast AP50",
+      "passed": true
+    },
+    {
+      "check": "stress foreground_colorcast allGT",
+      "passed": true
+    },
+    {
+      "check": "stress original-defect source foreground_dark_background_color",
+      "passed": true
+    },
+    {
+      "check": "stress foreground_dark_background_color count",
+      "passed": true
+    },
+    {
+      "check": "stress foreground_dark_background_color AP50",
+      "passed": true
+    },
+    {
+      "check": "stress foreground_dark_background_color allGT",
+      "passed": true
+    },
+    {
+      "check": "EN all citations resolved",
+      "passed": true
+    },
+    {
+      "check": "EN four existing image links and one flowchart",
+      "passed": true
+    },
+    {
+      "check": "EN equations balanced",
+      "passed": true
+    },
+    {
+      "check": "EN no placeholder tags",
+      "passed": true
+    },
+    {
+      "check": "EN no editorial emphasis",
+      "passed": true
+    },
+    {
+      "check": "EN tables well formed",
+      "passed": true
+    },
+    {
+      "check": "ZH all citations resolved",
+      "passed": true
+    },
+    {
+      "check": "ZH four existing image links and one flowchart",
+      "passed": true
+    },
+    {
+      "check": "ZH equations balanced",
+      "passed": true
+    },
+    {
+      "check": "ZH no placeholder tags",
+      "passed": true
+    },
+    {
+      "check": "ZH no editorial emphasis",
+      "passed": true
+    },
+    {
+      "check": "ZH tables well formed",
+      "passed": true
+    },
+    {
+      "check": "bilingual table numbers identical",
+      "passed": true
+    },
+    {
+      "check": "reference text identical",
+      "passed": true
+    }
+  ],
+  "english_words_excluding_references": 7019,
+  "english_abstract_words": 232,
+  "chinese_body_characters": 17165,
+  "files": {
+    "MANUSCRIPT_EN.md": {
+      "bytes": 53931,
+      "sha256": "7e62bf26fb4bb6492a05fdc45f856a07959c08972e4f4d5d59443015689b53c7"
+    },
+    "MANUSCRIPT_ZH.md": {
+      "bytes": 43523,
+      "sha256": "de586f3c52b767d1771d71c5a044ec12deafada757e6196cf8935eba1fd4effc"
+    }
+  },
+  "scope": "Mechanical/numeric checks only; independent literature review is separate. No training, inference, or test access."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_STRICT_AND_EXPLICIT_NUMERICAL_EQUIVALENCE",
+  "rows": 1044,
+  "arms": 9,
+  "images": 116,
+  "max_rank_abs": 8.231401443481445e-05,
+  "rows_exceeding_original_probability_guard": 42,
+  "strict_graph_default": true,
+  "original_probability_failure_preserved": true,
+  "test_accessed": false
+}

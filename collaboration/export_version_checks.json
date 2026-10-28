@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "paper/manuscript_20261025/MANUSCRIPT_ZH.docx",
+      "bytes": 244029,
+      "sha256": "c8eb8d240d39459307e7bd43217d7bc80791973aa8151ebd9c068dcebaeb0561",
+      "pages": null,
+      "final_test_tokens": {
+        "80.72": true,
+        "69.12": true,
+        "481/560": true,
+        "480/560": true
+      },
+      "passed": true,
+      "scope": "Read-only parse and final-test version check; existing layout not changed or newly certified."
+    },
+    {
+      "path": "paper/manuscript_20261025/MANUSCRIPT_ZH.pdf",
+      "bytes": 1362166,
+      "sha256": "16c691efed462026246181a8dbe512ae7efe4ccd6e5e1efa9aa2d7f5d9c8e0e6",
+      "pages": 23,
+      "final_test_tokens": {
+        "80.72": true,
+        "69.12": true,
+        "481/560": true,
+        "480/560": true
+      },
+      "passed": true,
+      "scope": "Read-only parse and final-test version check; existing layout not changed or newly certified."
+    },
+    {
+      "path": "paper/manuscript_20261025/MANUSCRIPT_EN.pdf",
+      "bytes": 979659,
+      "sha256": "47f81e7af1ef17c974b44a6cf6305c9d799d300dfd54cb631693e4921dd4c9c7",
+      "pages": 29,
+      "final_test_tokens": {
+        "80.72": true,
+        "69.12": true,
+        "481/560": true,
+        "480/560": true
+      },
+      "passed": true,
+      "scope": "Read-only parse and final-test version check; existing layout not changed or newly certified."
+    }
+  ]
+}

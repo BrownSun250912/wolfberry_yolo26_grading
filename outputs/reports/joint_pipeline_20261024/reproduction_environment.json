@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cuda_runtime": "13.0",
+  "torch_device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "torch": "2.13.0+cu130",
+  "torchvision": "0.28.0+cu130",
+  "ultralytics": "8.4.117",
+  "numpy": "2.5.2",
+  "pandas": "3.0.5",
+  "opencv-python": "5.0.0.93",
+  "matplotlib": "3.11.1",
+  "scipy": "1.18.1",
+  "pillow": "12.3.0"
+}

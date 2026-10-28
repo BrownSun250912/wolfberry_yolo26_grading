@@ -1,0 +1,13 @@
+{
+  "status": "FAILED",
+  "row": {
+    "arm": "rankRR_reuse",
+    "image_id": "wb_000348",
+    "boxes_exact": true,
+    "conf_exact": true,
+    "labels_exact": true,
+    "keep_exact": true,
+    "mask_pixels_exact": true,
+    "ranking_abs": 1.6137957572937012e-05
+  }
+}

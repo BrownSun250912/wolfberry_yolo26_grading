@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "rows": 696,
+  "arms": 6,
+  "images": 116,
+  "max_score_abs": 7.62939453125e-06,
+  "max_stem_abs": 0.0,
+  "max_attribute_probability_abs": 0.0,
+  "test_accessed": false
+}

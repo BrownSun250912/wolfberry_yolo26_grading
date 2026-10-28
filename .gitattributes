@@ -1,4 +1,5 @@
 * text=auto
+/.gitattributes text eol=lf
 
 *.py text eol=lf
 *.yaml text eol=lf
@@ -15,3 +16,13 @@
 *.jpg binary
 *.jpeg binary
 *.ttf binary
+
+# Preserve the exact bytes of the paper handoff evidence and frozen source snapshots.
+# Markdown views were explicitly exported with LF before checksums were calculated.
+/collaboration/** -text
+/paper/** -text
+/research_code/** -text
+/docs/experiments/** -text
+/outputs/reports/** -text
+/data/grading_four_class_v3_valfix_20261006/** -text
+/data/grading_four_class_v3/audit/* -text

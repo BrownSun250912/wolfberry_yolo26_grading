@@ -1,80 +1,46 @@
-# 枸杞分割、单果特征与分级标准项目
+# 枸杞实例分割与外观分级：论文协作仓库
 
-> 交接入口：新接手开发者请先阅读 [`HANDOFF.md`](HANDOFF.md)；RGB 图片不保存在 GitHub 中，获取和放置方式见 [`DATASET.md`](DATASET.md)。
+更新：2026-10-28。当前阶段：模型与最终测试已冻结，进入共同改稿和投稿准备。
 
-## 最新入口（2026-09-06）
+## 从这里开始
 
-三人果梗复核和测试集审核完成后，已制作四等级实例分割数据集：[`data/grading_four_class_v3/README.md`](data/grading_four_class_v3/README.md)。
-当前训练集966张、验证集116张、独立测试集129张，共1211张图片、5371个实例；配置为 `data/grading_four_class_v3/data.yaml`。
-类别总数为：不合格451、一级1186、二级1456、三级2278。全部标签已通过逐文件校验和 Ultralytics train/val/test 分割加载检查，加载丢失数为0。
-另有74张训练/验证图片因原始轮廓数量或JSON/TXT不一致而暂缓，不会影响当前版本训练。
-已完成 YOLO26n 四等级实例分割基线训练和冻结测试集首次评估：测试集 Mask mAP50 为0.821、Mask mAP50–95 为0.678。完整记录见 `docs/YOLO26_GRADING_BASELINE_AND_PAPER_PLAN.md`。
-下文部分内容是此前分割与特征阶段的历史记录；当前等级数据制作结果以上述新入口为准。
+| 需要做的事 | 入口 |
+|---|---|
+| 新加入作者先看 | [论文交接与协作说明](collaboration/START_HERE.md) |
+| 改中文正文 | [中文Markdown稿](paper/manuscript_20261025/MANUSCRIPT_ZH.md) |
+| 改英文正文 | [英文Markdown稿](paper/manuscript_20261025/MANUSCRIPT_EN.md) |
+| 阅读和批注 | [中文Word](paper/manuscript_20261025/MANUSCRIPT_ZH.docx) · [中文PDF](paper/manuscript_20261025/MANUSCRIPT_ZH.pdf) · [英文PDF](paper/manuscript_20261025/MANUSCRIPT_EN.pdf) |
+| 核对论文主结果 | [最终测试报告](outputs/reports/final_test_preflight_20261027/最终测试报告.md) · [原始指标CSV](outputs/reports/final_test_preflight_20261027/test_replay/metrics.csv) |
+| 查表格、图的依据 | [图表证据索引](collaboration/EVIDENCE_INDEX.md) · [图表来源说明](paper/manuscript_20261025/TABLE_AND_FIGURE_SOURCES.md) |
+| 分配修改工作 | [修改任务清单](collaboration/TASKS.md) · [提交规则](CONTRIBUTING.md) |
+| 查方法实现与复现范围 | [方法代码说明](collaboration/METHODS_AND_REPRODUCIBILITY.md) |
 
-## 当前状态
+## 当前最终结果：test，不是val
 
-- 已完成 YOLO26 枸杞实例分割基线训练。
-- 已对 train/val 共 5,108 个单果实例完成去白边、Mask 保存和 18 项可解释特征提取。
-- test 集未参与阈值选择，现已完成独立审核并加入最终数据集，仅用于模型评价。
-- 已完成2278颗单果人工腐烂复检：腐烂447颗、正常1831颗。
-- 已按冻结的尺寸/形态阈值与缺梗三级规则生成四等级标签。
-- 已完成 YOLO26n 四等级实例分割基线100轮训练和独立测试集评估。
+129张图像、576个GT，五组方案均定位560个实例；所有方法固定后统一测试，未根据test换模型或调阈值。
 
-## 当前使用入口
+| 固定方案 | Mask AP50 | Mask AP50–95 | 分级正确／已定位 |
+|---|---:|---:|---:|
+| 原YOLO26（本轮冻结检测器） | 78.04% | 65.84% | 456/560 |
+| 原YOLO26＋同类NMS | 78.89% | 66.46% | 456/560 |
+| RR22分层参考 | 79.75% | 67.16% | 481/560 |
+| 原缺陷证据排序主方案 | **80.72%** | **68.03%** | **481/560** |
+| 主方案＋输出掩膜细化 | **80.72%** | **69.12%** | 480/560 |
 
-| 工作内容 | 入口 |
-| --- | --- |
-| 最终人工腐烂标签 | `review/rot_review_v1/rot_review_strict_completed_2026-09-02.xlsx` |
-| 四等级训练/验证/测试数据集 | `data/grading_four_class_v3/` |
-| 最新分级清单与审计 | `outputs/grading_standard_post_review_v5/` |
-| 三人审核结果与测试裁决 | `review/three_person_audit_v1/04_审核结果汇总/` |
-| 全量单果和 Mask | `outputs/features_frozen_v1/` |
-| 最新腐烂排除与健康候选池 | `outputs/strict_rot_exclusion_v2/` |
-| 最佳分割模型 | `models/experiments/yolo26n_seg_baseline_seed20260823/weights/best.pt` |
-| 四等级基线最佳模型 | `models/experiments/yolo26n_seg_grading4_baseline_seed20260906/weights/best.pt` |
-| 四等级基线测试报告 | `outputs/reports/yolo26n_seg_grading4_baseline_seed20260906_test/` |
-| 后续实验与论文路线 | `docs/YOLO26_GRADING_BASELINE_AND_PAPER_PLAN.md` |
-| 数据集和原始标签 | `data/split_v1/` |
-| 特征定义 | `docs/FEATURE_DEFINITIONS.md` |
+主方案相对原YOLO提高2.68个百分点AP50，配对95%描述性区间[1.43,4.08]；相对RR22提高0.97个百分点，区间[0.27,1.70]。开发集83.48%→87.10%作为开发证据单列，不写成test成绩。9月100轮基线的历史82.1%来自另一训练运行及评价记录，不能与本表直接相减作公平对照。
 
-## 目录结构
+## 结果解释必须保留的内容
 
-```text
-wolfberry_yolo26_cv/
-├── data/
-│   ├── split_v1/                   # train/val/test图像、YOLO标签和LabelMe JSON
-│   ├── manifests/                  # 文件重命名和划分追溯表
-│   └── reviews/                    # 已完成人工审核的稳定数据
-├── models/
-│   ├── pretrained/                 # 通用预训练分割权重
-│   ├── reference_previous/         # 历史参考模型
-│   └── experiments/                # 正式基线模型及训练记录
-├── outputs/
-│   ├── features_frozen_v1/         # 5,108个单果、Mask、轮廓和特征
-│   ├── feature_analysis_frozen_v1/ # 全量特征统计和图表
-│   ├── grade_candidate_audit_v1/   # 240颗人工审核记录
-│   ├── rot_triage_full_v1/         # 腐烂位置与连通区域检测结果
-│   └── rot_screening_tiers_v2/     # 疑似排除集与分级分析候选集
-├── review/
-│   └── rot_review_v1/              # 当前人工腐烂复检包
-├── configs/                        # 正式配置和腐烂筛查配置
-├── scripts/                        # 数据、训练、特征和筛查脚本
-├── docs/                           # 数据审计、特征定义和路线说明
-├── environment/                    # 环境版本与依赖锁
-└── .venv/                          # 已配置的Python/GPU运行环境
-```
+- test标签为302个双审一致、51个人工裁决、223个冻结规则沿用；不合格GT仅25个。
+- 主方案仍有2/25匹配不合格漏放、37个匹配合格误拒；新增漏放为0不等于绝对漏放为0。
+- 输出细化提高严格IoU平均AP，但引起一个重匹配错误，分级正确数481→480。
+- 早期基线曾使用test；来源编号及无字节完全重复图像不证明实物果/采集批次独立。
+- 当前目标是候选外观分级规则的视觉复现，没有毫米标定或商业分选可靠性认证。
 
-## 当前推荐流程
+## 材料范围
 
-1. 打开 `review/rot_review_v1/rot_review.csv`，逐张查看同目录 `images/` 中的单果图。
-2. 在 `rot` 列填写 `YES`、`NO` 或 `UNCERTAIN`，不要修改 `instance_id` 和 `split`。
-3. 完成人工复检后，只排除确认 `rot=YES` 的实例；误检且正常的实例重新加入健康果。
-4. 使用剩余健康果分析尺寸、形态和颜色分布，提出一级、二级、三级候选标准。
-5. 人工确认标准后生成等级标签，再训练和改进后续等级识别模型。
+本次同步当前双语稿、已有Word/PDF阅读稿、论文图表及其数据、终测与开发报告、标签版本说明、文献调研与引用核验，以及冻结方法源码审阅快照。正文链接已改为仓库相对路径，下载ZIP后也能定位。
 
-## 重要约束
+已有训练代码和历史标签继续保留。最新训练RGB图像、模型权重、训练运行缓存及第三方论文全文不在本次交接范围；方法代码快照用于审阅，不代表clone后即可重跑完整模型。原始实验JSON中可能保留本机路径与原始哈希，发布副本的校验值见[发布清单](collaboration/PUBLISH_MANIFEST.json)。Word/PDF是当前阅读快照，后续以Markdown为协作主版本。
 
-- 高召回“腐烂疑似排除”只是人工复检入口，不是腐烂真值。
-- `LOW_EVIDENCE` 不表示绝对没有腐烂。
-- 当前没有可靠的 px/mm 标定，因此尺寸单位仍为 px，面积单位为 px²。
-- 不应直接把疑似腐烂候选写入 YOLO 等级标签。
+历史入口：[9月README原文](docs/history/README_before_paper_handoff_20261028.txt) · [9月HANDOFF原文](docs/history/HANDOFF_before_paper_handoff_20261028.txt) · [原始数据交接](DATASET.md)。

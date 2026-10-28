@@ -1,0 +1,877 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-23T21:11:49.462316+00:00",
+  "checks": [
+    {
+      "check": "immutable_detector",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "immutable_stem",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "immutable_targets",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "immutable_head_roles",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "immutable_ranking_roles",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "immutable_review",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "rank_fit_ledger.csv_count",
+      "PASS": true,
+      "details": 54
+    },
+    {
+      "check": "rank_fit_ledger.csv_complete",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_evidence4_independent_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_evidence4_independent_multi_iou_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_zero4_independent_multi_iou_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_zero4_one_to_one_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_evidence4_one_to_one_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_zero4_independent_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_zero4_one_to_one_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_evidence4_independent_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_evidence4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_zero4_independent_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_evidence4_one_to_one_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_evidence4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_zero4_one_to_one_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_evidence4_independent_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_evidence4_one_to_one_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_standard_base14_zero4_independent_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_evidence4_independent_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_evidence4_independent_multi_iou_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_zero4_independent_multi_iou_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_zero4_one_to_one_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_evidence4_one_to_one_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_zero4_independent_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_zero4_one_to_one_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_evidence4_independent_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_evidence4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_zero4_independent_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_evidence4_one_to_one_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_evidence4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_zero4_one_to_one_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_evidence4_independent_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_evidence4_one_to_one_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_selected22_boundary_stem_base14_zero4_independent_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_evidence4_independent_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_evidence4_independent_multi_iou_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_zero4_independent_multi_iou_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_zero4_one_to_one_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_evidence4_one_to_one_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_zero4_independent_tp50_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_zero4_one_to_one_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_evidence4_independent_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_evidence4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_zero4_independent_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_evidence4_one_to_one_tp50_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_evidence4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_zero4_one_to_one_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_evidence4_independent_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_evidence4_one_to_one_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_rule_anchored22_boundary_stem_base14_zero4_independent_tp50_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "arbitration_fit_ledger.csv_count",
+      "PASS": true,
+      "details": 36
+    },
+    {
+      "check": "arbitration_fit_ledger.csv_complete",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_zero_photo17_paired_preference_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_paired_preference_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_clean_control_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_photo17_paired_preference_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_paired_preference_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_zero_photo17_clean_control_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_photo17_paired_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_zero_photo17_paired_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_paired_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_photo17_clean_control_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_paired_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_clean_control_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_zero_photo17_paired_preference_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_zero_photo17_paired_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_clean_control_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_paired_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_photo17_clean_control_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_paired_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_zero_photo17_clean_control_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_photo17_paired_preference_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_paired_preference_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_clean_control_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_photo17_paired_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_paired_preference_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_paired_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_photo17_paired_preference_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_zero_photo17_paired_preference_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_photo17_paired_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_paired_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_paired_preference_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_zero_photo17_clean_control_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_clean_control_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_zero_photo17_paired_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_linear_model23_photo17_clean_control_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_paired_preference_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_clean_control_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "spatial_arbitration_fit_ledger.csv_count",
+      "PASS": true,
+      "details": 12
+    },
+    {
+      "check": "spatial_arbitration_fit_ledger.csv_complete",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_old4_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_all7_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_old4_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_all7_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_old4_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_old4_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_all7_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_all7_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_all7_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_old4_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_all7_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_old4_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "source_nested_fit_ledger.csv_count",
+      "PASS": true,
+      "details": 24
+    },
+    {
+      "check": "source_nested_fit_ledger.csv_complete",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_zero_photo17_nested_all7_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261024",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261025",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint_mlp16_model23_photo17_nested_all7_protected_seed20261026",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "unique_126_checkpoints",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "capture_train",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "capture_ids_train",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "capture_hashes_train",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "capture_val",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "capture_ids_val",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "capture_hashes_val",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "native_parity_status.json",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "stress_mask_parity.json",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "delivery_metric_replay.json",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "spatial_bootstrap_status.json",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "runtime_final_status.json",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "inference_examples_status.json",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "final_timing_code_inference",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "final_timing_code_policy",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "960_runs",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "p0_baseline_matrix.csv_rows",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "p2_decision_matrix.csv_rows",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "p3_stress_matrix.csv_rows",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "object_grouping_metrics.csv_rows",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "source_nested_metrics.csv_rows",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "bootstrap_intervals.csv_rows",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "spatial_bootstrap_intervals.csv_rows",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "consensus_v1_invalidated",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "failed_optimization_preserved_high_scope_full_status.json",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "failed_optimization_preserved_batch_aligned_status.json",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "syntax_all_stage_scripts",
+      "PASS": true,
+      "details": 43
+    },
+    {
+      "check": "regression_tests",
+      "PASS": true,
+      "details": "7 regression checks passed; standard-library runner, no pytest dependency"
+    },
+    {
+      "check": "output_risk_counterexamples",
+      "PASS": true,
+      "details": "3 additional output-risk checks passed"
+    },
+    {
+      "check": "output_risk_47pairs_3rules",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "18_runtime_empty_probes",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "actual_train_val_image_hashes",
+      "PASS": true,
+      "details": null
+    },
+    {
+      "check": "confidence_contrast_36rows",
+      "PASS": true,
+      "details": null
+    }
+  ],
+  "fits": 126,
+  "new_checkpoints": 126,
+  "test_accessed": false,
+  "primary_replaced": false,
+  "known_failures": "Spatial445clean guard; weighted UQ recovery risk; 3untrained mixes weak; normalization wins globaldark; high-scope/batch-aligned parity failed; invalid consensusv1 excluded.",
+  "limitations": "This audit verifies internal consistency and replay, not independent external validation."
+}

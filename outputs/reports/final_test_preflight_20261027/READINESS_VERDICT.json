@@ -1,0 +1,29 @@
+{
+  "status": "READY_FOR_FINAL_TEST",
+  "authorization_scope": "Preflight verification only; no final-test inference executed in this task.",
+  "data_checks_passed": 15640,
+  "val_metric_comparisons_passed": 110,
+  "maximum_val_metric_absolute_delta": 0.0,
+  "closure_checks": 106,
+  "failed_checks": [],
+  "frozen_input_sha256": "64fe18bf73fc309a8986f0d0996c713590b28ab7e951391071f233f15f676982",
+  "val_report": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\val_replay\\replay_report.json",
+  "val_report_sha256": "a3ec072845985ac13c75a756701ffdef4789d1239d9e5ea9ed0e33678655f394",
+  "runtime_packages": {
+    "torch": "2.13.0+cu130",
+    "ultralytics": "8.4.117",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "opencv-python": "5.0.0.93",
+    "matplotlib": "3.11.1",
+    "Pillow": "12.3.0"
+  },
+  "entry_script": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\final_test_evaluation_20261027.py",
+  "entry_script_sha256": "e3ad28dd1125a2d643c2c0f06f0d519d437de0db6fca9ac59e992fbb021dbd74",
+  "verified_guard": "Executed --split test without opt-in: parser rejected before loading model/data; wrapper exit 1. No test marker/output created.",
+  "test_model_inference_runs_this_task": 0,
+  "test_metrics_computed_this_task": false,
+  "historical_test_use": "An early baseline was evaluated on test historically. Do not claim the test split has never been accessed.",
+  "generated_utc": "2026-10-27T11:49:10.910896+00:00"
+}

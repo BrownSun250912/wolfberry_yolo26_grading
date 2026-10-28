@@ -1,0 +1,18 @@
+{
+  "status": "FAILED",
+  "row": {
+    "arm": "primary_stem",
+    "image_id": "wb_000611",
+    "boxes_exact": true,
+    "conf_exact": true,
+    "labels_exact": true,
+    "keep_exact": true,
+    "score_abs": 0.0,
+    "stem_abs": 0.0,
+    "soft_feature_exact": true,
+    "mask_pixels_exact": true,
+    "grading_mask_exact": true,
+    "attribute_ids_exact": true,
+    "attribute_probability_abs": 0.00012382864952087402
+  }
+}

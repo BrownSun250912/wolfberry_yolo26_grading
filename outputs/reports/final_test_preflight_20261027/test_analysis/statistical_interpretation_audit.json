@@ -1,0 +1,65 @@
+{
+  "verification_status": "ANALYZED",
+  "coverage": "11/11",
+  "primary_assumption": "Image blocks approximately independent within source ranges; not established for physical fruits/batches.",
+  "normality_and_equal_variance": "Not required for the chosen nonparametric paired image-bootstrap; no t-test/ANOVA performed.",
+  "missing_data": "No image/GT drop, all2000 AP draws contain four target classes; attribute/continuous-score test targets unavailable and omitted.",
+  "zero_difference": "Degenerate zero paired escape difference is an observed invariance, not equivalence or absence of population risk.",
+  "rows": [
+    {
+      "fallacy": "Simpson reversal",
+      "status": "CHECKED_WITH_LIMIT",
+      "assessment": "All four source groups have higher correct/all-GT for primary than raw. Per-group AP is not averaged; smallest group lacks UQ, so no universal subgroup-AP claim."
+    },
+    {
+      "fallacy": "Ecological fallacy",
+      "status": "DISCLOSED_LIMITATION",
+      "assessment": "Bootstrap unit is image; source ranges are not proven physical-fruit or harvest-batch independence."
+    },
+    {
+      "fallacy": "Selection/Berkson bias",
+      "status": "DISCLOSED_LIMITATION",
+      "assessment": "Existing curated dataset, mixed rule/review labels; no claim of population-representative fruit quality."
+    },
+    {
+      "fallacy": "Collider bias",
+      "status": "DISCLOSED_LIMITATION",
+      "assessment": "Conditional grading selects localized instances; correct/all-GT and localization are also reported, not only the selected subset."
+    },
+    {
+      "fallacy": "Base-rate neglect",
+      "status": "CHECKED",
+      "assessment": "UQ prevalence reported as 25/576; escape 2/25 and qualified rejection denominators retained."
+    },
+    {
+      "fallacy": "Regression to mean",
+      "status": "NOT_APPLICABLE_AS_PREPOST_TEST",
+      "assessment": "Paired fixed algorithms on the same frozen images, not a selected extreme-score pre/post intervention."
+    },
+    {
+      "fallacy": "Survivorship bias",
+      "status": "CHECKED_WITH_LIMIT",
+      "assessment": "All129 images and576GT retained;16 unlocalized GT counted separately. Conditional560 denominator is explicit."
+    },
+    {
+      "fallacy": "Look-elsewhere effect",
+      "status": "DISCLOSED_LIMITATION",
+      "assessment": "Five frozen arms and six contrasts reported, including RR22-minus-NMS CI crossing zero. Pointwise intervals unadjusted; no stars/p-values."
+    },
+    {
+      "fallacy": "Forking paths",
+      "status": "DISCLOSED_LIMITATION",
+      "assessment": "Development adaptation and early baseline test use retained; methods and primary endpoint frozen before current test. Bootstrap details recorded after point estimates."
+    },
+    {
+      "fallacy": "Causal overclaim",
+      "status": "CHECKED_WITH_LIMIT",
+      "assessment": "Controlled algorithm comparison supports performance differences on this partition, not causal nutrition/commercial sorting outcomes."
+    },
+    {
+      "fallacy": "Reverse causality",
+      "status": "NOT_APPLICABLE_TO_FIXED_ALGORITHM_CONTRAST",
+      "assessment": "Prediction precedes GT evaluation; no observational causal direction between fruit attributes and commercial outcomes is asserted."
+    }
+  ]
+}

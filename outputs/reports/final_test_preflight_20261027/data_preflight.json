@@ -1,0 +1,58 @@
+{
+  "status": "PASS_DATA_AND_FROZEN_ARTIFACTS",
+  "checks": 15640,
+  "failed_checks": 0,
+  "errors": [],
+  "warnings": [
+    "Byte hashes do not establish distinct physical fruits or independent acquisition batches.",
+    "Only 25 unqualified test instances; report its uncertainty and support counts.",
+    "Test labels mix independent review and frozen-rule fallback; grade accuracy is not an independent commercial-quality gold standard.",
+    "Validation overlay is a historical seven-label, single-reviewer correction; test is not silently overlaid.",
+    "No independent score/defect/stem test target manifest is present in the frozen multitask targets; omit those extra target-specific metrics unless separately verified."
+  ],
+  "counts": {
+    "train": {
+      "images": 966,
+      "instances": 4277,
+      "class_counts": {
+        "0": 372,
+        "1": 945,
+        "2": 1138,
+        "3": 1822
+      }
+    },
+    "val": {
+      "images": 116,
+      "instances": 518,
+      "class_counts": {
+        "0": 54,
+        "1": 109,
+        "2": 150,
+        "3": 205
+      }
+    },
+    "test": {
+      "images": 129,
+      "instances": 576,
+      "class_counts": {
+        "0": 25,
+        "1": 126,
+        "2": 167,
+        "3": 258
+      }
+    }
+  },
+  "test_label_sources": {
+    "double_review_agreement": 302,
+    "lead_manual_adjudication_missing_stem_or_other_manual_decision": 51,
+    "frozen_base_rule_per_user_instruction": 223
+  },
+  "test_cross_split_exact_duplicates": [],
+  "original_grid_polygon_checks": 1094,
+  "val_overlay_changed_classes": 7,
+  "test_images_and_annotations_read": true,
+  "test_model_inference_runs": 0,
+  "test_performance_metrics_computed": false,
+  "frozen_input_manifest": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\FROZEN_INPUTS.json",
+  "generated_utc": "2026-10-27T11:42:24.342215+00:00"
+}

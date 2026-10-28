@@ -1,0 +1,365 @@
+{
+  "generated_utc": "2026-10-24T19:58:38.499443+00:00",
+  "matplotlib": "3.11.1",
+  "script_sha256": "e94ccb6166e41df97bb2d904ba457845206305fb7c7bdce4c0dd382181b3687f",
+  "figures": [
+    {
+      "name": "01_paired_main_results",
+      "inches": [
+        9.2,
+        5.2
+      ],
+      "png_DPI": 300,
+      "files": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\01_paired_main_results.png",
+          "sha256": "8f15c9aa9063a3d9de6e4ba91dc836866a10c67883190f199c9b5f2539d1d6de"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\01_paired_main_results.pdf",
+          "sha256": "297626dec35f11b8a04f00381e9893fc1aff5b5c5126fce2751595432ff6efc9"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\01_paired_main_results.svg",
+          "sha256": "e70279107c58f8eceb6876fd9e2155a53ed1ef5c06ec5b50c28e20245cf46e45"
+        }
+      ],
+      "sources": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\paired_image_intervals.csv",
+          "sha256": "a3c4377a62f0aef3a2c267c870e9ef43e857d02ccbb0f2923993a02a6b196dfe"
+        }
+      ],
+      "caption": "Fixed new seed25 and historical seed23; paired original-image, source-stratified percentile95 intervals,2000draws; all116val images/518GT; adaptive reusedval, no multiplicity correction. Raw YOLO point uses same fullGT pool.",
+      "alt": "Two forest plots show attribute replacements fail to improve reliably, while output-only prototype refinement improves AP50:95 without changing AP50.",
+      "text_outside_figure": [],
+      "publisher_requirements": "Provisional general exports; no target journal specified or compliance claimed."
+    },
+    {
+      "name": "02_attribute_factorial",
+      "inches": [
+        8.7,
+        3.6
+      ],
+      "png_DPI": 300,
+      "files": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\02_attribute_factorial.png",
+          "sha256": "e94a340df6a0063b575fbf6a36fd7fce45870d6ec5fc4d86101ad58630b682c3"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\02_attribute_factorial.pdf",
+          "sha256": "9ec270fac56098c54464eddcc135a2fdf260c2e475a7b660f4814355cfe6eadf"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\02_attribute_factorial.svg",
+          "sha256": "3daf53d20eb9ee88949240d5965f45c84d1085afdf3062f7a184b22f20ea020b"
+        }
+      ],
+      "sources": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\held_pipeline_metrics.csv",
+          "sha256": "ff93fa13cc3494cadcf5e7f116fe66b6bf2f8777859f17632ec47da898bf3e94"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\val_pipeline_metrics.csv",
+          "sha256": "9b2f24887b67a85a971e5272c670caa8e12964b9b2de6eff2e6e012df94319c5"
+        }
+      ],
+      "caption": "Mean of all3trainingseeds in original2x2 experiment; each cell one fixed replacement policy; equal allocated architecture, held source onlynewtraining; heatmap is descriptive, seeds are not new datasets.",
+      "alt": "Two matched heatmaps retain all factor and intervention combinations, showing clean validation transfer is weaker than internal held performance.",
+      "text_outside_figure": [],
+      "publisher_requirements": "Provisional general exports; no target journal specified or compliance claimed."
+    },
+    {
+      "name": "03_boundary_dose",
+      "inches": [
+        8.8,
+        3.6
+      ],
+      "png_DPI": 300,
+      "files": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\03_boundary_dose.png",
+          "sha256": "1d4041ffbc0040ccc516298fe6d6c0eee9bd6e0186d7fe91cf157cc64fbec6a9"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\03_boundary_dose.pdf",
+          "sha256": "475d47c9f906a780ebe85af66b6b6dd4cbc9c2dc143805ea02f769c2809695f4"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\03_boundary_dose.svg",
+          "sha256": "108c17743d0e04a7a8fab3483f72ebad72c3ce6621e328be67ca4e2e0e38501f"
+        }
+      ],
+      "sources": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\prototype_fixed_dose_ledger.csv",
+          "sha256": "cadfeb26e347b2e3c90a4254e58f5b30c61af910ba337f999b01c38ea2212f84"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\prototype_val_metrics.csv",
+          "sha256": "dc66599b55ca053dc5f7b39068ac5afb2208f15cb2aaefad3a89caf5c51e4bb4"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\historical_boundary_control.csv",
+          "sha256": "a26a7defd8a652181dbde4e21cae9aaf615a5eb8db048092b8a93550718961c6"
+        }
+      ],
+      "caption": "Left: equal30epochs, mean/min-max across3fits, not confidenceinterval; held meanIoU measured on originalgrid. Right: all3originalselected-checkpoint seed outcomes,not fixed-dose reselectedval; grades/conf fixed. Historical seeds23/24/25; new25/26/27.",
+      "alt": "Prototype features improve native mask learning despite equal training dose; historical binary refinement remains a strong segmentation control.",
+      "text_outside_figure": [],
+      "publisher_requirements": "Provisional general exports; no target journal specified or compliance claimed."
+    },
+    {
+      "name": "04_stress_all_conditions",
+      "inches": [
+        8.6,
+        5.3
+      ],
+      "png_DPI": 300,
+      "files": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\04_stress_all_conditions.png",
+          "sha256": "d0b6fd88eeb3e69394ec1dd08b9f7f7665c06293f4dfef6ae37c52c840015ebf"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\04_stress_all_conditions.pdf",
+          "sha256": "764ab6a81f830e06492d35cc1bbff9f0722234a71012bed116f8ecf05f0a38a6"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\04_stress_all_conditions.svg",
+          "sha256": "907cd57c17d5d2b3923507583d90ea979fca179f2abcd145ca67688a4d446092"
+        }
+      ],
+      "sources": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\attribute_stress_metrics.csv",
+          "sha256": "f113c37a2c599d2d7d494ee561612fcf4265d8f22780765c987085d39c129592"
+        }
+      ],
+      "caption": "Fixedseed25, all10conditions, original518GT denominator percondition; transforms use predicted foreground only. Synthetic label-preservationassumption, detector predictions condition-specific; no robustness dominance claimed. Otherseeds and riskcounts in sourceCSV.",
+      "alt": "A ten-condition heatmap shows severe legacy grading sensitivity persists despite local gains from new attributes.",
+      "text_outside_figure": [],
+      "publisher_requirements": "Provisional general exports; no target journal specified or compliance claimed."
+    },
+    {
+      "name": "05_geometry_sensitivity",
+      "inches": [
+        8.8,
+        3.8
+      ],
+      "png_DPI": 300,
+      "files": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\05_geometry_sensitivity.png",
+          "sha256": "4b913c48914296ac6dc0f302fc7c09e38e5a28408639f08bc4852de7e92363ed"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\05_geometry_sensitivity.pdf",
+          "sha256": "a99826d1156c0b8195114766db2791c95046da8d87b429820c33d46f5b1b2ce7"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\05_geometry_sensitivity.svg",
+          "sha256": "fae22a4561b35a4beb5ba94ebd31a83b52f6d2eb5670d9cc6e55058cad9d170a"
+        }
+      ],
+      "sources": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\native_geometry_intervals.csv",
+          "sha256": "a3dc424ac0c9da936429b8ebd35f49b5ddf80bcb250114528d19a49a8caca890"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\native_geometry_instances.csv",
+          "sha256": "895ec3c34832de370914ccf26592c12e5f12222d20092ed71fdde343802b55e8"
+        }
+      ],
+      "caption": "Fixed original500matched pairs; no postrefinement cohort reselection. Left3000paired-image percentile95 intervals; IoUpositive is improvement, negative geometryerrors are improvement. Right includes original image diagonal and fixedpixel scales; manualpolygons are not physical metrology.",
+      "alt": "Paired geometry errors improve; boundary quality depends strongly on erosion-band width and the historical control is competitive.",
+      "text_outside_figure": [],
+      "publisher_requirements": "Provisional general exports; no target journal specified or compliance claimed."
+    },
+    {
+      "name": "06_defect_probability",
+      "inches": [
+        8.7,
+        4.3
+      ],
+      "png_DPI": 300,
+      "files": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\06_defect_probability.png",
+          "sha256": "4964d84d6cadc0444fa8d84d42c3d3d07437c2ce7c00002fde2c1adbde5d62b3"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\06_defect_probability.pdf",
+          "sha256": "545fe3a1bd48f97742907682031719c7cf623ff5e65073975516323062082a86"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\06_defect_probability.svg",
+          "sha256": "3c78c75c517197345f558c7e43265cf4b643d9ab3fd169c5fa35e6d7abbf2346"
+        }
+      ],
+      "sources": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\attribute_calibration_bins.csv",
+          "sha256": "512f64dacddb4096070e9ae3843a6ff22e5c4e68e6bbd45931dee98863905f9d"
+        }
+      ],
+      "caption": "Fixed original500matched valcohort, available defectlabels only. All occupied15equalwidthbins shown, missingbins leave gaps. No empirical valcalibration fitted. Curves are descriptive, smallbins unstable; counts and numericalECE/Brier/NLL in source tables.",
+      "alt": "Reliability curves separate weighted-loss raw probabilities from analytically prior-corrected values, without claiming calibrated safety.",
+      "text_outside_figure": [],
+      "publisher_requirements": "Provisional general exports; no target journal specified or compliance claimed."
+    },
+    {
+      "name": "07_runtime",
+      "inches": [
+        9.6,
+        5.0
+      ],
+      "png_DPI": 300,
+      "files": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\07_runtime.png",
+          "sha256": "f27176f4211792c4b8e390df97540ae63b8189d9c566dd2f534bd636d5bab5a6"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\07_runtime.pdf",
+          "sha256": "eda2c0c8f9c4e340d319b8d4de6b80101078d0bde22a512d83ed3899c27b18d8"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\07_runtime.svg",
+          "sha256": "65bd313a0a05aedc78ed3ae23a7e395d14162118db14b6beacefc0684968a7b0"
+        }
+      ],
+      "sources": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\rank_latency_summary.csv",
+          "sha256": "0d44ed9fff814b122578e2e7355d4e3371513cd8778795c1b2b61b278f9fe153"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\rank_latency_intervals.csv",
+          "sha256": "0ca4a86ebd14f011ecef724de6433b546ab6ff777327d9ab3f291c4ad1e8f935"
+        }
+      ],
+      "caption": "24images6/source,3repeats, graphs randomized perimage; GPU synchronized, FP32/conf.001, image decoding/model loading excluded. Pairedimage3000draw percentile95intervals; shared multi-score audit baseline and existing leanRR22 are distinct. Strict replay encodes unusedlocalview for numericalidentity; single-global recomputation is separate faircontrol. Timing on actualdevice, not cachedfeature latency.",
+      "alt": "Actual timing shows old-defect ranking has small overhead, whereas output-mask refinement adds measurable cost; explicit numerical graph variants remain separate.",
+      "text_outside_figure": [],
+      "publisher_requirements": "Provisional general exports; no target journal specified or compliance claimed."
+    },
+    {
+      "name": "08_rank_information_controls",
+      "inches": [
+        9.0,
+        4.0
+      ],
+      "png_DPI": 300,
+      "files": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\08_rank_information_controls.png",
+          "sha256": "654f4dd6050a6acb07589a424455454feb84307d7b49da1b9a3a8fc6db5387e5"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\08_rank_information_controls.pdf",
+          "sha256": "89c9caa5143ad0ad80b9b974b672618d98f440fc10c2d553a76603f9fb6f9575"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\08_rank_information_controls.svg",
+          "sha256": "484267ec996c734c5c617698c5bf3877591a87dc7c57499f150594fc00995eb9"
+        }
+      ],
+      "sources": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\attribute_rank_val_metrics.csv",
+          "sha256": "e0dad088797ad98848d5b20879924d5de8ec874d57be8f70d9ad263d8c6b15c5"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\attribute_rank_control_metrics.csv",
+          "sha256": "10f8be7dbaf0202028e2e5f83c4f408354c63c9a80a0f9fbdab85948e9aba6e8"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\rank_source_metrics.csv",
+          "sha256": "95ae79f4edd48246832acb32f80954bbf66aebd5a4b6835bf9a0c1c7340ad519"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\rank_source_pooled_metrics.csv",
+          "sha256": "0472f577b25c24112b7d943e93fb0c94d522b6bc39247509e6d996a936357cfc"
+        }
+      ],
+      "caption": "All3seeds shown; filledpoint fixedseed25, open26/27 inleft. Originaldefect is an adaptive mechanismcontrol, not originalpreselectednewhead family. Right outer sources excluded onlyfrom newlyfittedrank/checkpoints/normalizer; oldencoders saworiginaltrain. Pooled AP recomputed after concatenatingallouter predictions, not averagedsourceAP. Sourcegroup evidence is exploratory, no whole-system OOD claim.",
+      "alt": "Original defect evidence explains the useful rank gain with less added computation; source-group benefits vary and pooled gains are small.",
+      "text_outside_figure": [],
+      "publisher_requirements": "Provisional general exports; no target journal specified or compliance claimed."
+    },
+    {
+      "name": "09_shape_score_tradeoff",
+      "inches": [
+        6.5,
+        4.3
+      ],
+      "png_DPI": 300,
+      "files": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\09_shape_score_tradeoff.png",
+          "sha256": "967912c58a387f18de452a69983a3887925a8ec33f32056e9f971b23da17aa78"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\09_shape_score_tradeoff.pdf",
+          "sha256": "1f542d84303e6e26e8101e9fff9f8cb946c973cbc834a0a27e69678ec7845ad1"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\09_shape_score_tradeoff.svg",
+          "sha256": "5dabce2b4718b456962c04c9b33e4fa742f74221db0da6bf69a51ff66a381163"
+        }
+      ],
+      "sources": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\shape_score_stress_metrics.csv",
+          "sha256": "99833ea772a9881ff1c243408648e4b9cbf6cfa843fce3b205575376d61c6927"
+        }
+      ],
+      "caption": "All12fits and RR22, fixedsource split, all3seeds; filledpoint seed25. This two-condition mechanismcontrast is not a globalPareto frontier; prior illuminationnormalizers are stronger on someconditions. All10conditions, including adverse results, retained in sourceCSV. No candidate passed the internalfullpipelinegate.",
+      "alt": "Binary geometry improves one dark-condition result while losing substantial clean accuracy, so it is rejected as a replacement score head.",
+      "text_outside_figure": [],
+      "publisher_requirements": "Provisional general exports; no target journal specified or compliance claimed."
+    },
+    {
+      "name": "10_qualitative_best_and_worst",
+      "inches": [
+        8.6,
+        6.8
+      ],
+      "png_DPI": 300,
+      "files": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\10_qualitative_best_and_worst.png",
+          "sha256": "a168d3bd9d98c7f02e72e342bf82dcf6fea5261b9da01f2338348255487c9a51"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\10_qualitative_best_and_worst.pdf",
+          "sha256": "012decfa86e57a5c7cdf973cd080b263c4a42fc1f8e7e3eef5e00aa74872a824"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\figures\\10_qualitative_best_and_worst.svg",
+          "sha256": "b9d5e7a05dfca9673c36e44cb8c5a4acd3747fdabc7b11539ed4f6c1566584db"
+        }
+      ],
+      "sources": [
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\qualitative_selected_cases.csv",
+          "sha256": "6fdbf3feac4d1d6a87dc4d42652616658e9a30676c4310882e450b90ca31f723"
+        },
+        {
+          "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\native_geometry_instances.csv",
+          "sha256": "895ec3c34832de370914ccf26592c12e5f12222d20092ed71fdde343802b55e8"
+        }
+      ],
+      "caption": "GT-only selected largestgain, largestdecline and near-medianIoUchange on fixed500cohort, fixedseed25. These are deliberately selected illustrations, not representative proof. Original RGB pixels retained, viewing crops can be enlarged byrenderer; no recoveredimage detail or photometricenhancement. Dashedgold GTmanualpolygon, solidblue prediction. GT never entersruntime.",
+      "alt": "Three paired native-image crops include both refinement improvement and regression, with unchanged source photography and visibly different contours.",
+      "text_outside_figure": [],
+      "publisher_requirements": "Provisional general exports; no target journal specified or compliance claimed."
+    }
+  ],
+  "scope": "General research report, no journal-specific requirements verified.",
+  "manual_visual_QA": "PASS_PNG_REVIEW"
+}

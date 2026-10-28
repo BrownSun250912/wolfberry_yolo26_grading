@@ -1,0 +1,1004 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "source_immutable_attribute_encoder",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_immutable_detector",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_immutable_targets",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_immutable_roles",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "train_val_imageIDs_disjoint",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "target_fit_ledger.csv_fitcount",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "target_fit_ledger.csv_all_checkpoint_hashes",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "target_fit_ledger.csv_paired_init_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "target_fit_ledger.csv_frozen_state_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "target_fit_ledger.csv_paired_init_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "target_fit_ledger.csv_frozen_state_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "target_fit_ledger.csv_paired_init_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "target_fit_ledger.csv_frozen_state_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fit_ledger.csv_fitcount",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fit_ledger.csv_all_checkpoint_hashes",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fit_ledger.csv_paired_init_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fit_ledger.csv_frozen_state_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fit_ledger.csv_paired_init_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fit_ledger.csv_frozen_state_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fit_ledger.csv_paired_init_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fit_ledger.csv_frozen_state_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_cv_fit_ledger.csv_fitcount",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_cv_fit_ledger.csv_all_checkpoint_hashes",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_cv_fit_ledger.csv_paired_init_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_cv_fit_ledger.csv_frozen_state_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_cv_fit_ledger.csv_paired_init_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_cv_fit_ledger.csv_frozen_state_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_cv_fit_ledger.csv_paired_init_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "source_cv_fit_ledger.csv_frozen_state_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source0_internal_selected_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source0_exploratory_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source0_exploratory_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source0_internal_selected_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source0_exploratory_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source0_internal_selected_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source1_exploratory_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source1_internal_selected_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source1_exploratory_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source1_internal_selected_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source1_internal_selected_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source1_exploratory_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source2_exploratory_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source2_internal_selected_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source2_internal_selected_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source2_exploratory_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source2_internal_selected_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source2_exploratory_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source3_internal_selected_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source3_exploratory_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source3_internal_selected_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source3_exploratory_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source3_exploratory_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "CV_population_source3_internal_selected_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fixed_dose_ledger.csv_fitcount",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fixed_dose_ledger.csv_all_checkpoint_hashes",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "equal_realized_30epochs",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fixed_dose_ledger.csv_paired_init_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fixed_dose_ledger.csv_frozen_state_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fixed_dose_ledger.csv_paired_init_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fixed_dose_ledger.csv_frozen_state_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fixed_dose_ledger.csv_paired_init_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_fixed_dose_ledger.csv_frozen_state_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_ledger.csv_fitcount",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_ledger.csv_all_checkpoint_hashes",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_ledger.csv_paired_init_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_ledger.csv_frozen_state_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_ledger.csv_paired_init_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_ledger.csv_frozen_state_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_ledger.csv_paired_init_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_ledger.csv_frozen_state_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_attribute4_independent_tp50_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_zero4_independent_tp50_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_zero4_independent_tp50_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_attribute4_independent_tp50_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_attribute4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_attribute4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_attribute4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_zero4_independent_tp50_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_zero4_independent_tp50_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_attribute4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_attribute4_independent_tp50_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_attribute4_independent_tp50_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_attribute4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_attribute4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_zero4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_zero4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_attribute4_independent_tp50_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_correctedcreation99_zero4_independent_tp50_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_zero4_independent_tp50_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_attribute4_independent_tp50_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_control_ledger.csv_fitcount",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_control_ledger.csv_all_checkpoint_hashes",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_control_ledger.csv_paired_init_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_control_ledger.csv_frozen_state_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_control_ledger.csv_paired_init_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_control_ledger.csv_frozen_state_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_control_ledger.csv_paired_init_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "attribute_rank_control_ledger.csv_frozen_state_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_flag_only_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_original_defect_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_flag_only_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_original_defect_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_flag_only_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_original_defect_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_fit_ledger.csv_fitcount",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_fit_ledger.csv_all_checkpoint_hashes",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_fit_ledger.csv_paired_init_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_fit_ledger.csv_frozen_state_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_fit_ledger.csv_paired_init_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_fit_ledger.csv_frozen_state_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_fit_ledger.csv_paired_init_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_fit_ledger.csv_frozen_state_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source0_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source0_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source0_original_defect_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source0_original_defect_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source1_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source1_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source1_original_defect_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source1_original_defect_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source2_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source2_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source2_original_defect_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source2_original_defect_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source3_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source3_zero4_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source3_original_defect_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source3_original_defect_independent_multi_iou_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source0_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source0_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source0_original_defect_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source0_original_defect_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source1_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source1_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source1_original_defect_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source1_original_defect_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source2_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source2_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source2_original_defect_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source2_original_defect_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source3_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source3_zero4_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source3_original_defect_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source3_original_defect_independent_multi_iou_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source0_zero4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source0_zero4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source0_original_defect_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source0_original_defect_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source1_zero4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source1_zero4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source1_original_defect_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source1_original_defect_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source2_zero4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source2_zero4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source2_original_defect_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source2_original_defect_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source3_zero4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source3_zero4_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RR22_source3_original_defect_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_source_excluded_RR22_source3_original_defect_independent_multi_iou_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "shape_score_fit_ledger.csv_fitcount",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "shape_score_fit_ledger.csv_all_checkpoint_hashes",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "shape_score_fit_ledger.csv_paired_init_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "shape_score_fit_ledger.csv_frozen_state_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "shape_score_fit_ledger.csv_paired_init_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "shape_score_fit_ledger.csv_frozen_state_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "shape_score_fit_ledger.csv_paired_init_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "shape_score_fit_ledger.csv_frozen_state_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RGB_refined_single_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_binary_single_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_binary_multiscale_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RGB_refined_multiscale_seed20261025",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RGB_refined_multiscale_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_binary_single_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_binary_multiscale_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RGB_refined_single_seed20261026",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_binary_multiscale_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RGB_refined_multiscale_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_binary_single_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_population_RGB_refined_single_seed20261027",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_train_complete",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_train_all_cache_hashes",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_val_complete",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "prototype_val_all_cache_hashes",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "all_same_forward_original_detector_parity",
+      "PASS": true,
+      "detail": {
+        "images": 1082
+      }
+    },
+    {
+      "name": "soft_prototype_storage_shapes_finite",
+      "PASS": true,
+      "detail": {
+        "records": 4949
+      }
+    },
+    {
+      "name": "FP16_cast_error_bound",
+      "PASS": true,
+      "detail": {
+        "soft_abs": 0.000244140625,
+        "prototype_abs": 0.000244140625
+      }
+    },
+    {
+      "name": "zero_delta_native_identity_all_predictions",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "GT_area_denominator_includes_outside_crop",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "native_strict_full116x6",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "reuse_drift_disclosed_strict_replay_exact",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "rank_native_full116x9_with_drift_disclosure",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "target_file_contains_only_trainval",
+      "PASS": true,
+      "detail": null
+    },
+    {
+      "name": "val_targets_hierarchy_reconstructs_all518",
+      "PASS": true,
+      "detail": null
+    }
+  ],
+  "check_count": 198,
+  "test_accessed": false
+}

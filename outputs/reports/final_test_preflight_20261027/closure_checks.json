@@ -1,0 +1,556 @@
+[
+  {
+    "check": "Data audit passed",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Full validation replay passed",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Gate matches the recorded val report",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Input snapshot still matches gate",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "All 110 metric comparisons passed",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Current replay is numerically identical on compared metrics",
+    "passed": true,
+    "detail": 0.0
+  },
+  {
+    "check": "All 116 per-image evaluation caches present",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\attribute_local_20261025\\FROZEN_CANDIDATES_AND_TEST_PROTOCOL.json",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3\\data.yaml",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3\\audit\\label_manifest.csv",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3\\audit\\image_manifest.csv",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3\\audit\\test_polygon_deduplication.json",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3\\audit\\build_summary.json",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\review\\three_person_audit_v1\\04_审核结果汇总\\test_final_labels.json",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3_valfix_20261006\\version.json",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3_valfix_20261006\\audit\\r1_multitask_targets.csv",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\.venv\\Lib\\site-packages\\ultralytics\\utils\\ops.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1a_hierarchical_grader_e200_resume_epoch150_seed20260929\\best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\yolo26n_seg_offlineaug_e200_mask50_seed20260915\\weights\\best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3_valfix_20261006\\audit\\r1_multitask_targets.csv",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1_quality_followup_20261009\\head_image_split.csv",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\refine_module_20261022\\rule_anchored_residual\\rule_base_residual_seed20261022\\best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\refine_module_20261022\\score_direction\\control_seed20261022\\best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1_score_refined_geometry_20261008_artifactfix\\refined_only_seed20261007\\refined_only_seed20261007_best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1_ap_followup_20261008\\mlp_confidence_seed20261008\\best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\configs\\feature_extraction_frozen_v1_val.yaml",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\grading_standard_config.json",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\grading_labels_candidate_v3.csv",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1_score_refined_geometry_20261008_artifactfix\\refined_geometry_cache.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\attribute_rank_fits\\RR22_original_defect_independent_multi_iou_seed20261025\\best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\attribute_rank_fits\\RR22_attribute4_independent_multi_iou_seed20261025\\best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\target_fits\\defect_balanced_neutral_pair_seed20261025\\best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\prototype_fits\\soft_prototype_seed20261025\\best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Frozen file: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\attribute_rank_fits\\correctedcreation99_zero4_independent_multi_iou_seed20261025\\best.pt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\.venv\\Lib\\site-packages\\ultralytics\\utils\\ops.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\analyze_r1_ap_bootstrap.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\analyze_val_instance_errors.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\apply_stem_rule.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_bg_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_cache_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_common_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_evaluate_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_fit_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_prior_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_proto_cache_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_proto_evaluate_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_proto_fit_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_rank_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_runtime_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_source_cv_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_target_evaluate_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\attribute_local_target_fit_20261025.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\build_r1_multitask_targets.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\cache_r1_encoder_inputs.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\cache_r1_quality_color.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\cache_r1_quality_features.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\diagnose_r1_score_replay.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\direction_experiments_20261023.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\direction_native_inference_20261023.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\evaluate_r1a_frozen_predictions.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\evaluate_refine_score_direction.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\extract_features.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\final_test_evaluation_20261027.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\joint_pipeline_capture_20261024.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\joint_pipeline_common_20261024.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\joint_pipeline_data_20261024.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\joint_pipeline_decision_matrix_20261024.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\joint_pipeline_evaluate_20261024.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\joint_pipeline_policy_20261024.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\joint_pipeline_rank_fit_20261024.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\joint_pipeline_runtime_20261024.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\r1_research_runtime.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\refine_residual_runtime.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\refine_rule_anchored_residual.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\refine_rule_reliability.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\refine_rule_runtime.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\refine_score_direction.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\refine_score_ranking.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\refine_score_residual_ablation.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\run_r0_fixed_prediction_replay.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\run_r1_ap_followup.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\run_r1_refined_geometry_batch.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\run_r1_score_followup_batch.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\run_refine_module_experiments.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\seeded_native_trainer.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\train_r1_confidence_followup.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\train_r1_score_geometry_only.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\train_r1_score_geometry_s2.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\train_r1_score_ordinal_s3.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\train_r1_score_specialist.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\train_r1a_hierarchical_grader.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\validate_r1_closure_runtime.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\yolo26_identity_eca.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime source: F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\scripts\\yolo26_refine_gates.py",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Runtime package torch",
+    "passed": true,
+    "detail": {
+      "actual": "2.13.0+cu130",
+      "expected": "2.13.0+cu130"
+    }
+  },
+  {
+    "check": "Runtime package ultralytics",
+    "passed": true,
+    "detail": {
+      "actual": "8.4.117",
+      "expected": "8.4.117"
+    }
+  },
+  {
+    "check": "Runtime package numpy",
+    "passed": true,
+    "detail": {
+      "actual": "2.5.2",
+      "expected": "2.5.2"
+    }
+  },
+  {
+    "check": "Runtime package pandas",
+    "passed": true,
+    "detail": {
+      "actual": "3.0.5",
+      "expected": "3.0.5"
+    }
+  },
+  {
+    "check": "Runtime package scipy",
+    "passed": true,
+    "detail": {
+      "actual": "1.18.1",
+      "expected": "1.18.1"
+    }
+  },
+  {
+    "check": "Runtime package opencv-python",
+    "passed": true,
+    "detail": {
+      "actual": "5.0.0.93",
+      "expected": "5.0.0.93"
+    }
+  },
+  {
+    "check": "Runtime package matplotlib",
+    "passed": true,
+    "detail": {
+      "actual": "3.11.1",
+      "expected": "3.11.1"
+    }
+  },
+  {
+    "check": "Runtime package Pillow",
+    "passed": true,
+    "detail": {
+      "actual": "12.3.0",
+      "expected": "12.3.0"
+    }
+  },
+  {
+    "check": "Test start marker absent",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "No test evaluation output directory",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Recorded test inference count remains zero",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "Recorded test performance remains uncomputed",
+    "passed": true,
+    "detail": null
+  }
+]

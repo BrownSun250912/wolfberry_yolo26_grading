@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "examples": [
+    {
+      "image_id": "wb_000275",
+      "source": "rule_anchored22",
+      "policy": "boundary_stem",
+      "input": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3\\images\\val\\wb_000275.png",
+      "output": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\inference_examples\\rule_anchored22_boundary_stem",
+      "predictions": 9
+    },
+    {
+      "image_id": "wb_001007",
+      "source": "selected22",
+      "policy": "arbitration",
+      "input": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3\\images\\val\\wb_001007.png",
+      "output": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\joint_pipeline_20261024\\inference_examples\\selected22_arbitration",
+      "predictions": 18
+    }
+  ],
+  "test_accessed": false
+}

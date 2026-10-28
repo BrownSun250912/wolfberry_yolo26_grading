@@ -1,0 +1,784 @@
+{
+  "status": "COMPLETE_TEST_AND_BILINGUAL_UPDATE",
+  "test_evaluation_passes_this_stage": 1,
+  "subsequent_analysis_model_inference": 0,
+  "primary_arm": "original_defect_rank",
+  "test_images": 129,
+  "test_GT": 576,
+  "primary_AP50": 0.8072028356784946,
+  "primary_correct": 481,
+  "refined_correct": 480,
+  "validation_checks": 425,
+  "failed_checks": [],
+  "primary_contrast": {
+    "candidate": "original_defect_rank",
+    "reference": "RR22_reference",
+    "endpoint": "Mask_AP50",
+    "point_delta": 0.009718697353715333,
+    "primary": true,
+    "valid_replicates": 2000,
+    "invalid_replicates": 0,
+    "ci95_low": 0.002721477416160717,
+    "ci95_high": 0.016950023729704385
+  },
+  "cumulative_contrast": {
+    "candidate": "original_defect_rank",
+    "reference": "raw_YOLO",
+    "endpoint": "Mask_AP50",
+    "point_delta": 0.026839558938716923,
+    "primary": false,
+    "valid_replicates": 2000,
+    "invalid_replicates": 0,
+    "ci95_low": 0.0142622959421299,
+    "ci95_high": 0.040831383130866324
+  },
+  "report": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\最终测试报告.md",
+  "report_sha256": "dda0116b88f401a906e7d12db2b891d5f85fde8d20fd1a153e105c126c44e905",
+  "manuscript_sha256": {
+    "MANUSCRIPT_ZH.md": "9e5e9f7c9e600058a0dfe766165b9c1ded188a0ee3a6e12c7132a2928910b41f",
+    "MANUSCRIPT_EN.md": "7026f48314fadaa6d78998b2c9959f3babcd7ed3231ccfb9c3ac0629c9b764d8"
+  },
+  "artifact_inventory": [
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\details.json",
+      "bytes": 985661,
+      "sha256": "70cab5c0abdb5446653554cee4f5cf7b1b9d0a683aba281fb8a4e2757c5297bb"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\mask_hashes.json",
+      "bytes": 344934,
+      "sha256": "ecef12c7fca2cd818fc060818c10d131fe790547b1e707ad56c59775c64677b4"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\metrics.csv",
+      "bytes": 2719,
+      "sha256": "16a9494bca9e85b8cb8115522520b16999b0830bc408a7f40e2c78cd570a3a2e"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\original_defect_rank_evaluation.pt",
+      "bytes": 166717,
+      "sha256": "02c3b46689c27f33027c476541e5ad51fcdd98324fa84a76a32325c6344fed17"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\original_defect_rank_prototype_evaluation.pt",
+      "bytes": 166777,
+      "sha256": "07d7745455ccab84ddbf4eb2f7bc2cc8a26f92f09fdaea7675b702ab3fb2203a"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000001.pt",
+      "bytes": 8825,
+      "sha256": "eefd0f875a2b7cf7137f5730cb4211ae68f9075b6e5f4c36f5fa3b927ed11306"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000007.pt",
+      "bytes": 8953,
+      "sha256": "fde9cfe2d9c46cb255e76eb998de1158093f246fe4b57c4109a258b4f15ca3fb"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000011.pt",
+      "bytes": 7673,
+      "sha256": "33dd99b7778549565139580d8614e15c65a9a1d1aeb33cb6a0687229472254b5"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000012.pt",
+      "bytes": 8697,
+      "sha256": "a38fa249a884ce54f16f587b3e7dd5530a94f9ab4628a6097b237a609a49b73c"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000032.pt",
+      "bytes": 7545,
+      "sha256": "54cfbe5b79d886deb879d0c65fc03e404e053078b28f3cf4020387dfc99808fd"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000045.pt",
+      "bytes": 9273,
+      "sha256": "0dbeb45dd2e5451f965d5df620db5fd0aff46aa8923f6449cb34abe66b1f7c79"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000053.pt",
+      "bytes": 6649,
+      "sha256": "2697a4af949c979b71b122318e99647b8dcbe86fb09178fcca5b04a2b960beb1"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000071.pt",
+      "bytes": 8377,
+      "sha256": "6df922e987b64a3f7287b989f9838edf342b67c01c37527d276990335cb43e89"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000097.pt",
+      "bytes": 5497,
+      "sha256": "cb64cad21e219f40f6d83d88731645be32158ed6e8714c872e7ddff84590250b"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000100.pt",
+      "bytes": 8825,
+      "sha256": "62cff83f58cabb1c1a14837ef5a6f3a237ed935c9091e2de8fce898665389b7c"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000106.pt",
+      "bytes": 8761,
+      "sha256": "0e33a7d14957f81be351c7ef709d55552f7dcd04c7be091d1c912cc649b8663d"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000110.pt",
+      "bytes": 6649,
+      "sha256": "dc64a1e70fb9a5882296b3bb87ffcd755812009ca36c3e58951b5ea937bc4d41"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000121.pt",
+      "bytes": 11065,
+      "sha256": "0df6bf2cb6bd4f4281186094fc4a3f9ee06be998a35ed226079ef39adbd0d4b9"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000148.pt",
+      "bytes": 6393,
+      "sha256": "6d0f19dd8ca5563f7c1b77c284be8edb90619f42c917d5fef662f9a2dd3926b6"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000166.pt",
+      "bytes": 7289,
+      "sha256": "0dced3162aa804b272d95394ac5cef77308eaa84e0253bf8606c52858d3ae670"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000205.pt",
+      "bytes": 5817,
+      "sha256": "08ded8a6b8abbd3b14cdcaac7450a399d7c81503f7075c820844140d36ffdd2a"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000218.pt",
+      "bytes": 8505,
+      "sha256": "bb26d2dcf42e329778be5db0cb2b039dabfa88938e2867b8c8f95a8e367ca38d"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000225.pt",
+      "bytes": 6969,
+      "sha256": "e7bcf0191cfac592a5d981e1b2d8bf5ed1cb90a7944960b3aeb663fc233e1eae"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000232.pt",
+      "bytes": 7417,
+      "sha256": "8330ef49c1aa3913b1bcf2713263d534e9734da334fc93cd763e4cb62a737536"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000233.pt",
+      "bytes": 9145,
+      "sha256": "40fc3593ac4ffad5235da8bafdd1251f8ddf4d8feb4297999887746c05aca6d4"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000237.pt",
+      "bytes": 7545,
+      "sha256": "9374c0b815052593059cb8ea33c0e6d205775cdf201d40be1e519ade2df70c29"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000240.pt",
+      "bytes": 6649,
+      "sha256": "411d1c5079ac2a5201b947370e3019f23c985176b4bb5cb092fd4bcd2a13d9aa"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000257.pt",
+      "bytes": 7097,
+      "sha256": "cbf4cb1e3a5d8a12150f2bcc85d631b6d301404559440414c1aa6e3423e66ce2"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000293.pt",
+      "bytes": 5881,
+      "sha256": "ac4acaf79ceb8d5be26e7d46b86c6ec711283defdb549f71deeb75cdde31f6f4"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000298.pt",
+      "bytes": 7097,
+      "sha256": "a0fb2964f6806bb716ee4f3df9fe283615e1535b7db643b598b665de8e28aa41"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000305.pt",
+      "bytes": 6073,
+      "sha256": "57bac10fe638745b9c958309eb78ba11f8f5c3a58d86f645a5f42f3862208b14"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000307.pt",
+      "bytes": 9721,
+      "sha256": "fc9fc36617f666db54a3709d61212791dfa815e6405cda3a0fb86390ec62a6b7"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000311.pt",
+      "bytes": 11001,
+      "sha256": "d4e3b58976701d948c3cccfd468b654dcc5db1d39325f42a8046ab5d4987e3ca"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000313.pt",
+      "bytes": 9081,
+      "sha256": "a49d1e2ea18a22683712227423a6c97ec44750fae65b1afe910c55a856169966"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000314.pt",
+      "bytes": 10681,
+      "sha256": "d484687578d2ab71d700690c3168988399f426c3b1292ed503e550845c2665a5"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000317.pt",
+      "bytes": 7673,
+      "sha256": "12757a82edc56c992761e041e501d95088b10f2a72df3bde7d77f751ac04f0d5"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000318.pt",
+      "bytes": 11897,
+      "sha256": "3c79a4888c0cb5a9ebb4f03944b3de7e29461132c927dc1b9c460df62988219a"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000321.pt",
+      "bytes": 11001,
+      "sha256": "19e06410eb20845551aac8e981a1217d84e12c4a0a95a3372aefe0d737ae7a18"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000325.pt",
+      "bytes": 9465,
+      "sha256": "cf2b5b1faa1dfb437058808e8a32b964f6e117b8b406f72b599d92ea925f0133"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000326.pt",
+      "bytes": 7225,
+      "sha256": "4457e16e053e8b7735b54833b0dc62e0011fa1b3f131b998c4f45514d16ef61d"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000331.pt",
+      "bytes": 8377,
+      "sha256": "cb21628104c00e4c3cb6727660b206d1fe247cd8c93fd4c73fb42c94570c8f03"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000347.pt",
+      "bytes": 7289,
+      "sha256": "f169595227cbef61542e59c81903c741157c312ca71247376f6cbd61e9614453"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000356.pt",
+      "bytes": 9785,
+      "sha256": "9fa705a65b0d37986b4508befc4725b4463a14c5738bbfa000f6e9b7f5907e32"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000370.pt",
+      "bytes": 7097,
+      "sha256": "ea0f37cec6875b0ceb31b5875b567aa26a431da5271600c0f394a30a3c201e75"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000390.pt",
+      "bytes": 8313,
+      "sha256": "a6d399a5edec92eac651307db394dc66bd745b387ef659c60ffff9ff1dbed906"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000411.pt",
+      "bytes": 8505,
+      "sha256": "7c5c5619bb514aee8ef9ef595e07feea90009ccb350bd6c9e63b3a60b0221cf5"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000412.pt",
+      "bytes": 9145,
+      "sha256": "23141492f71b1b0f279603367dd862379ed177741bbbcb7f2c3cccc85d7d7e2d"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000415.pt",
+      "bytes": 6841,
+      "sha256": "3e1203b03363cf78e6f025ba59395f97de662a9833d25883a4080706c33ea0f4"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000422.pt",
+      "bytes": 8825,
+      "sha256": "61dd539565d378bf8183648dbfbc94803e31ec0db198386df28374719abfbaff"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000424.pt",
+      "bytes": 10361,
+      "sha256": "5d4351c3feff5d89a5a36e130f7322a525203459ada4901d8d529dd1ea38281e"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000431.pt",
+      "bytes": 7417,
+      "sha256": "c0b057257afed4124bd4c93a8b541508568613bf627ba4c7a6693542e2a8207e"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000434.pt",
+      "bytes": 8313,
+      "sha256": "223867bd635ddfa1f665741dc1e4010ab55e7cf889d257e62226463dbfb5e9d4"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000452.pt",
+      "bytes": 8825,
+      "sha256": "82af2d7c68b025c705ca40c487ec1126199e91df72fba6bb52c51d9c8babf9f4"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000457.pt",
+      "bytes": 11257,
+      "sha256": "2c1a8b233b6ffb4eb122647ff9d81ad09efa591b7768672a7222e5b01f5fc949"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000498.pt",
+      "bytes": 7737,
+      "sha256": "d6f9262f4f6d9421823be94f8d8743aa861d28253bfd488dd6abc5d0c60b6df9"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000507.pt",
+      "bytes": 9785,
+      "sha256": "74d34318c72acdf77f553f81857d7e4da1e173dec7b4a158e5388cb24cb6e5cc"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000517.pt",
+      "bytes": 7289,
+      "sha256": "2938d85eb0f2b427cb714604e62f2f92119cb47ea5426a8a17d2ebe7dd4b4f30"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000518.pt",
+      "bytes": 7161,
+      "sha256": "44bddb5e9054ddd641cbca800eb62539b1188bc76582e0935a95fc331ee83a0d"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000522.pt",
+      "bytes": 8505,
+      "sha256": "ce50ebd31f62dc3e5a6f5db63663d74bc8f3780576eb9ba31aa12c846cbcd08c"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000528.pt",
+      "bytes": 9209,
+      "sha256": "cda46add5f3aa8ec23a611eb44f777f36c600896441d1e4bd1e55be8b239ba1f"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000538.pt",
+      "bytes": 11321,
+      "sha256": "645d124c4146f4e15de23adf6eda2212c3d5a7d44640c940cac043316d0995b1"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000564.pt",
+      "bytes": 10617,
+      "sha256": "2975246fb383bc210b05f4ecacfb83e469dbe386205c4927573d9439e0673a78"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000569.pt",
+      "bytes": 7993,
+      "sha256": "62f7fc6e0254e286deb0121ccb6b40563ae67c6aff3720673a70ea9c54f56ec9"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000571.pt",
+      "bytes": 9401,
+      "sha256": "d0b8acfa0d4a74a46552c23630488e63b74f83d6cc29d4deea4b304fbc245a4c"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000572.pt",
+      "bytes": 10041,
+      "sha256": "5f77a09f4f69c7149dc15980a3fb42de1e508688ef8184c7521ed095b17bcbbc"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000579.pt",
+      "bytes": 7481,
+      "sha256": "6ed5c130177b3b6d8e4af5d63faa991a41c720d48210ecc711bcac61bd77d948"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000604.pt",
+      "bytes": 8377,
+      "sha256": "92941d86b23cec3d7974af35b6a308dcca51885d22e30d2e2c7d62db1c920ac3"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000624.pt",
+      "bytes": 12281,
+      "sha256": "d2e7ba88afc93d2e58b2c0837f63f6f8d3392815a2d339a70fffafe5966c45a2"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000627.pt",
+      "bytes": 8185,
+      "sha256": "908d4251e0148f26f197edc796c7905e76163161ffba5162eb9fa1f7db2d5549"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000654.pt",
+      "bytes": 7801,
+      "sha256": "bf43f504b76a2706243453c7093141c3434f220f3c93ade9d3acb004a400f589"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000662.pt",
+      "bytes": 7417,
+      "sha256": "60ed603be75bd013a857a2c4818e42845531cdbb7ad5ddfd84f47ade2fe46d9a"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000666.pt",
+      "bytes": 10105,
+      "sha256": "3b4647ee46ae248eda5c3aa060362e754c745a6433a098d251aa784de0b37009"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000708.pt",
+      "bytes": 11257,
+      "sha256": "4a0ee6ffec6492a349e80248056f16822fe28c275557389ebb51c2083ebd9509"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000711.pt",
+      "bytes": 7865,
+      "sha256": "7225b826ef42284ff13b095da55d298ec91ce7b5e9615a2cc21536f04f87d41a"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000731.pt",
+      "bytes": 8505,
+      "sha256": "dbecad701732b28a7c2a60f609ac75acaacef21bd6943aa3f2255f0832e405ed"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000732.pt",
+      "bytes": 10873,
+      "sha256": "c0a55df3f0e85c4880e8dfa07f972ef1ecaede7890271f75bb2ab2f00e71496e"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000733.pt",
+      "bytes": 12409,
+      "sha256": "3973a584f9df88fe1864819ae0206d75ebf39a5ecb8403ee78ee913868b65f06"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000743.pt",
+      "bytes": 11257,
+      "sha256": "c1ad3e18cd47e40d550dd3a51a1df8c2ea61ad45ae75ef03f8da70f932b03ec9"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000756.pt",
+      "bytes": 10233,
+      "sha256": "30ad10dc1cc16316b64bb5122e9fcfba985c8c420c240a30d5ebc7ca6fa24769"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000765.pt",
+      "bytes": 10617,
+      "sha256": "52fa05e4bc0a49840f07724f929de03238c30fadf198b63fbc7d5bfe7929ea1b"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000770.pt",
+      "bytes": 10361,
+      "sha256": "61010e382d3bf9be5e56fb46489a082e59c50013c0ef2f4abafd8a08e2dafd7b"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000774.pt",
+      "bytes": 8249,
+      "sha256": "54480945562dbfa222755a96c25456bd1ac1a0e75b319ef3284a950a07e960c2"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000784.pt",
+      "bytes": 9209,
+      "sha256": "c2d5c4dd4a66f19e0ba95ded657eacf434855ef986aa9180dbe8be6d9dd7c6c3"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000787.pt",
+      "bytes": 6393,
+      "sha256": "495217ab7245f23b23548b2f6c12e2711e9ab7250c3d516a6c612f9bacb403ed"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000789.pt",
+      "bytes": 6073,
+      "sha256": "114a9c7f924eb6e5cc529275a0d177a69a5d978b4913a499882435195f6bb0c1"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000807.pt",
+      "bytes": 5497,
+      "sha256": "b4867eabcbb4785548f3d3a8efd6c38cb83809e935d71c94174006b0e929e030"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000810.pt",
+      "bytes": 6521,
+      "sha256": "5bfe3d1e957c9759182ea67b02d997a5799359c959dd4797854f37f8b451a2ea"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000815.pt",
+      "bytes": 8761,
+      "sha256": "2fb1be2c4c0cbc044f863781b2859d75af6ea26547eb1b80718ac680d43b6180"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000832.pt",
+      "bytes": 5177,
+      "sha256": "c2e15d8fc876b680dcb61a2a522e918e32aa4d8ef3b8c893095991d9523e80e1"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000842.pt",
+      "bytes": 6457,
+      "sha256": "7bb54ca90f93813a587a373c1d188289f2787d2a56e0257a0a6d90684ef6de51"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000846.pt",
+      "bytes": 10745,
+      "sha256": "f16c1225351d6680fbdc6fddc5b96c7fe3a8cf8172e3ef1de7202e33708a7170"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000852.pt",
+      "bytes": 9465,
+      "sha256": "0bd046531f8fc4cd606a43cd8187edf82b88f696b60a9e5351118071513c624f"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000892.pt",
+      "bytes": 6393,
+      "sha256": "7e7a8a584996e7560f38927eaedc889d3ef2abec3a810e81cdb0dd8f73438856"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000910.pt",
+      "bytes": 6777,
+      "sha256": "9a0bef72c103e31765942acf5ff5fed06e93ec61470f1bf7d429c21e0df555d1"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000911.pt",
+      "bytes": 7033,
+      "sha256": "2b89d60bca89f74f3f1b083ce07a44d8bca2de7bd4fc85c6fbb45bed22d0972f"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000915.pt",
+      "bytes": 7737,
+      "sha256": "b70b646292074948faf194615921f3a77902fefb01ddb7fa4c9aca7d3238b25f"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000917.pt",
+      "bytes": 11001,
+      "sha256": "31c16a63124399cff8b3308368228f4acf8360095cf6fc13e888e2d2c6b22090"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000935.pt",
+      "bytes": 9785,
+      "sha256": "3cdc36cd4334a52311fc48336cd028db9611e26801f081af9d5edb3495aad2cd"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000940.pt",
+      "bytes": 8633,
+      "sha256": "f857751b38d335925af037460170449f153b5677d58eb85dffae0e2fb9e410e1"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000945.pt",
+      "bytes": 8057,
+      "sha256": "7dbd6d51b86221ab0a9fae909913b552c5864b38f0fdd9ea1055a64a9f0714cf"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000961.pt",
+      "bytes": 9401,
+      "sha256": "c7781515396ef66662c8110786f7e8fc2a691a4da2dfe58179e88e5affe20f47"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000963.pt",
+      "bytes": 8377,
+      "sha256": "38e4c5c25e192ceb5abdb6e92bccfd360ad93ce88332e58025d09f70db4b5dc5"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000974.pt",
+      "bytes": 11577,
+      "sha256": "53088eb266302a8f79c98ab3e020970435d26ff64ffe6d28e8c08a82fd02d125"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000975.pt",
+      "bytes": 8825,
+      "sha256": "ecc7dca33f6980d13a59e6f832b1ca61b542f0c368446a96e2bb3710f000b575"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000978.pt",
+      "bytes": 6457,
+      "sha256": "0a8bf8440b8137aeec4b4ffb976b78203cabd3f93c3acd1e123246f5ed449bf9"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000981.pt",
+      "bytes": 7737,
+      "sha256": "eb1cfe3e7781bf39a89b62a4b63ae997749051dbcddd46261a208a0e6a8803d7"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_000996.pt",
+      "bytes": 10425,
+      "sha256": "580e9f6f86f09f95c366fe0a2dce8a2141ae3d86fd05087dbd2afb2bc1b6dfa4"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001019.pt",
+      "bytes": 8057,
+      "sha256": "78f2a24502d8ec3e542d017a7b6cd9df21f471bec192d55a2c63b0d569cc68e8"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001024.pt",
+      "bytes": 9721,
+      "sha256": "a24477bcb830664a95b4ba1dedf3a0779bd232464f188894a09a18def9a929ba"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001074.pt",
+      "bytes": 8825,
+      "sha256": "e98e2d1895e3f93d3a2b4daa642fb1592935c0942a0387301e28b5a7231b3d17"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001082.pt",
+      "bytes": 9145,
+      "sha256": "3cd97cc884e4b37418187547c2aef370fb58746579e41944a2bade75c20e11ce"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001083.pt",
+      "bytes": 8761,
+      "sha256": "3a8dd481f70013f11420a0e2b149f23efc6ec315d3ebcd26d91b7b200acd8b4f"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001088.pt",
+      "bytes": 6777,
+      "sha256": "2743cb168b6ed2b79ec04cbce42d52bc81d4b9342c5b6e5f5f947e594f6dfb85"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001090.pt",
+      "bytes": 8185,
+      "sha256": "0c1ef8be6ce387393134bb40de77ef1afebc4c5186832f0529907e225118371e"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001098.pt",
+      "bytes": 10041,
+      "sha256": "ba91ccad4df61ed32f70db3c12ce2ea1fbca0f9047d943627d673865226a3fdf"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001100.pt",
+      "bytes": 6777,
+      "sha256": "a553d2324a1d3c85efbca3da1b5d02cd1a3df5579ec86bd46f47da5e923c997b"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001121.pt",
+      "bytes": 6777,
+      "sha256": "e37a23a5528f2b322c944592d4e5038b7af85c38aa969f3c9f0b0af2cf6fcea9"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001142.pt",
+      "bytes": 5561,
+      "sha256": "97654bcc8a1c2e08537bf36a1820d10980748fcc23e58efbece65a44507318cb"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001166.pt",
+      "bytes": 8185,
+      "sha256": "92b92ba679e3cfa164d6561c722cbfd7d80726cdf976c2829b1ad75c9c9a5a12"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001177.pt",
+      "bytes": 7865,
+      "sha256": "308ff8d02e344357e711dfb130e4844b362da66bfb96bc8b28faa7db739e8696"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001185.pt",
+      "bytes": 8441,
+      "sha256": "71767e7016a670a001461dc63588eef47c9465fba6c5fcf3c73cfe47f7e65687"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001192.pt",
+      "bytes": 8185,
+      "sha256": "1eb33b276dfe854c2926354e865f37ad7d167826e24e1847fd9fc649ca3a3e9c"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001199.pt",
+      "bytes": 9273,
+      "sha256": "198f2909a27d1598de2c1d873fb767e91d02bdc227f259be6d77a664e94d4b86"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001209.pt",
+      "bytes": 11577,
+      "sha256": "0a0fbc7a730c5d6f4e5ab422fa1b9506d62ceb34a59d740a6f6a38e2d45b233e"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001211.pt",
+      "bytes": 7801,
+      "sha256": "0f27a571d549bc8970f80c14d8a13191a2e1330242f4c8d1154c4b4250add0d8"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001214.pt",
+      "bytes": 8889,
+      "sha256": "f0179cf08ea77e4004b3128000897a72ef2de334f13bc8eac244198a01dd7c30"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001226.pt",
+      "bytes": 8057,
+      "sha256": "99a763a0a40777700be1ec7ac338d5a6c824a6517ba57d058e6cf860b0726e6d"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001227.pt",
+      "bytes": 8505,
+      "sha256": "767af7ea4094000a4c8e232c42496e2d44add350a2515152d20b16192540dea5"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001232.pt",
+      "bytes": 8825,
+      "sha256": "4d71c8e8233c7767e7588ef9d0e927b2fbbde20c10b317a0010aeff8872f0d32"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001234.pt",
+      "bytes": 8825,
+      "sha256": "8d153e73d5f5f4aea548af68d6c3728fe6005e329fae7b43806fe12273c3b577"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001237.pt",
+      "bytes": 8569,
+      "sha256": "f14e75d36682b436da9f7b12152a039768a549594c1ea9942e7ef5c6d1073bea"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001241.pt",
+      "bytes": 8889,
+      "sha256": "e90e5893bd989a20842707439d74320cd2827848e6067e0341a30205e69e7c5c"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001266.pt",
+      "bytes": 9145,
+      "sha256": "2dd2090d6614af020d61fcaa6d8a094fd778a392d1b566b8e89860f393e53b44"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\predictions\\wb_001274.pt",
+      "bytes": 5881,
+      "sha256": "bc2b587c8a6ac52095e568457ea903faa4f8579c091dd1926beb2d9f5ec90a9f"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\raw_YOLO_evaluation.pt",
+      "bytes": 179445,
+      "sha256": "d810cc88c5acc70a3caed8edeeb789ac7fa5c54f2d6b5a0a3de86fee090ba23e"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\raw_YOLO_realNMS_evaluation.pt",
+      "bytes": 168037,
+      "sha256": "1d769b6b56d2dd798674965767ecd1f13049acdeab6ca9c4626facefa1ca0395"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\replay_report.json",
+      "bytes": 19090,
+      "sha256": "22bfd6be6857f8a5c53e4ba0f7200d31d8f24f41f423d5e2fe4db48333a226af"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\RR22_reference_evaluation.pt",
+      "bytes": 166489,
+      "sha256": "68da8769ad4ea03e8601f222b5125a87ddff5e1966e8aa43920ce110ef5f9fe5"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_replay\\val_parity_checks.csv",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_analysis\\absolute_intervals.csv",
+      "bytes": 4960,
+      "sha256": "eb6da05e927364b806a571d534615fa1c34f070e88ffb232e9b53798c9933637"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_analysis\\analysis_plan.json",
+      "bytes": 2530,
+      "sha256": "933df717256e240be7c5317c235910c889a237190cd32d6e18724982753ef081"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_analysis\\analysis_status.json",
+      "bytes": 1702,
+      "sha256": "558bb066c020d69be061970d520e0ae067e99fd04b01905ee10daaf22cf213d7"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_analysis\\bootstrap_draws.npz",
+      "bytes": 325301,
+      "sha256": "8e020dfc040fb13e341ef823ddd99f8688d4a5aba327f0dead3d333f87da2f4a"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_analysis\\paired_contrasts.csv",
+      "bytes": 6652,
+      "sha256": "1abb757a534a04282a5e72dd6368e6cd320ed941891c227dbdd1d77e92673daf"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_analysis\\point_reproduction.json",
+      "bytes": 1980,
+      "sha256": "29a6016d39b13c21e7da2efc0712ec97c26d41fb149fade2ba3cf91c1097ee7c"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_analysis\\refined_matching_changes.json",
+      "bytes": 1115,
+      "sha256": "1ca754f1f93d5208358641e6e577f808f20e523e80e3a05261c6c628b76d09d2"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_analysis\\source_group_counts.csv",
+      "bytes": 2067,
+      "sha256": "a3379c648639bcdbf639f85907b0c2cbbf6c08645d17c5fefa154575aa005b19"
+    },
+    {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\reports\\final_test_preflight_20261027\\test_analysis\\statistical_interpretation_audit.json",
+      "bytes": 3326,
+      "sha256": "2a9b0f615872faef2e13e5d81afd95b0b6eef06f4a45a604adefba99c76b0c44"
+    }
+  ],
+  "completed_utc": "2026-10-27T12:07:16.544156+00:00"
+}

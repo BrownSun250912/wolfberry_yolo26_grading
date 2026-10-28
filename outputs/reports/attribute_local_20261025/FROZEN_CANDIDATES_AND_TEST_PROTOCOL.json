@@ -1,0 +1,139 @@
+{
+  "status": "FROZEN_FOR_FUTURE_TEST_NOT_EXECUTED",
+  "frozen_utc": "2026-10-24T20:18:59.386895+00:00",
+  "current_stage_test_evaluations": 0,
+  "historical_test_use": "Early baseline had been evaluated historically; do not claim never-accessedtest.",
+  "reported_test_images": 129,
+  "test_imagecount_verified_this_stage": false,
+  "primary_candidate": "old_defect_rank fixedseed20261025, originalgrading masks",
+  "optional_segmentation_variant": "Same fixedrank andprototype_output_refiner seed20261025; originalmask forgrading/rank, refinedmask forsegmentationoutput.",
+  "main_controls": [
+    "raw_YOLO no extraNMS",
+    "raw_YOLO realsameclassNMS",
+    "RR22 boundary/stem/neighbour realNMS",
+    "old_defect_rank",
+    "old_defect_rank + prototypeoutput"
+  ],
+  "secondary_exploratory": [
+    "selected_new_rank",
+    "correctedcreation99 rank"
+  ],
+  "primary_endpoint": "MaskAP50: old_defect_rank versusRR22",
+  "secondary_endpoints": [
+    "MaskAP50:95 includingoptionaloutputrefiner",
+    "class-aware operating macroF1/recall",
+    "correct/allGT andconditionalcorrect/localized",
+    "netUQescapes,newlymisacceptedGT,UQanyqualifiedemission,qualifiedrejects",
+    "matchedscoreMAE withavailabilitycounts",
+    "same-device same-conf actualtiming"
+  ],
+  "frozen_parameters": {
+    "seed": 20261025,
+    "detector_conf_pool": 0.001,
+    "raw_grading_scope": 0.25,
+    "max_det": 300,
+    "imgsz": 640,
+    "retina_masks": true,
+    "FP32": true,
+    "class_aware_NMS_IoU": 0.7,
+    "rawscope_priority": true,
+    "neighbour_box_IoU": 0.85,
+    "score_LOW": 37.40298225745565,
+    "score_HIGH": 65.62684031710077,
+    "alpha_stem": 0.5,
+    "boundary_lambda": 1.5,
+    "boundary_sigma": 2.5,
+    "ranking": "sigmoidMLP timesrawconf; finalclass0rawconf preserved",
+    "prototype_native_band_radius_px": 4
+  },
+  "reporting": "Alllockedmethods once underidenticalGT overlay andmatching. Image-paired bootstrap intervals descriptive; trainingseeds not independenttestsets. No threshold/checkpoint/featurechoice optimizedafterviewingtest, no besttestvariant selection. Unexpectedmetric-code bugs require documented consistent re-evaluation, never silentselective reruns.",
+  "test_GT_protocol": "Before finalmetric computation, verify classID/specification andfreeze existingtestannotationversion independentlyof modelpredictions. No prediction-guided relabeling. ScoreMAE/attribute-specific metrics onlyif independenttesttargets exist; otherwise mark unavailable rather than generateGTfrompredictions. This stage did not inspecttestlabels.",
+  "authorization": "This file prepares the protocol only. The current task used train/val and did not run finaltest.",
+  "weights_and_sources": {
+    "attribute_encoder": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1a_hierarchical_grader_e200_resume_epoch150_seed20260929\\best.pt",
+      "sha256": "45fb45ec8724629c6bebccc44924946551adae067c39772273fcb358506e3b9a",
+      "bytes": 36895064
+    },
+    "detector": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\yolo26n_seg_offlineaug_e200_mask50_seed20260915\\weights\\best.pt",
+      "sha256": "6a63c81d901755f4f0282331323c4863416708b6d073bf47f8343b214a02a779",
+      "bytes": 6549469
+    },
+    "targets": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3_valfix_20261006\\audit\\r1_multitask_targets.csv",
+      "sha256": "f0514e910b2ac5f3b740094911e72a922b83992944d8b0036ef711e512badec8",
+      "bytes": 3686493
+    },
+    "roles": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1_quality_followup_20261009\\head_image_split.csv",
+      "sha256": "e2bcafa0aefc69f83813ce2355a92512aa8c0f3563891b5b104c8fab101f20a1",
+      "bytes": 28153
+    },
+    "RR22_residual": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\refine_module_20261022\\rule_anchored_residual\\rule_base_residual_seed20261022\\best.pt",
+      "sha256": "c95edfe7a7e0ce914d861cdea9abddadb9c1e341f68250466a72722bc61dcd91",
+      "bytes": 40817
+    },
+    "legacy_learned_residual": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\refine_module_20261022\\score_direction\\control_seed20261022\\best.pt",
+      "sha256": "31172d0c85fb876097aef645c56513acfba123c1e0ea3d8fa2ed5d7f13a37e27",
+      "bytes": 6844893
+    },
+    "legacy_geometry_score": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1_score_refined_geometry_20261008_artifactfix\\refined_only_seed20261007\\refined_only_seed20261007_best.pt",
+      "sha256": "1bac120aac94c5e90b049a1e5ed035f38d8ba530c0ea42fd40e7a72e8e7a536d",
+      "bytes": 172405
+    },
+    "legacy_rank_loaded": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1_ap_followup_20261008\\mlp_confidence_seed20261008\\best.pt",
+      "sha256": "a23075139d92ce9cd75abb4fe44faf17f0c72cb5ca1fa401932f538a739b84c2",
+      "bytes": 4351
+    },
+    "shape_config": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\configs\\feature_extraction_frozen_v1_val.yaml",
+      "sha256": "90d7c4d92541129fed960bdd30d8877eb8b88de854fe66001aae32646e13a652",
+      "bytes": 2455
+    },
+    "grading_config": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\grading_standard_config.json",
+      "sha256": "ab6cd472737c9cf5706ec0878eb5e92fee697311e222a380917bfa1a99affa3f",
+      "bytes": 3966
+    },
+    "frozen_reference_source": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\grading_labels_candidate_v3.csv",
+      "sha256": "be7d40f52f65051fdccb1a3de1610aa7a319d1f553769cdb0952223dd6c841e8",
+      "bytes": 11471776
+    },
+    "legacy_refinement_cache": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1_score_refined_geometry_20261008_artifactfix\\refined_geometry_cache.pt",
+      "sha256": "12801c863f769c9fe4adf0d84fb5b55ac604aec718b282dcc26ade8d2ce98c50",
+      "bytes": 3260745
+    },
+    "old_defect_rank": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\attribute_rank_fits\\RR22_original_defect_independent_multi_iou_seed20261025\\best.pt",
+      "sha256": "e2d846ecf4a09bd861e51983e3cdc03e4f3c65e9c232fcf5ea3b5d76d69e52b5",
+      "bytes": 4543
+    },
+    "selected_new_rank": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\attribute_rank_fits\\RR22_attribute4_independent_multi_iou_seed20261025\\best.pt",
+      "sha256": "fdcd2b021391e5844841aefc843f5e920c84a7b795a384bfbf87ff0c0002eec9",
+      "bytes": 4479
+    },
+    "new_defect_attribute": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\target_fits\\defect_balanced_neutral_pair_seed20261025\\best.pt",
+      "sha256": "5707fe0a02f81b6b82a9d13fb7cec85b0d92ca5a449dd240ccc6d634a131d72c",
+      "bytes": 6812957
+    },
+    "prototype_output_refiner": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\prototype_fits\\soft_prototype_seed20261025\\best.pt",
+      "sha256": "cd1d5186385ebfe2ed4c603358bd4e66ac7717456ff0d79e76035178d7d880fe",
+      "bytes": 9841
+    },
+    "exploratory_creation_rank": {
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\attribute_rank_fits\\correctedcreation99_zero4_independent_multi_iou_seed20261025\\best.pt",
+      "sha256": "97cbf46b89c91ef9ce99988337077503c53154eed1fe299fbddcb0c941be51de",
+      "bytes": 4479
+    }
+  }
+}

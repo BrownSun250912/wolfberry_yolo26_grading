@@ -1,0 +1,13 @@
+arm,review_fraction,localized_cases,review_n,total_grade_errors,listed_grade_errors,total_UQ_escapes,listed_UQ_escapes,interpretation
+RR22_raw,0.05,500,25,51,6,21,2,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+RR22_raw,0.1,500,50,51,8,21,2,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+RR22_raw,0.2,500,100,51,15,21,5,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+historical18,0.05,500,25,51,4,21,1,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+historical18,0.1,500,50,51,9,21,3,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+historical18,0.2,500,100,51,20,21,6,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+new_defect_rank,0.05,500,25,51,9,21,5,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+new_defect_rank,0.1,500,50,51,14,21,6,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+new_defect_rank,0.2,500,100,51,23,21,9,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+original_defect_rank,0.05,500,25,51,7,21,3,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+original_defect_rank,0.1,500,50,51,13,21,6,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
+original_defect_rank,0.2,500,100,51,21,21,8,"Descriptive reviewlist only, no humanaccuracy or safeautomaticrelease claim"
