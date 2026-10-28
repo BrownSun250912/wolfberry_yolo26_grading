@@ -1,0 +1,63 @@
+# YOLO26n-seg 离线增强 200 轮冻结基线
+
+_2026-09-18 预先记录；训练状态：已完成 200 轮（第 146 轮后曾中断，随后从检查点恢复）。冻结协议不作事后修改。_
+
+## 🧭 研究问题与边界
+
+在固定官方 YOLO26n-seg 架构、已审核四类标签、离线增强训练集、原始验证集和单一种子下，完整训练 200 轮，判断验证集分割指标及损失是否在后期趋于稳定。**本轮不改 YAML 模型结构，不使用 test 选轮次，不证明离线增强优于原始数据或新结构优于基线。** 离线增强样本不等于新增独立实物样本。
+
+## ⚙️ 冻结协议（运行前）
+
+| 项目 | 固定值 |
+| --- | --- |
+| 训练 / 验证 | `data/grading_four_class_v3_augmented_delivery/images/{train,val}`，2,898 / 116 张；val 为未离线增强的原始验证图 |
+| 数据入口 | `configs/grading_four_class_v3_augmented_delivery_local.yaml`；test 路径不参与训练、验证或检查点选择 |
+| 初始化 | 本地官方 `models/pretrained/yolo26n-seg.pt`，SHA-256 `361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f` |
+| 模型 / 任务 | YOLO26n-seg / 四等级实例分割；不修改模型 YAML |
+| 随机性 / 精度 | `seed=20260915`、`deterministic=True`、`amp=False`、单 GPU 0 |
+| 轮数与停止 | `epochs=200`、`patience=0`（禁用早停）、每轮验证；不得根据中途曲线提前截取实验后宣称跑满 |
+| 规模 | `imgsz=640`、`batch=8`、`workers=4`、`mask_ratio=4`、`overlap_mask=True`、`end2end=True` |
+| 优化器 | AdamW、`lr0=0.00125`、线性学习率 `lrf=0.01`、`momentum=0.9`、`weight_decay=0.0005`、`nbs=64`、warmup 3 轮 / momentum 0.8 / bias lr 0 |
+| 在线增强 | 几何、Mosaic、MixUp、CutMix、Copy-Paste、HSV、翻转、随机缩放均关闭；`multi_scale=0`；仅使用已经交付的离线增强图 |
+| 主要验证指标 | val **Mask mAP50**；次要同时报告 Mask mAP50–95、逐类 AP 和 train/val loss |
+| 选模规则 | 每轮验证后，`best.pt` 按未四舍五入的 val Mask mAP50 最大值保存；全精度相同则较晚轮次获选。保留 `last.pt`，两者不可混称 |
+| 输出 | `models/experiments/yolo26n_seg_offlineaug_e200_mask50_seed20260915/` |
+
+这是**新协议**：旧 step-matched 实验的 `lrf=1.0` 与这次 `lrf=0.01` 不同，原有训练曲线和分数不能冒充同协议结构对照。后续结构改动须从同一个预训练权重重训，使用相同数据、种子、步数、增广和选模规则。
+
+## 🧪 实施与可核查记录
+
+脚本：[冻结训练实现](../scripts/train_frozen_offlineaug_e200.py)；[选模单元测试](../tests/test_train_frozen_offlineaug_e200.py)。本地安装 Ultralytics 8.4.117 的 `SegmentationTrainer.validate()` 默认取组合 `fitness`，而其 `save_model()` 在 `best_fitness == fitness` 时覆盖 `best.pt`。本实验仅覆写验证返回的检查点 fitness 为 `metrics/mAP50(M)`，其余指标不改。每轮原默认 fitness 和选模分数写入 `mask50_selection_trace.csv`，以备核对。
+
+运行前验证：单元测试 3 项通过，预训练 SHA-256 与预设一致，训练图/标签 2,898 对，验证图/标签 116 对。复现命令（项目根目录、项目虚拟环境）：
+
+```powershell
+& .\.venv\Scripts\python.exe scripts/train_frozen_offlineaug_e200.py --check-only
+& .\.venv\Scripts\python.exe scripts/train_frozen_offlineaug_e200.py
+```
+
+执行中核对（2026-09-18 17:49 CST）：环境 Ultralytics 8.4.117 / Python 3.12.14 / PyTorch 2.13.0+cu130 / NVIDIA RTX 5070 Laptop GPU 8,151 MiB；模型 3,054,420 参数、10.3 GFLOPs，预训练加载 740/844 项；训练与验证扫描均无损坏文件。第 1 轮已写出 `best.pt`，val Mask mAP50 = 0.57868，默认组合 fitness = 0.91255，而实际选模 fitness = 0.57868，确认两者未混用。此为**运行中观察**，不构成结果结论。
+
+为避免长时间训练结束后遗漏归档，2026-09-18 18:33 CST 启动只读监测与汇总脚本 [report_frozen_offlineaug_e200.py](../scripts/report_frozen_offlineaug_e200.py)（启动时 PID 61192，最多等待 8 小时）。它只在完整的 200 行逐轮记录与选模轨迹、best/last 权重均存在时生成[实测结果报告](YOLO26_OFFLINEAUG_E200_RESULTS_20260918.md)和机器可读摘要；不会参与训练、选模或使用 test。报告生成前该链接暂不可用。18:34 CST 检查已完成 44/200 轮、历史最佳 val Mask mAP50 = 0.82295；这只是过程记录，不是最终结论。
+
+### 2026-09-18 中断与恢复记录
+
+初次进程在第 146 轮后停止：结果表与选模轨迹各 146 行，最后写入约 20:06:49 CST；22:51 检查时训练及先前的汇总进程均不在，未生成结果报告。用户后续说明，中断是因为当时关闭 Codex，导致附属训练进程随之终止；不得写成连续无中断的 200 轮。第 146 轮 val Mask mAP50 为 0.74301，历史最佳为第 16 轮的 0.82295。
+
+用户随后明确要求继续训练。续训前读取原始 last.pt：检查点 epoch 为零基 145（即已完成 146 轮）、optimizer 与 EMA 均存在、best_fitness 为 0.82295；与两个 CSV 的轮次和选模轨迹一致。预检与 3 项选模规则单元测试通过。续训命令保持原协议、由第 147 轮接至总计 200 轮；训练脚本在完成后直接生成结果报告，避免依赖另一个监测进程：
+
+    & .\.venv\Scripts\python.exe scripts/train_frozen_offlineaug_e200.py --resume --check-only
+    & .\.venv\Scripts\python.exe scripts/train_frozen_offlineaug_e200.py --resume
+
+中断/恢复可能改变数据加载随机序列等细节，因此这是一条**从检查点恢复的运行**，不应表述为与无中断单次运行逐步完全一致。恢复结果须核对第 147 轮追加、best.pt 选模规则以及最后 200 行完整性。
+
+22:59 CST 实测：日志明确显示从第 147 轮恢复至总计 200 轮；results.csv 与选模轨迹均已从 146 行追加到 147 行，未清空旧轮次。第 147 轮 val Mask mAP50 = 0.74007，历史最佳仍为 0.82295；训练仍在运行，尚无收敛结论。
+
+## 📊 结果与结论
+
+- 2026-09-18 23:48 CST 完成 200/200 轮，results.csv 与 Mask mAP50 选模轨迹各 200 行；续训后训练命令正常退出（退出码 0），[自动结果报告](YOLO26_OFFLINEAUG_E200_RESULTS_20260918.md)、机器可读摘要和曲线图均生成。第 146 轮中断和第 147 轮恢复见上方时间记录。
+- 按冻结规则选中第 16 轮 best.pt：val Mask mAP50 = 0.82295，Mask mAP50–95 = 0.68066；第 200 轮分别为 0.74814 和 0.60093。最后 20 轮 Mask mAP50 均值 0.74737、标准差 0.00149。
+- 训练分割损失从首轮 0.85009 降至末轮接近 0；验证分割损失由 0.71576 升至 5.99656，验证分类损失由 1.71857 经早期低点回升至 1.46894。训练优化本身持续降低损失，但验证表现未随更多轮数改善，呈明显的泛化退化信号；这**不支持**“只是轮数不够，继续训练就会提高验证 mAP”的解释。可能涉及过拟合或训练/验证差异，具体成因仍需诊断，不能仅凭曲线断言。
+- 模型 3,054,420 参数、10.3 GFLOPs；最佳权重 SHA-256 见结果报告。test：**未使用**；完成结构方案定稿后另行评价，原始 test 与合成水槽压力测试分开报告。
+
+论文中应将验证集选择指标与独立测试性能明确分开，不能用 200 次验证机会的最高点替代泛化结论；合成水槽图也不能当作真实新场景独立样本。

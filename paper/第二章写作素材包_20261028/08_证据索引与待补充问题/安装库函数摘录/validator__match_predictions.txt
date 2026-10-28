@@ -1,0 +1,44 @@
+来源: .venv/Lib/site-packages/ultralytics/engine/validator.py
+源文件SHA256: b0d3c7496b38df086ecb0e829fe7946a3f9b82079045914808abf71a824bce6f
+行号: 318–356
+此摘录来自本机安装版本，不保证与官方发行包字节相同。
+
+00318:     def match_predictions(
+00319:         self, pred_classes: torch.Tensor, true_classes: torch.Tensor, iou: torch.Tensor, use_scipy: bool = False
+00320:     ) -> torch.Tensor:
+00321:         """Match predictions to ground truth objects using IoU.
+00322: 
+00323:         Args:
+00324:             pred_classes (torch.Tensor): Predicted class indices of shape (N,).
+00325:             true_classes (torch.Tensor): Target class indices of shape (M,).
+00326:             iou (torch.Tensor): An NxM tensor containing the pairwise IoU values for predictions and ground truth.
+00327:             use_scipy (bool, optional): Whether to use Hungarian one-to-one matching (more precise).
+00328: 
+00329:         Returns:
+00330:             (torch.Tensor): Correct tensor of shape (N, 10) for 10 IoU thresholds.
+00331:         """
+00332:         # Dx10 matrix, where D - detections, 10 - IoU thresholds
+00333:         correct = np.zeros((pred_classes.shape[0], self.iouv.shape[0])).astype(bool)
+00334:         # LxD matrix where L - labels (rows), D - detections (columns)
+00335:         correct_class = true_classes[:, None] == pred_classes
+00336:         iou = iou * correct_class  # zero out the wrong classes
+00337:         iou = iou.cpu().numpy()
+00338:         for i, threshold in enumerate(self.iouv.cpu().tolist()):
+00339:             if use_scipy:
+00340:                 cost_matrix = iou * (iou >= threshold)
+00341:                 if cost_matrix.any():
+00342:                     labels_idx, detections_idx = linear_sum_assignment(-cost_matrix)  # negate to maximize IoU
+00343:                     valid = cost_matrix[labels_idx, detections_idx] > 0
+00344:                     if valid.any():
+00345:                         correct[detections_idx[valid], i] = True
+00346:             else:
+00347:                 matches = np.nonzero(iou >= threshold)  # IoU > threshold and classes match
+00348:                 matches = np.array(matches).T
+00349:                 if matches.shape[0]:
+00350:                     if matches.shape[0] > 1:
+00351:                         matches = matches[iou[matches[:, 0], matches[:, 1]].argsort()[::-1]]
+00352:                         matches = matches[np.unique(matches[:, 1], return_index=True)[1]]
+00353:                         matches = matches[np.unique(matches[:, 0], return_index=True)[1]]
+00354:                     correct[matches[:, 1].astype(int), i] = True
+00355:         return torch.from_numpy(correct)
+00356: 

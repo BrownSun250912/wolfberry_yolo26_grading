@@ -1,0 +1,7 @@
+flowchart LR
+ M[原mask] --> G[受限白边清理 五几何]
+ G --> E[冻结ECDF 规则分数]
+ F[融合256] --> N[fit归一化 MLP256-32-1]
+ N --> D[0.05 tanh 残差]
+ E --> S[相加 clip0-1 x100]
+ D --> S

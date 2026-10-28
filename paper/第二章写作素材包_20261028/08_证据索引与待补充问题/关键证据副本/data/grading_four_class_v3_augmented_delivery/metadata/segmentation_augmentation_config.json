@@ -1,0 +1,78 @@
+{
+  "approved_pilot_directory": "E:\\gouqi\\grading_four_class_v3\\offline_aug_seg_pilot_20260915_102112",
+  "approved_pilot_result": "PILOT_PASS",
+  "aug01": {
+    "blur_probability": 0.075,
+    "blur_radius": [
+      0.1,
+      0.4
+    ],
+    "brightness": [
+      0.96,
+      1.04
+    ],
+    "contrast": [
+      0.96,
+      1.04
+    ],
+    "gamma": [
+      0.98,
+      1.02
+    ],
+    "horizontal_flip": true,
+    "noise_and_blur_mutually_exclusive": true,
+    "noise_probability": 0.075,
+    "noise_sigma_255": [
+      0.25,
+      1.5
+    ]
+  },
+  "aug02": {
+    "blur_probability": 0.1,
+    "blur_radius": [
+      0.1,
+      0.5
+    ],
+    "brightness": [
+      0.95,
+      1.05
+    ],
+    "contrast": [
+      0.95,
+      1.05
+    ],
+    "gamma": [
+      0.97,
+      1.03
+    ],
+    "geometric_operations": [],
+    "noise_probability": 0.15,
+    "noise_sigma_255": [
+      0.25,
+      2.0
+    ]
+  },
+  "command": "D:\\www\\python.exe offline_augment_yolo_seg.py --project-root . --manifest stage1_output_20260914_231717_544981_1\\train_manifest.csv --source-images stage1_output_20260914_231717_544981_1\\images\\train --source-labels labels\\train --output offline_aug_seg_train --seed 20260914 --execute",
+  "copies_per_image": 2,
+  "disk_space": {
+    "available_bytes_before_run": 363345326080,
+    "estimated_output_bytes": 3786153101,
+    "pilot_augmented_to_original_average_ratio": 0.7284280520523227,
+    "required_with_25_percent_margin_bytes": 4732691376,
+    "source_image_bytes": 1518445536,
+    "source_label_bytes": 1850306
+  },
+  "full_source_count": 966,
+  "global_seed": 20260914,
+  "mode": "execute-full",
+  "pilot_configuration_match": true,
+  "pilot_count": 0,
+  "script_path": "E:\\gouqi\\grading_four_class_v3\\offline_augment_yolo_seg.py",
+  "script_sha256": "99520993f8f3908c7fcd4f1acfb842cb90b4c347b24f8e25415dc5e925423681",
+  "task_type": "yolo_instance_segmentation",
+  "versions": {
+    "Pillow": "11.1.0",
+    "numpy": "2.1.3",
+    "python": "3.13.5"
+  }
+}

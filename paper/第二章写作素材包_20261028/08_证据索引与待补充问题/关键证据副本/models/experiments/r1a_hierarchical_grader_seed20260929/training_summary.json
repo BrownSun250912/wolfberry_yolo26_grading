@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETED",
+  "best_epoch": 20,
+  "epochs_completed": 40,
+  "best_metrics": {
+    "loss": 1.5332530875003476,
+    "defect_loss": 1.1837374160648773,
+    "stem_loss": 0.3048236301046541,
+    "score_loss": 0.04469203287340039,
+    "defect": {
+      "tp": 34,
+      "fp": 23,
+      "fn": 20,
+      "tn": 441,
+      "precision": 0.5964912280701754,
+      "recall": 0.6296296296296297,
+      "f1": 0.6126126126126126
+    },
+    "stem": {
+      "tp": 58,
+      "fp": 21,
+      "fn": 3,
+      "tn": 382,
+      "precision": 0.7341772151898734,
+      "recall": 0.9508196721311475,
+      "f1": 0.8285714285714285
+    },
+    "score_mae": 6.576323912639556,
+    "score_rmse": 8.598146471069244,
+    "four_class": {
+      "accuracy": 0.7683397683397684,
+      "correct": 398,
+      "total": 518,
+      "macro_f1": 0.7377408810466188,
+      "per_class": [
+        {
+          "class_id": 0,
+          "class_name": "UNQUALIFIED",
+          "tp": 34,
+          "fp": 23,
+          "fn": 20,
+          "tn": 441,
+          "precision": 0.5964912280701754,
+          "recall": 0.6296296296296297,
+          "f1": 0.6126126126126126
+        },
+        {
+          "class_id": 1,
+          "class_name": "GRADE_1",
+          "tp": 87,
+          "fp": 24,
+          "fn": 28,
+          "tn": 379,
+          "precision": 0.7837837837837838,
+          "recall": 0.7565217391304347,
+          "f1": 0.7699115044247786
+        },
+        {
+          "class_id": 2,
+          "class_name": "GRADE_2",
+          "tp": 108,
+          "fp": 37,
+          "fn": 43,
+          "tn": 330,
+          "precision": 0.7448275862068966,
+          "recall": 0.7152317880794702,
+          "f1": 0.7297297297297297
+        },
+        {
+          "class_id": 3,
+          "class_name": "GRADE_3",
+          "tp": 169,
+          "fp": 36,
+          "fn": 29,
+          "tn": 284,
+          "precision": 0.824390243902439,
+          "recall": 0.8535353535353535,
+          "f1": 0.8387096774193548
+        }
+      ]
+    }
+  },
+  "best_checkpoint_sha256": "9d6d1d8582fc57e24d5e8d9e17b7a750b1195c3506929f6313632123d20a8446",
+  "last_checkpoint_sha256": "81ee7a700d53b4680112ca5a8da915b500316f202a7e7dfad9a723885bc5b4ee",
+  "test_accessed": false,
+  "scope": "GT-crop diagnostic and checkpoint selection only; frozen-Seg prediction replay is still required"
+}

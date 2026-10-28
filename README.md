@@ -13,6 +13,7 @@
 | 核对论文主结果 | [最终测试报告](outputs/reports/final_test_preflight_20261027/最终测试报告.md) · [原始指标CSV](outputs/reports/final_test_preflight_20261027/test_replay/metrics.csv) |
 | 查表格、图的依据 | [图表证据索引](collaboration/EVIDENCE_INDEX.md) · [图表来源说明](paper/manuscript_20261025/TABLE_AND_FIGURE_SOURCES.md) |
 | 分配修改工作 | [修改任务清单](collaboration/TASKS.md) · [提交规则](CONTRIBUTING.md) |
+| 撰写第二章：材料与方法 | [经文件核验的写作素材包](paper/第二章写作素材包_20261028/README.md)：六部分、参数CSV、实际样图、公式、113项证据与待补问题 |
 | 查方法实现与复现范围 | [方法代码说明](collaboration/METHODS_AND_REPRODUCIBILITY.md) |
 
 ## 当前最终结果：test，不是val

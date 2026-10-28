@@ -1,0 +1,10 @@
+flowchart LR
+ I[RGB+mask 4x160x160] --> V[5级stride2 Conv+Residual<br/>32 64 128 192 256]
+ V --> P[GAP 256]
+ G[几何6维] --> M[MLP 6-32-32]
+ P --> C[Concat288 融合256 Dropout0.2]
+ M --> C
+ C --> A[缺陷logit]
+ C --> S[缺梗概率]
+ C --> R[历史score头/回退]
+ C --> F[256维复用特征]

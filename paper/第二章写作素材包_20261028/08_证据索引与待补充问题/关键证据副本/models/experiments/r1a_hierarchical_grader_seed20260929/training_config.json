@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-29T11:54:26.050615+00:00",
+  "config": {
+    "seed": 20260929,
+    "epochs": 100,
+    "patience": 20,
+    "batch_size": 64,
+    "image_size": 160,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "lambda_stem": 1.0,
+    "lambda_score": 1.0,
+    "num_workers": 0,
+    "amp": true,
+    "device": "cuda:0"
+  },
+  "targets": {
+    "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\r1_multitask_targets_v1\\r1_multitask_targets.csv",
+    "sha256": "4eabbf572d0c0fd3cde70514d9b70536007790f0dc496343aab9c519798381e2"
+  },
+  "model": {
+    "name": "R1HierarchicalGrader",
+    "initialization": "random_kaiming_pytorch_default_no_external_pretrained_weights",
+    "parameters": 3067203,
+    "input": "RGB+mask 160x160 plus 6 geometry features"
+  },
+  "loss": {
+    "defect": "BCEWithLogitsLoss",
+    "defect_pos_weight": 10.49731182795699,
+    "stem": "BCEWithLogitsLoss",
+    "stem_pos_weight": 5.09204368174727,
+    "score": "SmoothL1Loss(beta=0.05) on score/100",
+    "lambda_stem": 1.0,
+    "lambda_score": 1.0
+  },
+  "selection": "val GT-crop hierarchical four-class macro F1; ties: UQ F1, stem F1, lower score MAE, earlier epoch",
+  "test_accessed": false,
+  "software": {
+    "python": "3.12.14",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+  }
+}

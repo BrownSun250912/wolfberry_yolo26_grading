@@ -1,0 +1,1001 @@
+{
+  "models/experiments/yolo26n_seg_offlineaug_e200_mask50_seed20260915": {
+    "files": [
+      "args.yaml",
+      "BoxF1_curve.png",
+      "BoxPR_curve.png",
+      "BoxP_curve.png",
+      "BoxR_curve.png",
+      "confusion_matrix.png",
+      "confusion_matrix_normalized.png",
+      "e200_evidence_summary.json",
+      "labels.jpg",
+      "mask50_selection_trace.csv",
+      "MaskF1_curve.png",
+      "MaskPR_curve.png",
+      "MaskP_curve.png",
+      "MaskR_curve.png",
+      "results.csv",
+      "results.png",
+      "train_batch0.jpg",
+      "train_batch1.jpg",
+      "train_batch2.jpg",
+      "val_batch0_labels.jpg",
+      "val_batch0_pred.jpg",
+      "val_batch1_labels.jpg",
+      "val_batch1_pred.jpg",
+      "val_batch2_labels.jpg",
+      "val_batch2_pred.jpg"
+    ],
+    "args.yaml": {
+      "task": "segment",
+      "mode": "train",
+      "model": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\yolo26n_seg_offlineaug_e200_mask50_seed20260915\\weights\\last.pt",
+      "data": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\configs\\grading_four_class_v3_augmented_delivery_local.yaml",
+      "epochs": 200,
+      "time": null,
+      "patience": 0,
+      "batch": 8,
+      "imgsz": 640,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 4,
+      "project": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments",
+      "name": "yolo26n_seg_offlineaug_e200_mask50_seed20260915",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "AdamW",
+      "verbose": true,
+      "seed": 20260915,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\yolo26n_seg_offlineaug_e200_mask50_seed20260915\\weights\\last.pt",
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": false,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "end2end": true,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "keras": false,
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "nms": false,
+      "lr0": 0.00125,
+      "lrf": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.0,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 64,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": "randaugment",
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\yolo26n_seg_offlineaug_e200_mask50_seed20260915"
+    },
+    "results.csv": {
+      "rows": 200,
+      "columns": [
+        "epoch",
+        "time",
+        "train/box_loss",
+        "train/seg_loss",
+        "train/cls_loss",
+        "train/l1_loss",
+        "train/sem_loss",
+        "metrics/precision(B)",
+        "metrics/recall(B)",
+        "metrics/mAP50(B)",
+        "metrics/mAP50-95(B)",
+        "metrics/precision(M)",
+        "metrics/recall(M)",
+        "metrics/mAP50(M)",
+        "metrics/mAP50-95(M)",
+        "val/box_loss",
+        "val/seg_loss",
+        "val/cls_loss",
+        "val/l1_loss",
+        "val/sem_loss",
+        "lr/pg0",
+        "lr/pg1",
+        "lr/pg2"
+      ],
+      "first": {
+        "epoch": "1",
+        "time": "68.2595",
+        "train/box_loss": "0.83114",
+        "train/seg_loss": "0.85009",
+        "train/cls_loss": "3.20274",
+        "train/l1_loss": "0.00288",
+        "train/sem_loss": "4.44087",
+        "metrics/precision(B)": "0.51893",
+        "metrics/recall(B)": "0.64758",
+        "metrics/mAP50(B)": "0.57868",
+        "metrics/mAP50-95(B)": "0.45334",
+        "metrics/precision(M)": "0.51893",
+        "metrics/recall(M)": "0.64758",
+        "metrics/mAP50(M)": "0.57868",
+        "metrics/mAP50-95(M)": "0.45922",
+        "val/box_loss": "0.81972",
+        "val/seg_loss": "0.71576",
+        "val/cls_loss": "1.71857",
+        "val/l1_loss": "0.00376",
+        "val/sem_loss": "0",
+        "lr/pg0": "0.000415519",
+        "lr/pg1": "0.000415519",
+        "lr/pg2": "0.000415519"
+      },
+      "last": {
+        "epoch": "200",
+        "time": "2999.12",
+        "train/box_loss": "0.05703",
+        "train/seg_loss": "0",
+        "train/cls_loss": "0.02356",
+        "train/l1_loss": "0.00018",
+        "train/sem_loss": "0.00046",
+        "metrics/precision(B)": "0.78916",
+        "metrics/recall(B)": "0.78863",
+        "metrics/mAP50(B)": "0.74814",
+        "metrics/mAP50-95(B)": "0.62686",
+        "metrics/precision(M)": "0.78916",
+        "metrics/recall(M)": "0.78863",
+        "metrics/mAP50(M)": "0.74814",
+        "metrics/mAP50-95(M)": "0.60093",
+        "val/box_loss": "0.6242",
+        "val/seg_loss": "5.99656",
+        "val/cls_loss": "1.46894",
+        "val/l1_loss": "0.0028",
+        "val/sem_loss": "0",
+        "lr/pg0": "1.86875e-05",
+        "lr/pg1": "1.86875e-05",
+        "lr/pg2": "1.86875e-05"
+      }
+    },
+    "mask50_selection_trace.csv": {
+      "rows": 200,
+      "columns": [
+        "epoch",
+        "mask_map50",
+        "mask_map50_95",
+        "default_fitness",
+        "selection_fitness",
+        "best_mask_map50",
+        "is_new_best"
+      ],
+      "first": {
+        "epoch": "1",
+        "mask_map50": "0.57868",
+        "mask_map50_95": "0.45922",
+        "default_fitness": "0.91255",
+        "selection_fitness": "0.57868",
+        "best_mask_map50": "0.57868",
+        "is_new_best": "1"
+      },
+      "last": {
+        "epoch": "200",
+        "mask_map50": "0.74814",
+        "mask_map50_95": "0.60093",
+        "default_fitness": "1.22779",
+        "selection_fitness": "0.74814",
+        "best_mask_map50": "0.82295",
+        "is_new_best": "0"
+      }
+    },
+    "best_selection_trace": {
+      "epoch": "16",
+      "mask_map50": "0.82295",
+      "mask_map50_95": "0.68066",
+      "default_fitness": "1.33451",
+      "selection_fitness": "0.82295",
+      "best_mask_map50": "0.82295",
+      "is_new_best": "1"
+    }
+  },
+  "models/experiments/r1a_hierarchical_grader_seed20260929": {
+    "files": [
+      "best.pt",
+      "best_val_class_metrics.csv",
+      "best_val_predictions.csv",
+      "geometry_stats.json",
+      "history.csv",
+      "last.pt",
+      "training_config.json",
+      "TRAINING_REPORT.md",
+      "training_summary.json"
+    ],
+    "training_config.json": {
+      "schema_version": 1,
+      "created_utc": "2026-09-29T11:54:26.050615+00:00",
+      "config": {
+        "seed": 20260929,
+        "epochs": 100,
+        "patience": 20,
+        "batch_size": 64,
+        "image_size": 160,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "lambda_stem": 1.0,
+        "lambda_score": 1.0,
+        "num_workers": 0,
+        "amp": true,
+        "device": "cuda:0"
+      },
+      "targets": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\r1_multitask_targets_v1\\r1_multitask_targets.csv",
+        "sha256": "4eabbf572d0c0fd3cde70514d9b70536007790f0dc496343aab9c519798381e2"
+      },
+      "model": {
+        "name": "R1HierarchicalGrader",
+        "initialization": "random_kaiming_pytorch_default_no_external_pretrained_weights",
+        "parameters": 3067203,
+        "input": "RGB+mask 160x160 plus 6 geometry features"
+      },
+      "loss": {
+        "defect": "BCEWithLogitsLoss",
+        "defect_pos_weight": 10.49731182795699,
+        "stem": "BCEWithLogitsLoss",
+        "stem_pos_weight": 5.09204368174727,
+        "score": "SmoothL1Loss(beta=0.05) on score/100",
+        "lambda_stem": 1.0,
+        "lambda_score": 1.0
+      },
+      "selection": "val GT-crop hierarchical four-class macro F1; ties: UQ F1, stem F1, lower score MAE, earlier epoch",
+      "test_accessed": false,
+      "software": {
+        "python": "3.12.14",
+        "torch": "2.13.0+cu130",
+        "cuda": "13.0",
+        "device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+      }
+    },
+    "training_summary.json": {
+      "schema_version": 1,
+      "status": "COMPLETED",
+      "best_epoch": 20,
+      "epochs_completed": 40,
+      "best_metrics": {
+        "loss": 1.5332530875003476,
+        "defect_loss": 1.1837374160648773,
+        "stem_loss": 0.3048236301046541,
+        "score_loss": 0.04469203287340039,
+        "defect": {
+          "tp": 34,
+          "fp": 23,
+          "fn": 20,
+          "tn": 441,
+          "precision": 0.5964912280701754,
+          "recall": 0.6296296296296297,
+          "f1": 0.6126126126126126
+        },
+        "stem": {
+          "tp": 58,
+          "fp": 21,
+          "fn": 3,
+          "tn": 382,
+          "precision": 0.7341772151898734,
+          "recall": 0.9508196721311475,
+          "f1": 0.8285714285714285
+        },
+        "score_mae": 6.576323912639556,
+        "score_rmse": 8.598146471069244,
+        "four_class": {
+          "accuracy": 0.7683397683397684,
+          "correct": 398,
+          "total": 518,
+          "macro_f1": 0.7377408810466188,
+          "per_class": [
+            {
+              "class_id": 0,
+              "class_name": "UNQUALIFIED",
+              "tp": 34,
+              "fp": 23,
+              "fn": 20,
+              "tn": 441,
+              "precision": 0.5964912280701754,
+              "recall": 0.6296296296296297,
+              "f1": 0.6126126126126126
+            },
+            {
+              "class_id": 1,
+              "class_name": "GRADE_1",
+              "tp": 87,
+              "fp": 24,
+              "fn": 28,
+              "tn": 379,
+              "precision": 0.7837837837837838,
+              "recall": 0.7565217391304347,
+              "f1": 0.7699115044247786
+            },
+            {
+              "class_id": 2,
+              "class_name": "GRADE_2",
+              "tp": 108,
+              "fp": 37,
+              "fn": 43,
+              "tn": 330,
+              "precision": 0.7448275862068966,
+              "recall": 0.7152317880794702,
+              "f1": 0.7297297297297297
+            },
+            {
+              "class_id": 3,
+              "class_name": "GRADE_3",
+              "tp": 169,
+              "fp": 36,
+              "fn": 29,
+              "tn": 284,
+              "precision": 0.824390243902439,
+              "recall": 0.8535353535353535,
+              "f1": 0.8387096774193548
+            }
+          ]
+        }
+      },
+      "best_checkpoint_sha256": "9d6d1d8582fc57e24d5e8d9e17b7a750b1195c3506929f6313632123d20a8446",
+      "last_checkpoint_sha256": "81ee7a700d53b4680112ca5a8da915b500316f202a7e7dfad9a723885bc5b4ee",
+      "test_accessed": false,
+      "scope": "GT-crop diagnostic and checkpoint selection only; frozen-Seg prediction replay is still required"
+    },
+    "history.csv": {
+      "rows": 40,
+      "columns": [
+        "epoch",
+        "learning_rate",
+        "train_loss",
+        "train_macro_f1",
+        "val_loss",
+        "val_macro_f1",
+        "val_accuracy",
+        "val_correct",
+        "val_uq_f1",
+        "val_defect_f1",
+        "val_stem_f1",
+        "val_score_mae"
+      ],
+      "first": {
+        "epoch": "1",
+        "learning_rate": "0.0009997557473810372",
+        "train_loss": "1.9374158942925197",
+        "train_macro_f1": "0.3518411063059637",
+        "val_loss": "1.5976629257202148",
+        "val_macro_f1": "0.5942999504796188",
+        "val_accuracy": "0.6293436293436293",
+        "val_correct": "326",
+        "val_uq_f1": "0.3522012578616352",
+        "val_defect_f1": "0.3522012578616352",
+        "val_stem_f1": "0.8082191780821918",
+        "val_score_mae": "8.694611414175096"
+      },
+      "last": {
+        "epoch": "40",
+        "learning_rate": "0.0006579634122155995",
+        "train_loss": "0.5375990729926206",
+        "train_macro_f1": "0.7628675176950093",
+        "val_loss": "1.6766575487424047",
+        "val_macro_f1": "0.709011994949495",
+        "val_accuracy": "0.7316602316602316",
+        "val_correct": "379",
+        "val_uq_f1": "0.5555555555555555",
+        "val_defect_f1": "0.5555555555555555",
+        "val_stem_f1": "0.8053691275167784",
+        "val_score_mae": "5.630414097280852"
+      }
+    }
+  },
+  "models/experiments/r1a_hierarchical_grader_e150_resume_epoch40_seed20260929": {
+    "files": [
+      "best.pt",
+      "best_val_class_metrics.csv",
+      "best_val_predictions.csv",
+      "geometry_stats.json",
+      "history.csv",
+      "last.pt",
+      "training_config.json",
+      "TRAINING_REPORT.md",
+      "training_summary.json"
+    ],
+    "training_config.json": {
+      "schema_version": 1,
+      "created_utc": "2026-09-29T13:29:02.536156+00:00",
+      "config": {
+        "seed": 20260929,
+        "epochs": 150,
+        "patience": 20,
+        "batch_size": 64,
+        "image_size": 160,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "lambda_stem": 1.0,
+        "lambda_score": 1.0,
+        "num_workers": 0,
+        "amp": true,
+        "device": "cuda:0"
+      },
+      "targets": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\r1_multitask_targets_v1\\r1_multitask_targets.csv",
+        "sha256": "4eabbf572d0c0fd3cde70514d9b70536007790f0dc496343aab9c519798381e2"
+      },
+      "model": {
+        "name": "R1HierarchicalGrader",
+        "initialization": "random_kaiming_pytorch_default_no_external_pretrained_weights",
+        "parameters": 3067203,
+        "input": "RGB+mask 160x160 plus 6 geometry features"
+      },
+      "loss": {
+        "defect": "BCEWithLogitsLoss",
+        "defect_pos_weight": 10.49731182795699,
+        "stem": "BCEWithLogitsLoss",
+        "stem_pos_weight": 5.09204368174727,
+        "score": "SmoothL1Loss(beta=0.05) on score/100",
+        "lambda_stem": 1.0,
+        "lambda_score": 1.0
+      },
+      "selection": "val GT-crop hierarchical four-class macro F1; ties: UQ F1, stem F1, lower score MAE, earlier epoch",
+      "early_stopping_enabled": false,
+      "scheduler_policy": "resume optimizer LR, then new cosine decay over remaining 110 epochs to eta_min=1e-5",
+      "resume": {
+        "checkpoint": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1a_hierarchical_grader_seed20260929\\last.pt",
+        "checkpoint_sha256": "81ee7a700d53b4680112ca5a8da915b500316f202a7e7dfad9a723885bc5b4ee",
+        "completed_epoch": 40,
+        "optimizer_state_restored": true,
+        "model_state_restored": true,
+        "scheduler_state_restored": false,
+        "scheduler_reset_reason": "total epoch budget extended; decay current LR smoothly to epoch 150",
+        "augmentation_rng_note": "new deterministic stream seeded with seed + completed_epoch; not bitwise-identical to an uninterrupted run"
+      },
+      "test_accessed": false,
+      "software": {
+        "python": "3.12.14",
+        "torch": "2.13.0+cu130",
+        "cuda": "13.0",
+        "device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+      }
+    },
+    "training_summary.json": {
+      "schema_version": 1,
+      "status": "COMPLETED",
+      "best_epoch": 131,
+      "epochs_completed": 150,
+      "resumed_from_epoch": 40,
+      "best_metrics": {
+        "loss": 7.106787530611841,
+        "defect_loss": 6.535217680526056,
+        "stem_loss": 0.5521419490166153,
+        "score_loss": 0.019427993755543094,
+        "defect": {
+          "tp": 35,
+          "fp": 12,
+          "fn": 19,
+          "tn": 452,
+          "precision": 0.7446808510638298,
+          "recall": 0.6481481481481481,
+          "f1": 0.6930693069306931
+        },
+        "stem": {
+          "tp": 55,
+          "fp": 14,
+          "fn": 6,
+          "tn": 389,
+          "precision": 0.7971014492753623,
+          "recall": 0.9016393442622951,
+          "f1": 0.8461538461538461
+        },
+        "score_mae": 3.782408862278379,
+        "score_rmse": 4.917130434638911,
+        "four_class": {
+          "accuracy": 0.8146718146718147,
+          "correct": 422,
+          "total": 518,
+          "macro_f1": 0.7898628841816058,
+          "per_class": [
+            {
+              "class_id": 0,
+              "class_name": "UNQUALIFIED",
+              "tp": 35,
+              "fp": 12,
+              "fn": 19,
+              "tn": 452,
+              "precision": 0.7446808510638298,
+              "recall": 0.6481481481481481,
+              "f1": 0.6930693069306931
+            },
+            {
+              "class_id": 1,
+              "class_name": "GRADE_1",
+              "tp": 93,
+              "fp": 20,
+              "fn": 22,
+              "tn": 383,
+              "precision": 0.8230088495575221,
+              "recall": 0.808695652173913,
+              "f1": 0.8157894736842104
+            },
+            {
+              "class_id": 2,
+              "class_name": "GRADE_2",
+              "tp": 118,
+              "fp": 33,
+              "fn": 33,
+              "tn": 334,
+              "precision": 0.7814569536423841,
+              "recall": 0.7814569536423841,
+              "f1": 0.7814569536423841
+            },
+            {
+              "class_id": 3,
+              "class_name": "GRADE_3",
+              "tp": 176,
+              "fp": 31,
+              "fn": 22,
+              "tn": 289,
+              "precision": 0.8502415458937198,
+              "recall": 0.8888888888888888,
+              "f1": 0.8691358024691357
+            }
+          ]
+        }
+      },
+      "best_checkpoint_sha256": "45fb45ec8724629c6bebccc44924946551adae067c39772273fcb358506e3b9a",
+      "last_checkpoint_sha256": "f41b16b19d9fc9368dd3f2d04910f063d8714a5535aef79086dd7d15b5cb4c71",
+      "test_accessed": false,
+      "scope": "GT-crop diagnostic and checkpoint selection only; frozen-Seg prediction replay is still required"
+    },
+    "history.csv": {
+      "rows": 150,
+      "columns": [
+        "epoch",
+        "learning_rate",
+        "train_loss",
+        "train_macro_f1",
+        "val_loss",
+        "val_macro_f1",
+        "val_accuracy",
+        "val_correct",
+        "val_uq_f1",
+        "val_defect_f1",
+        "val_stem_f1",
+        "val_score_mae"
+      ],
+      "first": {
+        "epoch": "1",
+        "learning_rate": "0.000999755747381",
+        "train_loss": "1.93741589429252",
+        "train_macro_f1": "0.3518411063059637",
+        "val_loss": "1.5976629257202148",
+        "val_macro_f1": "0.5942999504796188",
+        "val_accuracy": "0.6293436293436293",
+        "val_correct": "326",
+        "val_uq_f1": "0.3522012578616352",
+        "val_defect_f1": "0.3522012578616352",
+        "val_stem_f1": "0.8082191780821918",
+        "val_score_mae": "8.694611414175096"
+      },
+      "last": {
+        "epoch": "150",
+        "learning_rate": "1e-05",
+        "train_loss": "0.023389856091523897",
+        "train_macro_f1": "0.9379508387709978",
+        "val_loss": "6.867872672191458",
+        "val_macro_f1": "0.7753592046849175",
+        "val_accuracy": "0.806949806949807",
+        "val_correct": "418",
+        "val_uq_f1": "0.6464646464646464",
+        "val_defect_f1": "0.6464646464646464",
+        "val_stem_f1": "0.8396946564885497",
+        "val_score_mae": "3.7322229152095727"
+      }
+    }
+  },
+  "models/experiments/r1a_hierarchical_grader_e200_resume_epoch150_seed20260929": {
+    "files": [
+      "best.pt",
+      "best_val_class_metrics.csv",
+      "best_val_predictions.csv",
+      "geometry_stats.json",
+      "history.csv",
+      "last.pt",
+      "training_config.json",
+      "TRAINING_REPORT.md",
+      "training_summary.json"
+    ],
+    "training_config.json": {
+      "schema_version": 1,
+      "created_utc": "2026-09-29T14:18:39.591395+00:00",
+      "config": {
+        "seed": 20260929,
+        "epochs": 200,
+        "patience": 20,
+        "batch_size": 64,
+        "image_size": 160,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "lambda_stem": 1.0,
+        "lambda_score": 1.0,
+        "num_workers": 0,
+        "amp": true,
+        "device": "cuda:0"
+      },
+      "targets": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\r1_multitask_targets_v1\\r1_multitask_targets.csv",
+        "sha256": "4eabbf572d0c0fd3cde70514d9b70536007790f0dc496343aab9c519798381e2"
+      },
+      "model": {
+        "name": "R1HierarchicalGrader",
+        "initialization": "random_kaiming_pytorch_default_no_external_pretrained_weights",
+        "parameters": 3067203,
+        "input": "RGB+mask 160x160 plus 6 geometry features"
+      },
+      "loss": {
+        "defect": "BCEWithLogitsLoss",
+        "defect_pos_weight": 10.49731182795699,
+        "stem": "BCEWithLogitsLoss",
+        "stem_pos_weight": 5.09204368174727,
+        "score": "SmoothL1Loss(beta=0.05) on score/100",
+        "lambda_stem": 1.0,
+        "lambda_score": 1.0
+      },
+      "selection": "val GT-crop hierarchical four-class macro F1; ties: UQ F1, stem F1, lower score MAE, earlier epoch",
+      "early_stopping_enabled": false,
+      "scheduler_policy": "resume optimizer LR, then new cosine decay over remaining 50 epochs to eta_min=1e-5",
+      "resume": {
+        "checkpoint": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\r1a_hierarchical_grader_e150_resume_epoch40_seed20260929\\last.pt",
+        "checkpoint_sha256": "f41b16b19d9fc9368dd3f2d04910f063d8714a5535aef79086dd7d15b5cb4c71",
+        "completed_epoch": 150,
+        "optimizer_state_restored": true,
+        "model_state_restored": true,
+        "scheduler_state_restored": false,
+        "scheduler_reset_reason": "total epoch budget extended; decay current LR smoothly to epoch 200",
+        "augmentation_rng_note": "new deterministic stream seeded with seed + completed_epoch; not bitwise-identical to an uninterrupted run"
+      },
+      "test_accessed": false,
+      "software": {
+        "python": "3.12.14",
+        "torch": "2.13.0+cu130",
+        "cuda": "13.0",
+        "device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+      }
+    },
+    "training_summary.json": {
+      "schema_version": 1,
+      "status": "COMPLETED",
+      "best_epoch": 131,
+      "epochs_completed": 200,
+      "resumed_from_epoch": 150,
+      "best_metrics": {
+        "loss": 7.106787530611841,
+        "defect_loss": 6.535217680526056,
+        "stem_loss": 0.5521419490166153,
+        "score_loss": 0.019427993755543094,
+        "defect": {
+          "tp": 35,
+          "fp": 12,
+          "fn": 19,
+          "tn": 452,
+          "precision": 0.7446808510638298,
+          "recall": 0.6481481481481481,
+          "f1": 0.6930693069306931
+        },
+        "stem": {
+          "tp": 55,
+          "fp": 14,
+          "fn": 6,
+          "tn": 389,
+          "precision": 0.7971014492753623,
+          "recall": 0.9016393442622951,
+          "f1": 0.8461538461538461
+        },
+        "score_mae": 3.782408862278379,
+        "score_rmse": 4.917130434638911,
+        "four_class": {
+          "accuracy": 0.8146718146718147,
+          "correct": 422,
+          "total": 518,
+          "macro_f1": 0.7898628841816058,
+          "per_class": [
+            {
+              "class_id": 0,
+              "class_name": "UNQUALIFIED",
+              "tp": 35,
+              "fp": 12,
+              "fn": 19,
+              "tn": 452,
+              "precision": 0.7446808510638298,
+              "recall": 0.6481481481481481,
+              "f1": 0.6930693069306931
+            },
+            {
+              "class_id": 1,
+              "class_name": "GRADE_1",
+              "tp": 93,
+              "fp": 20,
+              "fn": 22,
+              "tn": 383,
+              "precision": 0.8230088495575221,
+              "recall": 0.808695652173913,
+              "f1": 0.8157894736842104
+            },
+            {
+              "class_id": 2,
+              "class_name": "GRADE_2",
+              "tp": 118,
+              "fp": 33,
+              "fn": 33,
+              "tn": 334,
+              "precision": 0.7814569536423841,
+              "recall": 0.7814569536423841,
+              "f1": 0.7814569536423841
+            },
+            {
+              "class_id": 3,
+              "class_name": "GRADE_3",
+              "tp": 176,
+              "fp": 31,
+              "fn": 22,
+              "tn": 289,
+              "precision": 0.8502415458937198,
+              "recall": 0.8888888888888888,
+              "f1": 0.8691358024691357
+            }
+          ]
+        }
+      },
+      "best_checkpoint_sha256": "45fb45ec8724629c6bebccc44924946551adae067c39772273fcb358506e3b9a",
+      "last_checkpoint_sha256": "15c74cd0e6ebedbe08f2c043e54a7e146f31369acb67c551533775f2fbcd2679",
+      "test_accessed": false,
+      "scope": "GT-crop diagnostic and checkpoint selection only; frozen-Seg prediction replay is still required"
+    },
+    "history.csv": {
+      "rows": 200,
+      "columns": [
+        "epoch",
+        "learning_rate",
+        "train_loss",
+        "train_macro_f1",
+        "val_loss",
+        "val_macro_f1",
+        "val_accuracy",
+        "val_correct",
+        "val_uq_f1",
+        "val_defect_f1",
+        "val_stem_f1",
+        "val_score_mae"
+      ],
+      "first": {
+        "epoch": "1",
+        "learning_rate": "0.000999755747381",
+        "train_loss": "1.93741589429252",
+        "train_macro_f1": "0.3518411063059637",
+        "val_loss": "1.5976629257202148",
+        "val_macro_f1": "0.5942999504796188",
+        "val_accuracy": "0.6293436293436293",
+        "val_correct": "326",
+        "val_uq_f1": "0.3522012578616352",
+        "val_defect_f1": "0.3522012578616352",
+        "val_stem_f1": "0.8082191780821918",
+        "val_score_mae": "8.694611414175096"
+      },
+      "last": {
+        "epoch": "200",
+        "learning_rate": "1e-05",
+        "train_loss": "0.023060659574628266",
+        "train_macro_f1": "0.9425761024298862",
+        "val_loss": "7.287297086826163",
+        "val_macro_f1": "0.7623538730045496",
+        "val_accuracy": "0.7953667953667953",
+        "val_correct": "412",
+        "val_uq_f1": "0.6336633663366336",
+        "val_defect_f1": "0.6336633663366336",
+        "val_stem_f1": "0.8307692307692308",
+        "val_score_mae": "3.7692370337658914"
+      }
+    }
+  },
+  "models/experiments/refine_module_20261022/rule_anchored_residual/rule_base_residual_seed20261022": {
+    "files": [
+      "best.pt",
+      "completion.json",
+      "first32_ids.json",
+      "history.csv",
+      "initial_state.pt",
+      "last.pt"
+    ],
+    "completion.json": {
+      "kind": "rule_base_residual",
+      "seed": 20261022,
+      "held_MAE": 1.9509705305099487,
+      "held_RMSE": 3.1316237449645996,
+      "best_epoch": 19,
+      "epochs": 31,
+      "budget_partial": false,
+      "wall_seconds": 3.25,
+      "checkpoint_sha256": "c95edfe7a7e0ce914d861cdea9abddadb9c1e341f68250466a72722bc61dcd91",
+      "test_accessed": false
+    },
+    "history.csv": {
+      "rows": 32,
+      "columns": [
+        "epoch",
+        "MAE",
+        "RMSE",
+        "n",
+        "abs_gt10"
+      ],
+      "first": {
+        "epoch": "0",
+        "MAE": "1.958716630935669",
+        "RMSE": "3.1998989582061768",
+        "n": "761",
+        "abs_gt10": "8"
+      },
+      "last": {
+        "epoch": "31",
+        "MAE": "1.980305790901184",
+        "RMSE": "3.154575824737549",
+        "n": "761",
+        "abs_gt10": "5"
+      }
+    }
+  },
+  "models/experiments/attribute_local_20261025/attribute_rank_fits/RR22_original_defect_independent_multi_iou_seed20261025": {
+    "files": [
+      "best.pt",
+      "completion.json",
+      "history.csv",
+      "initial.pt",
+      "last.pt",
+      "population.json"
+    ],
+    "completion.json": {
+      "policy": "RR22",
+      "extra": "original_defect",
+      "target": "independent_multi_iou",
+      "seed": 20261025,
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\attribute_rank_fits\\RR22_original_defect_independent_multi_iou_seed20261025\\best.pt",
+      "epochs": 139,
+      "best_epoch": 109,
+      "held_BCE": 0.199323371052742,
+      "partial": false,
+      "seconds": 2.300661599962041,
+      "checkpoint_sha256": "e2d846ecf4a09bd861e51983e3cdc03e4f3c65e9c232fcf5ea3b5d76d69e52b5",
+      "initial_sha256": "972e9b3d1c672422fd692111aa69d90c43e3f3586629aaa84e3c653c77915b97"
+    },
+    "history.csv": {
+      "rows": 140,
+      "columns": [
+        "epoch",
+        "held_BCE"
+      ],
+      "first": {
+        "epoch": "0",
+        "held_BCE": "0.6990838646888733"
+      },
+      "last": {
+        "epoch": "139",
+        "held_BCE": "0.1998390108346939"
+      }
+    }
+  },
+  "models/experiments/attribute_local_20261025/prototype_fits/soft_prototype_seed20261025": {
+    "files": [
+      "best.pt",
+      "completion.json",
+      "history.csv",
+      "initial.pt",
+      "last.pt"
+    ],
+    "completion.json": {
+      "soft": true,
+      "prototype": true,
+      "seed": 20261025,
+      "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\prototype_fits\\soft_prototype_seed20261025\\best.pt",
+      "epochs": 30,
+      "best_epoch": 27,
+      "held_IoU": 0.9252474996134579,
+      "held_relative_area": 0.039670043969815744,
+      "partial": false,
+      "seconds": 35.61533649999183,
+      "checkpoint_sha256": "cd1d5186385ebfe2ed4c603358bd4e66ac7717456ff0d79e76035178d7d880fe",
+      "initial_sha256": "d2e7bb9780a01d6433c5b499a5d446f7ecf810e0e287d045a9a1e9b1e7fb382d"
+    },
+    "history.csv": {
+      "rows": 31,
+      "columns": [
+        "epoch",
+        "IoU",
+        "relative_area"
+      ],
+      "first": {
+        "epoch": "0",
+        "IoU": "0.919156833935779",
+        "relative_area": "0.05297145969710834"
+      },
+      "last": {
+        "epoch": "30",
+        "IoU": "0.9248932071831565",
+        "relative_area": "0.04146787323728097"
+      }
+    }
+  },
+  "models/experiments/r1_score_refined_geometry_20261008_artifactfix/refined_only_seed20261007": {
+    "files": [
+      "class_metrics.csv",
+      "matched_score_predictions.csv",
+      "refined_only_seed20261007_best.pt",
+      "refined_only_seed20261007_history.csv",
+      "refined_only_seed20261007_prediction_scores.csv",
+      "refined_only_seed20261007_val_gt_predictions.csv"
+    ]
+  }
+}

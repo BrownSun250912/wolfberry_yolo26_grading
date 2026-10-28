@@ -1,0 +1,14 @@
+{
+  "policy": "RR22",
+  "extra": "original_defect",
+  "target": "independent_multi_iou",
+  "seed": 20261025,
+  "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\attribute_rank_fits\\RR22_original_defect_independent_multi_iou_seed20261025\\best.pt",
+  "epochs": 139,
+  "best_epoch": 109,
+  "held_BCE": 0.199323371052742,
+  "partial": false,
+  "seconds": 2.300661599962041,
+  "checkpoint_sha256": "e2d846ecf4a09bd861e51983e3cdc03e4f3c65e9c232fcf5ea3b5d76d69e52b5",
+  "initial_sha256": "972e9b3d1c672422fd692111aa69d90c43e3f3586629aaa84e3c653c77915b97"
+}

@@ -1,0 +1,37 @@
+来源: .venv/Lib/site-packages/ultralytics/utils/metrics.py
+源文件SHA256: 974116d855398c48cd4cb30919b5ee424f8eaf555198086d7d5dc3068bc71ce2
+行号: 760–791
+此摘录来自本机安装版本，不保证与官方发行包字节相同。
+
+00760: def compute_ap(recall: list[float], precision: list[float]) -> tuple[float, np.ndarray, np.ndarray]:
+00761:     """Compute the average precision (AP) given the recall and precision curves.
+00762: 
+00763:     Args:
+00764:         recall (list[float]): The recall curve.
+00765:         precision (list[float]): The precision curve.
+00766: 
+00767:     Returns:
+00768:         ap (float): Average precision.
+00769:         mpre (np.ndarray): Precision envelope curve.
+00770:         mrec (np.ndarray): Modified recall curve with sentinel values added at the beginning and end.
+00771:     """
+00772:     # Append sentinel values to beginning and end
+00773:     mrec = np.concatenate(([0.0], recall, [recall[-1] if len(recall) else 1.0], [1.0]))
+00774:     mpre = np.concatenate(([1.0], precision, [0.0], [0.0]))
+00775: 
+00776:     # Compute the precision envelope
+00777:     mpre = np.flip(np.maximum.accumulate(np.flip(mpre)))
+00778: 
+00779:     # Integrate area under curve
+00780:     method = "interp"  # methods: 'continuous', 'interp'
+00781:     if method == "interp":
+00782:         x = np.linspace(0, 1, 101)  # 101-point interp (COCO)
+00783:         func = np.trapezoid if checks.check_version(np.__version__, ">=2.0") else np.trapz  # np.trapz deprecated
+00784:         ap = func(np.interp(x, mrec, mpre), x)  # integrate
+00785:     else:  # 'continuous'
+00786:         i = np.where(mrec[1:] != mrec[:-1])[0]  # points where x-axis (recall) changes
+00787:         ap = np.sum((mrec[i + 1] - mrec[i]) * mpre[i + 1])  # area under curve
+00788: 
+00789:     return ap, mpre, mrec
+00790: 
+00791: 

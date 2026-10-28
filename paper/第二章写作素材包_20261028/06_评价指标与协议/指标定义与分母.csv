@@ -1,0 +1,16 @@
+﻿指标,定义/公式,统计单位/分母,方向,解释限制
+Box/Mask IoU,|P∩G|/|P∪G|,单预测与单GT；mask原生像素，box xyxy连续面积,越大越好,box与mask的IoU不可互换
+Box/Mask AP50,每类PR积分AP_c(.50)，4类平均,全图所有GT与保留候选；池raw≥.001，按当前rank排序,越大越好,类别相容匹配；不是分级accuracy
+Box/Mask AP50:95,(1/(4×10))Σ_cΣ_τ AP_c(τ)，τ=.50:.05:.95,4类×10阈值宏平均；不能省略缺失类改变分母,越大越好,AP本身按101点插值PR积分
+固定scope precision/recall,"P_c=TP_c/N_pred,c；R_c=TP_c/N_GT,c",raw≥.25的保留预测，类别相容IoU=.5匹配,越大越好,confidence使用raw筛选，不使用新rank≥.25
+operating macro F1,"(1/4)Σ_c 2TP_c/(N_pred,c+N_GT,c)",同上；每类等权,越大越好,不是conditional accuracy；漏检和多输出均影响
+定位召回,L/G,原生maskIoU≥.5、忽略类别的Hungarian匹配；L匹配数、G全部GT,越大越好,仅说明定位，不保证等级正确
+已定位条件分级正确率,C/L,类无关匹配后的正确等级数C/已匹配GT数L,越大越好,不把漏检计入分母，必须同时报L/G
+全部GT定位且分级正确比例,C/G,同一C除全部GT；与C/L成对报告,越大越好,例如val原YOLO416/500与416/518分母不同，示例不是新结果
+score MAE/RMSE,Σ|S_pred−S_ref|/N_score；sqrt(Σ误差²/N_score),只有独立参考score可用且匹配实例；单位分,越小越好,不是N=全部GT；test无独立score目标不生成伪真值
+不合格误放,E_UQ/G_UQ；另列E_UQ/L_UQ,GT类0匹配到预测1/2/3；明确全GT或已定位分母,越小越好,漏检不计为被接受；总误放不等于新增误放
+新增误放,#原RR22正确拒绝GT0、候选输出合格/G_UQ,同GT实例ID配对；匹配规则不变,越小越好,相对基准变化；零新增不代表零绝对误放
+任意合格输出触及UQ,#GT0与任一raw-scope合格maskIoU≥.5/G_UQ,不依赖Hungarian只选一条，检查额外重复合格输出,越小越好,用于补充匹配表可能漏掉的重复输出风险
+合格误拒,#GT>0匹配到预测0/(G−G_UQ),匹配实例统计分子，全部合格GT分母,越小越好,缺梗降三级不等于判不合格
+漏检/重复输出,漏检=G−L；同类NMS删除=N−K,固定scope与全候选分别记录before/after；预测数不是果实数,越小越好但需保留召回,同类boxNMS删除不能当已证明物理重复真值
+延迟/FPS,逐图ms；FPS=1000/mean(ms),24张val，每臂每图3次，图像聚类统计；排除decode/load,ms小/FPS大,端到端选定调用图，不等于裸网络耗时或批处理吞吐

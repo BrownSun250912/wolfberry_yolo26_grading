@@ -1,0 +1,14 @@
+{
+  "soft": true,
+  "prototype": true,
+  "seed": 20261025,
+  "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments\\attribute_local_20261025\\prototype_fits\\soft_prototype_seed20261025\\best.pt",
+  "epochs": 30,
+  "best_epoch": 27,
+  "held_IoU": 0.9252474996134579,
+  "held_relative_area": 0.039670043969815744,
+  "partial": false,
+  "seconds": 35.61533649999183,
+  "checkpoint_sha256": "cd1d5186385ebfe2ed4c603358bd4e66ac7717456ff0d79e76035178d7d880fe",
+  "initial_sha256": "d2e7bb9780a01d6433c5b499a5d446f7ecf810e0e287d045a9a1e9b1e7fb382d"
+}

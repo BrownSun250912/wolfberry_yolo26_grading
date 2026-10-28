@@ -1,0 +1,8 @@
+﻿类别/版本,定义/用途,优先级/变化,证据
+class0,参考为人工ROT等外观不合格；最终在线保留原YOLO class0,最高优先，不由新头恢复,grading config / joint_pipeline_policy
+class1,无缺陷且有梗，高相对尺寸分；基本HIGH以上,最终另有局部边界证据修正,joint_pipeline_policy
+class2,无缺陷且有梗，基本LOW至HIGH区间,最终另有局部边界证据修正,joint_pipeline_policy
+class3,合格缺梗优先；或有梗低尺寸分,缺梗大果也为三级,joint_pipeline_policy
+原始单类,class0=wolfberry，5752 polygon,不是不合格标签,raw JSON/TXT
+V3,1211图5371实例四类GT，train/test当前仍用,HOLD74图，精确poly去重7条,build_summary / 逐文件清单
+valfix_20261006,116图518实例val-only标签覆盖层,7条等级/果梗改标；单审，无训练改动,version.json / corrections.json

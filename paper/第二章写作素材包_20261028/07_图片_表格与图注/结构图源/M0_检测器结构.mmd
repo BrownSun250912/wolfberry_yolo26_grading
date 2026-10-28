@@ -1,0 +1,8 @@
+flowchart LR
+ I[RGB 输入] --> B[Conv C3k2 下采样]
+ B --> A[SPPF C2PSA]
+ A --> U[上采样 Concat 侧连4与6]
+ U --> D[再下采样融合层13与10]
+ U --> H[Segment26 输入16 19 22]
+ D --> H
+ H --> O[boxes classes mask系数 prototype32]

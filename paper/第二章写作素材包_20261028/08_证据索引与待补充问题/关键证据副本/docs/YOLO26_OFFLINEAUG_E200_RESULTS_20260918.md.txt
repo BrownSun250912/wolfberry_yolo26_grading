@@ -1,0 +1,29 @@
+# 离线增强 200 轮冻结基线：实测结果
+
+_由原始逐轮记录生成，时间 2026-09-18T23:48:13.948187+08:00；协议见 [冻结实验记录](YOLO26_OFFLINEAUG_E200_FROZEN_PROTOCOL_20260918.md)。_
+
+## 🧪 运行与选模
+
+- 实际完成 200 轮，固定种子 20260915；原始 val，未使用 test。
+- 原训练进程在第 146 轮后中断，用户说明原因是当时关闭 Codex，附属训练进程随之终止；后从含优化器与 EMA 的 last.pt 恢复第 147–200 轮。此为恢复后的完整轮次记录，不能表述为无中断的单次训练，详见[实验过程](YOLO26_OFFLINEAUG_E200_FROZEN_PROTOCOL_20260918.md)。
+- 最佳轮次 16：val Mask mAP50 = 0.82295；Mask mAP50–95 = 0.68066。
+- 末轮 200：val Mask mAP50 = 0.74814；Mask mAP50–95 = 0.60093。
+- 最后 20 轮 Mask mAP50 均值 0.74737，标准差 0.00149，极差 0.00518。这些描述量不独自证明收敛。
+- 训练分割损失趋近零，而验证分割损失持续上升；结合 val Mask mAP50 早期达到峰值、后期明显回落，提示泛化退化，不能把“跑满 200 轮”直接解释为“验证效果收敛到更好水平”。
+
+## 📉 损失轨迹
+
+| 项目 | 第 1 轮 | 最佳轮 | 第 200 轮 |
+| --- | ---: | ---: | ---: |
+| train/box_loss | 0.83114 | 0.68554 | 0.05703 |
+| train/seg_loss | 0.85009 | 0.40740 | 0.00000 |
+| train/cls_loss | 3.20274 | 0.37635 | 0.02356 |
+| val/box_loss | 0.81972 | 0.76390 | 0.62420 |
+| val/seg_loss | 0.71576 | 0.63912 | 5.99656 |
+| val/cls_loss | 1.71857 | 0.67759 | 1.46894 |
+
+## 🔗 可追溯证据与局限
+
+- [逐轮结果](../models/experiments/yolo26n_seg_offlineaug_e200_mask50_seed20260915/results.csv) · [Mask mAP50 选模轨迹](../models/experiments/yolo26n_seg_offlineaug_e200_mask50_seed20260915/mask50_selection_trace.csv) · [实际参数](../models/experiments/yolo26n_seg_offlineaug_e200_mask50_seed20260915/args.yaml) · [曲线图](../models/experiments/yolo26n_seg_offlineaug_e200_mask50_seed20260915/results.png)。
+- best.pt SHA-256：6a63c81d901755f4f0282331323c4863416708b6d073bf47f8343b214a02a779；last.pt SHA-256：52ca257257456fbf35b9bea75eda22ea1900b55f5e196c8d4a8b922e9d04ab71。
+- 仅报告 val 选模表现；这不是独立 test 结论。收敛与否应人工结合整条曲线、验证波动和误差实例判断。

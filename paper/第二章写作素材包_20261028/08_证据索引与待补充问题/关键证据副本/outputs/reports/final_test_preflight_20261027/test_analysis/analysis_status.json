@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "iterations": 2000,
+  "seed": 20261027,
+  "test_inference_repeated": false,
+  "point_reproduction": "PASS",
+  "intervals_are": "Descriptive pointwise image-paired source-stratified percentile 95%.",
+  "primary": {
+    "candidate": "original_defect_rank",
+    "reference": "RR22_reference",
+    "endpoint": "Mask_AP50",
+    "point_delta": 0.009718697353715333,
+    "primary": true,
+    "valid_replicates": 2000,
+    "invalid_replicates": 0,
+    "ci95_low": 0.002721477416160717,
+    "ci95_high": 0.016950023729704385
+  },
+  "cumulative": {
+    "candidate": "original_defect_rank",
+    "reference": "raw_YOLO",
+    "endpoint": "Mask_AP50",
+    "point_delta": 0.026839558938716923,
+    "primary": false,
+    "valid_replicates": 2000,
+    "invalid_replicates": 0,
+    "ci95_low": 0.0142622959421299,
+    "ci95_high": 0.040831383130866324
+  },
+  "output_refinement": {
+    "candidate": "original_defect_rank_prototype",
+    "reference": "original_defect_rank",
+    "endpoint": "Mask_AP50_95",
+    "point_delta": 0.010851320453141522,
+    "primary": false,
+    "valid_replicates": 2000,
+    "invalid_replicates": 0,
+    "ci95_low": 0.006291828541728434,
+    "ci95_high": 0.016717096488084653
+  },
+  "no_missing_class_AP_draws": true,
+  "limitations": [
+    "Image-level pairing does not establish physical-fruit/batch independence.",
+    "Early baseline test use and mixed annotation provenance remain.",
+    "No multiplicity-adjusted tests or causal/commercial deployment conclusions.",
+    "25 UQ test instances; zero new escape delta is not zero absolute escape risk."
+  ],
+  "completed_utc": "2026-10-27T11:57:42.350507+00:00"
+}

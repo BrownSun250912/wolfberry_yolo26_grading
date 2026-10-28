@@ -1,0 +1,8 @@
+flowchart LR
+ R[RGB3+soft1+prototype32] --> H[1x1 Conv36-32-16-1]
+ H --> D[6tanh delta]
+ M[原native mask] --> B[9x9膨胀减腐蚀 半径4px]
+ B --> A[native基准logit 加 band乘resize delta]
+ D --> A
+ A --> O[细化mask仅分割输出]
+ M --> G[原mask仍分级与排序]

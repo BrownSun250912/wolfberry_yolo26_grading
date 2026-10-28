@@ -1,0 +1,50 @@
+{
+  "version": "grading_four_class_v3_valfix_20261006",
+  "generated_utc": "2026-10-06T12:07:29.067491+00:00",
+  "parent_dataset": "data/grading_four_class_v3",
+  "kind": "validation-only label overlay, not a standalone training dataset",
+  "corrected_instances": 7,
+  "reviewer_count": 1,
+  "second_reviewer": false,
+  "training_changed": false,
+  "training_performed": false,
+  "test_accessed_this_run": false,
+  "images_polygons_scores_splits_unchanged": true,
+  "targets": {
+    "path": "data/grading_four_class_v3_valfix_20261006/audit/r1_multitask_targets.csv",
+    "sha256": "f0514e910b2ac5f3b740094911e72a922b83992944d8b0036ef711e512badec8",
+    "parent_sha256": "4eabbf572d0c0fd3cde70514d9b70536007790f0dc496343aab9c519798381e2"
+  },
+  "predictions_recomputed": false,
+  "paired_vs_r0": {
+    "both_correct": 426,
+    "reference_only_correct": 1,
+    "candidate_only_correct": 17,
+    "both_wrong": 74,
+    "net_correct_change": 16
+  },
+  "stem_task_metrics": {
+    "population": "448 localized qualified validation GT; missing is positive",
+    "missing_targets": 66,
+    "h1_learned": {
+      "tp": 60,
+      "fp": 7,
+      "fn": 6,
+      "tn": 375,
+      "precision": 0.8955223880597015,
+      "recall": 0.9090909090909091,
+      "f1": 0.9022556390977443
+    },
+    "r0_rule": {
+      "tp": 41,
+      "fp": 1,
+      "fn": 25,
+      "tn": 381,
+      "precision": 0.9761904761904762,
+      "recall": 0.6212121212121212,
+      "f1": 0.7592592592592593
+    }
+  },
+  "interpretation": "Post-hoc user-authorized validation label correction; compare all variants on the same revised GT. This is not training improvement or independent test evidence. Checkpoint selection still used the old validation labels.",
+  "report": "outputs/reports/h1_valfix_replay_20261006"
+}

@@ -1,0 +1,8 @@
+flowchart LR
+ A[核心14] --> C[22维 fit归一化]
+ B[邻域4] --> C
+ D[原缺陷logit 熵 可用标志 0] --> C
+ C --> M[MLP22-16-1 SiLU]
+ M --> S[sigmoid x raw_conf]
+ S --> O[非零类新rank]
+ U[最终class0] --> R[保留raw_conf]

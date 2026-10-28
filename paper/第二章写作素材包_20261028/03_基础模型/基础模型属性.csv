@@ -1,0 +1,35 @@
+﻿字段,值,来源
+path,"""models\\experiments\\yolo26n_seg_offlineaug_e200_mask50_seed20260915\\weights\\best.pt""",detector best.pt CPU元数据；非重新forward
+sha256,"""6a63c81d901755f4f0282331323c4863416708b6d073bf47f8343b214a02a779""",detector best.pt CPU元数据；非重新forward
+version,"""8.4.117""",detector best.pt CPU元数据；非重新forward
+model_type,"""ultralytics.nn.tasks.SegmentationModel""",detector best.pt CPU元数据；非重新forward
+parameters,3054420,detector best.pt CPU元数据；非重新forward
+yaml.nc,4,detector best.pt CPU元数据；非重新forward
+yaml.end2end,true,detector best.pt CPU元数据；非重新forward
+yaml.reg_max,1,detector best.pt CPU元数据；非重新forward
+yaml.scales.n,"[0.5, 0.25, 1024]",detector best.pt CPU元数据；非重新forward
+yaml.scales.s,"[0.5, 0.5, 1024]",detector best.pt CPU元数据；非重新forward
+yaml.scales.m,"[0.5, 1.0, 512]",detector best.pt CPU元数据；非重新forward
+yaml.scales.l,"[1.0, 1.0, 512]",detector best.pt CPU元数据；非重新forward
+yaml.scales.x,"[1.0, 1.5, 512]",detector best.pt CPU元数据；非重新forward
+yaml.backbone,"[[-1, 1, ""Conv"", [64, 3, 2]], [-1, 1, ""Conv"", [128, 3, 2]], [-1, 2, ""C3k2"", [256, false, 0.25]], [-1, 1, ""Conv"", [256, 3, 2]], [-1, 2, ""C3k2"", [512, false, 0.25]], [-1, 1, ""Conv"", [512, 3, 2]], [-1, 2, ""C3k2"", [512, true]], [-1, 1, ""Conv"", [1024, 3, 2]], [-1, 2, ""C3k2"", [1024, true]], [-1, 1, ""SPPF"", [1024, 5, 3, true]], [-1, 2, ""C2PSA"", [1024]]]",detector best.pt CPU元数据；非重新forward
+yaml.head,"[[-1, 1, ""nn.Upsample"", [""None"", 2, ""nearest""]], [[-1, 6], 1, ""Concat"", [1]], [-1, 2, ""C3k2"", [512, true]], [-1, 1, ""nn.Upsample"", [""None"", 2, ""nearest""]], [[-1, 4], 1, ""Concat"", [1]], [-1, 2, ""C3k2"", [256, true]], [-1, 1, ""Conv"", [256, 3, 2]], [[-1, 13], 1, ""Concat"", [1]], [-1, 2, ""C3k2"", [512, true]], [-1, 1, ""Conv"", [512, 3, 2]], [[-1, 10], 1, ""Concat"", [1]], [-1, 1, ""C3k2"", [1024, true, 0.5, true]], [[16, 19, 22], 1, ""Segment26"", [""nc"", 32, 256]]]",detector best.pt CPU元数据；非重新forward
+yaml.scale,"""n""",detector best.pt CPU元数据；非重新forward
+yaml.yaml_file,"""yolo26n-seg.yaml""",detector best.pt CPU元数据；非重新forward
+yaml.channels,3,detector best.pt CPU元数据；非重新forward
+names.0,"""unqualified""",detector best.pt CPU元数据；非重新forward
+names.1,"""grade_1""",detector best.pt CPU元数据；非重新forward
+names.2,"""grade_2""",detector best.pt CPU元数据；非重新forward
+names.3,"""grade_3""",detector best.pt CPU元数据；非重新forward
+stride.shape,[3],detector best.pt CPU元数据；非重新forward
+stride.dtype,"""torch.float32""",detector best.pt CPU元数据；非重新forward
+stride.values,"[8.0, 16.0, 32.0]",detector best.pt CPU元数据；非重新forward
+end2end,true,detector best.pt CPU元数据；非重新forward
+head_attributes.nc,4,detector best.pt CPU元数据；非重新forward
+head_attributes.nm,32,detector best.pt CPU元数据；非重新forward
+head_attributes.npr,64,detector best.pt CPU元数据；非重新forward
+head_attributes.reg_max,1,detector best.pt CPU元数据；非重新forward
+head_attributes.max_det,300,detector best.pt CPU元数据；非重新forward
+head_attributes.nl,3,detector best.pt CPU元数据；非重新forward
+head_attributes.end2end,true,detector best.pt CPU元数据；非重新forward
+head_attributes.legacy,false,detector best.pt CPU元数据；非重新forward

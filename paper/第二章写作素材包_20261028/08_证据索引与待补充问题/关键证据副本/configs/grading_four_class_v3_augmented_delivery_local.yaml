@@ -1,0 +1,9 @@
+path: F:/wolfberry/photo_library/wolfberry_yolo26_cv/data/grading_four_class_v3_augmented_delivery
+train: images/train
+val: images/val
+
+names:
+  0: unqualified
+  1: grade_1
+  2: grade_2
+  3: grade_3

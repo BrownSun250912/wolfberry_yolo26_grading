@@ -1,0 +1,921 @@
+{
+  "date": "2026-10-28",
+  "files": [
+    {
+      "path": "00_阅读说明与素材完整性清单/六部分素材完整性汇总.csv",
+      "bytes": 1622,
+      "sha256": "cac01eef92adfa7e4b0e317944f580f5ec414788517df8813a28e3ce65674828"
+    },
+    {
+      "path": "00_阅读说明与素材完整性清单/本轮核验结果.json",
+      "bytes": 489,
+      "sha256": "58da9eebc23a5df313efa8e16a0a0b1ace029ac38c02205c837be508d42d72b8"
+    },
+    {
+      "path": "00_阅读说明与素材完整性清单/逐项覆盖核对.csv",
+      "bytes": 12168,
+      "sha256": "ccd254db2b118f86d1d2628bdb32ea87e3d20c66a335f2f10cda5342a01e030d"
+    },
+    {
+      "path": "00_阅读说明与素材完整性清单/阅读说明.md",
+      "bytes": 2937,
+      "sha256": "f11e25c8f42abbbf07190f8c4b115550fab25fd44400f3efff4465301caa8e04"
+    },
+    {
+      "path": "01_数据采集与数据集构建/原始文件逐图清单_SHA256.csv",
+      "bytes": 373277,
+      "sha256": "a202383c56cffcc024e5696ceacb90755b36c7fd7241d4fac1aec2ed4ac292fe"
+    },
+    {
+      "path": "01_数据采集与数据集构建/数据数量对账.csv",
+      "bytes": 825,
+      "sha256": "4bfb86b51c8886e6d9e34757357a705dc2f105143a7ff6034ce19ddbba99a796"
+    },
+    {
+      "path": "01_数据采集与数据集构建/数据采集与构建_逐项核验.md",
+      "bytes": 5315,
+      "sha256": "58d88e4053e9790e8316a4a1340cef6ea6ce4e07fb6fea53a5e3c66d52f751ae"
+    },
+    {
+      "path": "01_数据采集与数据集构建/采集条件与缺口.csv",
+      "bytes": 1569,
+      "sha256": "ea3d5eddeb02ad68fe1f8a38dff8e8d6997612b06933be89cfc4d7d5a819f165"
+    },
+    {
+      "path": "02_分级依据_标注与预处理/18项历史可解释特征与最终作用.csv",
+      "bytes": 3196,
+      "sha256": "15e761583857b1a983da2170bd4f640aab2b3d7d935823b2e732848d30f14a57"
+    },
+    {
+      "path": "02_分级依据_标注与预处理/分级_标注_预处理_逐项核验.md",
+      "bytes": 10665,
+      "sha256": "a6711d46c4a697bd5de20b1874ef0ff68378e8e95eb1672210249894b453aba1"
+    },
+    {
+      "path": "02_分级依据_标注与预处理/分级与预处理增强配置_逐字段.csv",
+      "bytes": 37647,
+      "sha256": "b85400a5d7094c59a231167dab76ed934ddc2ee8186ece423d29f67d2f4edd80"
+    },
+    {
+      "path": "02_分级依据_标注与预处理/当前正式标签逐文件清单.csv",
+      "bytes": 178029,
+      "sha256": "597f5f5d36b0dea227c7816ea5622f7967e84c160a6d9c29f8057712411b6912"
+    },
+    {
+      "path": "02_分级依据_标注与预处理/数据划分与各类实例统计.csv",
+      "bytes": 393,
+      "sha256": "909bc85562067be1b527d781b0669471a56ccb50b6b9189c326bd3795fa8eb32"
+    },
+    {
+      "path": "02_分级依据_标注与预处理/等级规则与版本表.csv",
+      "bytes": 884,
+      "sha256": "cd4525cd656cebb7f55a5d9dafccb4b5f5ee66ae64d3e37587d19514952a0baf"
+    },
+    {
+      "path": "02_分级依据_标注与预处理/边界标定样本与集合归属_核验.csv",
+      "bytes": 4696,
+      "sha256": "203f9947e82c7b65963015a0bfff0e849c13749d2e1b883cd3b5e3bd8ae37fc1"
+    },
+    {
+      "path": "03_基础模型/基础模型_结构与证据.md",
+      "bytes": 5046,
+      "sha256": "eb4c1ea41c8e787f53a7b078f6cf8cbd1b1ebc054889f421728a848159cf7a2c"
+    },
+    {
+      "path": "03_基础模型/基础模型属性.csv",
+      "bytes": 3553,
+      "sha256": "65ce78290d81d3ffe91a5c9caf30682712f525a6b74fc83a530f8021720581d7"
+    },
+    {
+      "path": "03_基础模型/权重清单与元数据.csv",
+      "bytes": 2108,
+      "sha256": "ac40d728d481da66c9e711bb5c04594d28c9adb4cbfebedc04e5f55156eec9b4"
+    },
+    {
+      "path": "04_改进模块与整体方法/M0_冻结YOLO26n-seg候选生成.md",
+      "bytes": 1877,
+      "sha256": "92ed16027f7bc6591f62e23d8fd83ece520441773784e60600b2b9b724f03f21"
+    },
+    {
+      "path": "04_改进模块与整体方法/M1_独立R1多任务属性编码器与分层证据.md",
+      "bytes": 2207,
+      "sha256": "c880cdde4ae70385eacb0279bef156dec346515a5eaa42d496c22f522102d859"
+    },
+    {
+      "path": "04_改进模块与整体方法/M2_冻结规则评分与有界学习残差RR22.md",
+      "bytes": 2205,
+      "sha256": "90e85f8105333212d6b98a7f5312ff02361715b710128008c9ea0e5e95e360dd"
+    },
+    {
+      "path": "04_改进模块与整体方法/M3_邻域候选证据融合、缺梗门控与等级边界.md",
+      "bytes": 1955,
+      "sha256": "58970bab8a97c34227255bb130baf9400439d87942a4f7f9c2d90bfdd4ea8ca7"
+    },
+    {
+      "path": "04_改进模块与整体方法/M4_复用原缺陷信息的22维预测质量排序.md",
+      "bytes": 2351,
+      "sha256": "d231837771d918e4cb3bffaa93c91685599c93ac44674aaa755d7d34fecd98fc"
+    },
+    {
+      "path": "04_改进模块与整体方法/M5_重分类后真实同类NMS与索引对齐.md",
+      "bytes": 1920,
+      "sha256": "5bba46a69859d27f293527acc8e870ebc1ddc3cf6c8e03cdcfe5012d2686e5a2"
+    },
+    {
+      "path": "04_改进模块与整体方法/M6_同次forward的prototype边界细化与双mask分工.md",
+      "bytes": 2564,
+      "sha256": "d47b5c8744396da6f118cd518cfa62fc9d2a6d43f2156fd2d1a5257f52598948"
+    },
+    {
+      "path": "04_改进模块与整体方法/关键公式与符号.csv",
+      "bytes": 2137,
+      "sha256": "7e833625011d11904860739b6444770e744caba714e96c0978ecdd2b502c62d9"
+    },
+    {
+      "path": "04_改进模块与整体方法/整体方法_数据流_方案边界.md",
+      "bytes": 5755,
+      "sha256": "f4c72833fc635531615f8c8b7ccbbd1b6852877d3be94e6f64223dab2297aa84"
+    },
+    {
+      "path": "04_改进模块与整体方法/模块总表.csv",
+      "bytes": 4558,
+      "sha256": "64cfc362d94ca5925fc01f783c7b455cda060ef39f988321b9943554e8f6819e"
+    },
+    {
+      "path": "05_训练环境与训练设置/分阶段训练参数.csv",
+      "bytes": 2933,
+      "sha256": "433d3f85135f0fa84b56fbdeb9c745b63e26433dc683cc4a95158792d3e08da1"
+    },
+    {
+      "path": "05_训练环境与训练设置/硬件软件环境与历史差异.csv",
+      "bytes": 2711,
+      "sha256": "e0f054b88b75ad673cce3c256dceb389e6ae986d6d99bd15048a893bc7ab6a90"
+    },
+    {
+      "path": "05_训练环境与训练设置/训练环境_设置与执行记录.md",
+      "bytes": 5817,
+      "sha256": "a061c037e9c737a0be33e4257eb93fa95c0b1de0912b6d62983cd47a0e42322c"
+    },
+    {
+      "path": "06_评价指标与协议/指标定义与分母.csv",
+      "bytes": 2648,
+      "sha256": "4273b2e0ae2bddcd1e2791d2072115bd36a6a8a3d8594a373acaf6685ccbf80d"
+    },
+    {
+      "path": "06_评价指标与协议/评价参数与匹配规则.csv",
+      "bytes": 1460,
+      "sha256": "e038fc51910687b38015f9e1955209abddee3187c7f725182d41dacfa402c472"
+    },
+    {
+      "path": "06_评价指标与协议/评价方法_统计与复现协议.md",
+      "bytes": 7039,
+      "sha256": "9d27d9d2bad83edd906899713acf70c0e9c5d584d196ecd2afe62b9c96b89a60"
+    },
+    {
+      "path": "07_图片_表格与图注/原图与现成增强_实际文件对比.png",
+      "bytes": 1445539,
+      "sha256": "822b2044edca210b73c468f02dbc8f918c84b36912b07e1db84db89022126455"
+    },
+    {
+      "path": "07_图片_表格与图注/原始样本/wb_000002_train_原始.png",
+      "bytes": 1651844,
+      "sha256": "7e31d8c0e91e0e67e2e9109872a9a883e128420cde8b8a3b1251f409bf0d7a06"
+    },
+    {
+      "path": "07_图片_表格与图注/原始样本/wb_000069_train_原始.png",
+      "bytes": 1698654,
+      "sha256": "2d4ac5b1256e3491a1d2786483fb88822115363e330b4bd386350c5b3c06344f"
+    },
+    {
+      "path": "07_图片_表格与图注/原始样本/wb_000151_train_原始.png",
+      "bytes": 1458420,
+      "sha256": "981a779ca40fe1bd8be249ba83e088dff85103c8bd815ac8a5e358c63449e325"
+    },
+    {
+      "path": "07_图片_表格与图注/原始样本/wb_000501_val_原始.png",
+      "bytes": 1697734,
+      "sha256": "d3bbd40753bf94eb521cbae9c829eb8906cfb584e07d7dd9df94e9cdebdedb4c"
+    },
+    {
+      "path": "07_图片_表格与图注/原始样本/wb_000911_test_原始.png",
+      "bytes": 1658557,
+      "sha256": "811045239f51f95fe6a78dd891ed44a29a83b1dd056bf58463bb76c7352e3940"
+    },
+    {
+      "path": "07_图片_表格与图注/图像说明与中文图注.md",
+      "bytes": 3591,
+      "sha256": "2ea4e42e81003c7a1f6d45927894125d2e56e26ca80b2860df47f6ae88418993"
+    },
+    {
+      "path": "07_图片_表格与图注/图表清单.csv",
+      "bytes": 6262,
+      "sha256": "950ff61e9c50cf19d73bd1b463e70d8de702649a72ded8564dfd2fd84131103c"
+    },
+    {
+      "path": "07_图片_表格与图注/增强示例实际参数.csv",
+      "bytes": 2367,
+      "sha256": "7cbe46dd8b96cc09649e123c0be249ba50ab252370d6d750464d59a67125ffce"
+    },
+    {
+      "path": "07_图片_表格与图注/实际增强对比/wb_000002.png",
+      "bytes": 1651844,
+      "sha256": "7e31d8c0e91e0e67e2e9109872a9a883e128420cde8b8a3b1251f409bf0d7a06"
+    },
+    {
+      "path": "07_图片_表格与图注/实际增强对比/wb_000002.txt",
+      "bytes": 974,
+      "sha256": "58976835ead951afbae4157cfd623d833d1a39e1ac91ff3c8724292dab956129"
+    },
+    {
+      "path": "07_图片_表格与图注/实际增强对比/wb_000002__aug01.png",
+      "bytes": 1200413,
+      "sha256": "be082f33bc8b4f32afd92bfde1695566ae95cc1f9f9acf7085e01d1f42cab01e"
+    },
+    {
+      "path": "07_图片_表格与图注/实际增强对比/wb_000002__aug01.txt",
+      "bytes": 652,
+      "sha256": "1159f2ed52e204803a17ea8d821f0072cfe5e45932de84fbe3c48533d83079c9"
+    },
+    {
+      "path": "07_图片_表格与图注/实际增强对比/wb_000002__aug02.png",
+      "bytes": 1186779,
+      "sha256": "9ee9220139da5387c68bae32be0498b66aa955e278c8dc5ab2ef096e0bcd97d3"
+    },
+    {
+      "path": "07_图片_表格与图注/实际增强对比/wb_000002__aug02.txt",
+      "bytes": 974,
+      "sha256": "58976835ead951afbae4157cfd623d833d1a39e1ac91ff3c8724292dab956129"
+    },
+    {
+      "path": "07_图片_表格与图注/标注实例_四例总览.png",
+      "bytes": 2002859,
+      "sha256": "8a039b341be63bd183699d527da8eb68c499b83698db614a2b65cb76d2a24f5b"
+    },
+    {
+      "path": "07_图片_表格与图注/标注示例/wb_000002_train_当前标签叠图.png",
+      "bytes": 1149842,
+      "sha256": "9f03db8260ea14ddd1bbb7baf1c3a897fd71b8137d395b3738457f26c8bdd536"
+    },
+    {
+      "path": "07_图片_表格与图注/标注示例/wb_000002_train_当前标签叠图.txt",
+      "bytes": 974,
+      "sha256": "58976835ead951afbae4157cfd623d833d1a39e1ac91ff3c8724292dab956129"
+    },
+    {
+      "path": "07_图片_表格与图注/标注示例/wb_000069_train_当前标签叠图.png",
+      "bytes": 1161287,
+      "sha256": "d964a5832649dce5a365d451b8ea20614fe6bd57cdeaf3560b476fcc6c78695f"
+    },
+    {
+      "path": "07_图片_表格与图注/标注示例/wb_000069_train_当前标签叠图.txt",
+      "bytes": 2493,
+      "sha256": "6457f9515cfd0e7ecbd5a7788fb3317ede88d0ac0eb6240323c60fd1f7be663c"
+    },
+    {
+      "path": "07_图片_表格与图注/标注示例/wb_000151_train_当前标签叠图.png",
+      "bytes": 980152,
+      "sha256": "134db9e72db56875f3a6df17503e8fbe7b9b74a55590672a185a21b6fbf1ace1"
+    },
+    {
+      "path": "07_图片_表格与图注/标注示例/wb_000151_train_当前标签叠图.txt",
+      "bytes": 1217,
+      "sha256": "20baaa10a937eac9231cc9b51e4398cbfa16ce7b362f8d050197b4c93474ebfc"
+    },
+    {
+      "path": "07_图片_表格与图注/标注示例/wb_000501_val_当前标签叠图.png",
+      "bytes": 1170447,
+      "sha256": "e74f234a3eccf1b4e62d86968fe5e7787fdc698d71502166ccd618b6028dedc7"
+    },
+    {
+      "path": "07_图片_表格与图注/标注示例/wb_000501_val_当前标签叠图.txt",
+      "bytes": 2102,
+      "sha256": "a76a34c849438c6f67e12f66aa5764ddc5a1189a693aac427f26120263c5657e"
+    },
+    {
+      "path": "07_图片_表格与图注/标注示例/wb_000911_test_当前标签叠图.png",
+      "bytes": 1150933,
+      "sha256": "a257f6ebd4bee598d6ab2852e7f19e84125cca68d2f958c21170871422542ab9"
+    },
+    {
+      "path": "07_图片_表格与图注/标注示例/wb_000911_test_当前标签叠图.txt",
+      "bytes": 1346,
+      "sha256": "c80a5640f79eaaed7db17fd95cfea2cbbbe5c9dc0c5b7aebde9562da76b61120"
+    },
+    {
+      "path": "07_图片_表格与图注/样本图与标签溯源.csv",
+      "bytes": 2348,
+      "sha256": "c218d95956808d95bb0e547129f7b2e82f7e07827f92cbb64400aca4317e06f1"
+    },
+    {
+      "path": "07_图片_表格与图注/模块结构图_可渲染.md",
+      "bytes": 3785,
+      "sha256": "9fe40dd5b5086c078079e28e86ead91d79cb958fb5154220750eb32a04ae883c"
+    },
+    {
+      "path": "07_图片_表格与图注/系统总流程_代码示意.png",
+      "bytes": 341693,
+      "sha256": "0149a48b95c9ea53a5dc185d2b93bb9036c789352ac8746d0ca2469d8eae44d2"
+    },
+    {
+      "path": "07_图片_表格与图注/系统总流程_代码示意.svg",
+      "bytes": 13014,
+      "sha256": "7cbd4fd2da1dd19de5db480b63ef421c4ebb99d05cc4c5aea28830fd3d39f1b4"
+    },
+    {
+      "path": "07_图片_表格与图注/结构图源/M0_检测器结构.mmd",
+      "bytes": 253,
+      "sha256": "ba9aec5e91842e5930d6e5a1f7499b193871fd5e508d44e3bf8f6c3f81056f04"
+    },
+    {
+      "path": "07_图片_表格与图注/结构图源/M1_属性编码器.mmd",
+      "bytes": 309,
+      "sha256": "ca6cf7cc415f1300be2f70245ef01d155c0e506ca5d8ff1b7b805616358d2ab4"
+    },
+    {
+      "path": "07_图片_表格与图注/结构图源/M2_规则残差.mmd",
+      "bytes": 214,
+      "sha256": "9e016b6bfbc097036d03f3029579f12a4fd7e2e6f6dbf1ae131e04b76e66a646"
+    },
+    {
+      "path": "07_图片_表格与图注/结构图源/M3_分层与邻域.mmd",
+      "bytes": 333,
+      "sha256": "39590d11758206102258aff02f252443c2685d389021e35f3ca54c6040565463"
+    },
+    {
+      "path": "07_图片_表格与图注/结构图源/M4_质量排序.mmd",
+      "bytes": 243,
+      "sha256": "373c920918b217c44d5f8c3767bc3cc74b1b84f8dcddbca3eae51dc60beeafe5"
+    },
+    {
+      "path": "07_图片_表格与图注/结构图源/M5_NMS与索引.mmd",
+      "bytes": 227,
+      "sha256": "9362f175a15e05b2c259b8584bb9506b6f1ab2969ce1e4ce310e1690f074a9e7"
+    },
+    {
+      "path": "07_图片_表格与图注/结构图源/M6_可选边界.mmd",
+      "bytes": 284,
+      "sha256": "b1887fb55998f092ead6f6115714ffaf98a1a1d41f5e7fc46bfac2d0a37935e7"
+    },
+    {
+      "path": "07_图片_表格与图注/结构图源/数据构建与划分.mmd",
+      "bytes": 463,
+      "sha256": "d355d0856dbcd73da9732e94e39bad2583a8c36caddb3c7b32fbcb35b72b1a43"
+    },
+    {
+      "path": "07_图片_表格与图注/结构图源/系统总流程.mmd",
+      "bytes": 880,
+      "sha256": "4257622d74e4aac221af4da2c4e5fb2f31336651f0201007f5fece6cc806312a"
+    },
+    {
+      "path": "08_证据索引与待补充问题/additional_facts.json",
+      "bytes": 2440,
+      "sha256": "2a6514b45ae000600bddb8f6213bb28360bb5c18d80d75e5bcb30f302397af89"
+    },
+    {
+      "path": "08_证据索引与待补充问题/current_hardware_software.json",
+      "bytes": 670,
+      "sha256": "de42e1316a2280698afbad7f2687e3d2c4b3d8db52b9024c97a24d441bd42508"
+    },
+    {
+      "path": "08_证据索引与待补充问题/data_facts_不含人员备注.json",
+      "bytes": 27028,
+      "sha256": "65385f0ba840afaa51cb18d3f750e46cecaa6565afa921be459fec4b0b5118be"
+    },
+    {
+      "path": "08_证据索引与待补充问题/detector_layers.json",
+      "bytes": 41907,
+      "sha256": "a213335975ac6ec5a5188102cea9d33d662afbe8d11c6896016433200681c92f"
+    },
+    {
+      "path": "08_证据索引与待补充问题/training_records.json",
+      "bytes": 32459,
+      "sha256": "cbc396b0b1c35a22c3ea8baa69ebbf63d33c67e69ba526ae47fd39b52924f1de"
+    },
+    {
+      "path": "08_证据索引与待补充问题/weights_metadata.json",
+      "bytes": 34049,
+      "sha256": "c95ca75e40c5506b676ffd93536409d42d5495eae87ed6990b3ec68a6f8fd0ce"
+    },
+    {
+      "path": "08_证据索引与待补充问题/代码函数行号索引.csv",
+      "bytes": 46716,
+      "sha256": "b17c4c73fb427810f900b60e92ddeed9c283682f2f9ed911cf3616b502f8d516"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/configs/feature_extraction_frozen_v1_train.yaml",
+      "bytes": 2461,
+      "sha256": "d46a7c0c5498a5e667b3618c4665a2001c659c17f6e47e2371ad7b7195073dd4"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/configs/feature_extraction_frozen_v1_val.yaml",
+      "bytes": 2455,
+      "sha256": "90d7c4d92541129fed960bdd30d8877eb8b88de854fe66001aae32646e13a652"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/configs/grading_four_class_v3_augmented_delivery_local.yaml",
+      "bytes": 199,
+      "sha256": "5a2a5cecf9551a23c5f663ec1cbfd73efc16e03c83fb0307aa1edba087b64050"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/configs/grading_four_class_v3_local.yaml",
+      "bytes": 197,
+      "sha256": "091346bbd2912d91ff07f36927052d353b07682761f0f6cb3acf2db8e51d428d"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/data/grading_four_class_v3/audit/build_summary.json",
+      "bytes": 3207,
+      "sha256": "5b3a3eca35f49d00637c223928c01567a8e3beb1c01f2964e8f72409be99a318"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/data/grading_four_class_v3/audit/exact_duplicate_polygons.csv",
+      "bytes": 69,
+      "sha256": "373811248060580a05cf7fcc176d91ccfcc8ce0939d7559c800549b4550dc398"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/data/grading_four_class_v3/audit/image_audit.csv",
+      "bytes": 107793,
+      "sha256": "a7af8af32a37855d9c71d1d077736cc4617c352d15ec2aeffcd2e9866861bcd6"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/data/grading_four_class_v3/audit/test_polygon_deduplication.json",
+      "bytes": 1906,
+      "sha256": "af5a7f1c6a254d488c6a05167131b24577c144186cf686d5c4809bcc5dac08fa"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/data/grading_four_class_v3_augmented_delivery/metadata/segmentation_augmentation_config.json",
+      "bytes": 2068,
+      "sha256": "8cc5a3fddfd6b438776b4b3479442780d84381fee576f59b1a5508b400314c2d"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/data/grading_four_class_v3_valfix_20261006/version.json",
+      "bytes": 1822,
+      "sha256": "4bc9e49be883194f217e9178c8c83161a62e7698dce70f75898326944e58e90e"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/docs/DATASET_AUDIT.md.txt",
+      "bytes": 2589,
+      "sha256": "403e780f79a7cd905b817ef83ca806bbf69da5de7d37edb694fb426aaa14f94e"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/docs/FEATURE_DEFINITIONS.md.txt",
+      "bytes": 4419,
+      "sha256": "0879e688f124957349392b294b5f1364dbac0277cee3b15176b1d882ae59ca73"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/docs/YOLO26_OFFLINEAUG_E200_FROZEN_PROTOCOL_20260918.md.txt",
+      "bytes": 7555,
+      "sha256": "799faa2935f65ea7585b9795459ca0af673584892fe3eda9eb2c678cfcd46c4e"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/docs/YOLO26_OFFLINEAUG_E200_RESULTS_20260918.md.txt",
+      "bytes": 2353,
+      "sha256": "a3cb081b501588e0c77cf1ef0ec73adbc81fb6bd80a3305f7f9b118a2b8c5f02"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/environment/ENVIRONMENT_REPORT.md.txt",
+      "bytes": 1480,
+      "sha256": "bd4192575d963e1c5c267031c26b5a740b433d58a91ce01452a642e1c4249d9f"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/attribute_local_20261025/attribute_rank_fits/RR22_original_defect_independent_multi_iou_seed20261025/completion.json",
+      "bytes": 621,
+      "sha256": "a02d7d172a89809012368bbd203121fd197d45d2994f6a6a4b7ef5ea2c0a47a7"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/attribute_local_20261025/attribute_rank_fits/RR22_original_defect_independent_multi_iou_seed20261025/history.csv",
+      "bytes": 3360,
+      "sha256": "627779927ca5ed146bb40923a9f70d1ad4421b89a9523e1ce25f20428a1f06f8"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/attribute_local_20261025/prototype_fits/soft_prototype_seed20261025/completion.json",
+      "bytes": 583,
+      "sha256": "42b509298c3b618ff849e388e2eefc3b967e97cfae276208e189a5878250cc23"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/attribute_local_20261025/prototype_fits/soft_prototype_seed20261025/history.csv",
+      "bytes": 1343,
+      "sha256": "b1b436d78e5b9e1ebb252247fc9815a29da214168b1976b80bb43ce09aa52766"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/attribute_local_20261025/prototype_population.csv",
+      "bytes": 162460,
+      "sha256": "884eba6041d5814d1a952720ef5ee9f51ed771600d7030265f2523545effa029"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/r1_quality_followup_20261009/head_image_split.csv",
+      "bytes": 28153,
+      "sha256": "e2bcafa0aefc69f83813ce2355a92512aa8c0f3563891b5b104c8fab101f20a1"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/r1a_hierarchical_grader_e150_resume_epoch40_seed20260929/history.csv",
+      "bytes": 29689,
+      "sha256": "3e284ad7dc2a29897ccc52bb0e846b5e66c282f497d02e529b4b8517b793dd69"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/r1a_hierarchical_grader_e150_resume_epoch40_seed20260929/training_config.json",
+      "bytes": 2210,
+      "sha256": "45c74774b2f5699519ae47b6f08c22886e9b874cf5f5e43e4572ec511d32489b"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/r1a_hierarchical_grader_e150_resume_epoch40_seed20260929/training_summary.json",
+      "bytes": 2469,
+      "sha256": "9049a31c9c468f60024aef75d8cd56553325370c533d86b90e73fc32c82a806f"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/r1a_hierarchical_grader_e200_resume_epoch150_seed20260929/history.csv",
+      "bytes": 38516,
+      "sha256": "a231aaba1b957087d1730077b7718d271a64821cc090a600606ef496db7fa525"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/r1a_hierarchical_grader_e200_resume_epoch150_seed20260929/training_config.json",
+      "bytes": 2230,
+      "sha256": "939cd6bafd74eafa6bcb89c861235b81b765d2694aa1e2299ea10509c72e0ef8"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/r1a_hierarchical_grader_e200_resume_epoch150_seed20260929/training_summary.json",
+      "bytes": 2470,
+      "sha256": "ce806ea2c71f09430ff8775590db416170ee531814059cd03a6478113cf91c12"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/r1a_hierarchical_grader_seed20260929/history.csv",
+      "bytes": 8022,
+      "sha256": "6a25f16d8cb863a07cb73a9424afd7289009f486fa4f0eedb161533e2f7d0477"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/r1a_hierarchical_grader_seed20260929/training_config.json",
+      "bytes": 1425,
+      "sha256": "357ba94beee28468399b6ce2feac099981f44f382b5a84e2a650ac24a683792e"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/r1a_hierarchical_grader_seed20260929/training_summary.json",
+      "bytes": 2439,
+      "sha256": "7a6ff890dcb38ec67b4db643be6899593c7080637c62425d1ba955ef623ef025"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/refine_module_20261022/rule_anchored_residual/rule_base_residual_seed20261022/completion.json",
+      "bytes": 338,
+      "sha256": "c3749e5133b10c795017ea58cd87f487962dc43afc396e964d60d97685ecb906"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/refine_module_20261022/rule_anchored_residual/rule_base_residual_seed20261022/history.csv",
+      "bytes": 1531,
+      "sha256": "40c03c849c9756b4101512ec5915c9c29e333816a914bfc52298fb396e8f1436"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/yolo26n_seg_offlineaug_e200_mask50_seed20260915/args.yaml",
+      "bytes": 2310,
+      "sha256": "1a021f324ea334e2e86cf687edb62208d22b928c83b09f39429c260e943f9597"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/yolo26n_seg_offlineaug_e200_mask50_seed20260915/mask50_selection_trace.csv",
+      "bytes": 9307,
+      "sha256": "65f8d593f639174cfd68ec8d67b2a258707a3654ad8491d4f2721887162be096"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/models/experiments/yolo26n_seg_offlineaug_e200_mask50_seed20260915/results.csv",
+      "bytes": 36686,
+      "sha256": "cbf080c96ea98949b53142ae305445ad4a8204c9947a598a294468882b4fefdd"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/grading_standard_manual_v4_final/grading_standard_config.json",
+      "bytes": 3966,
+      "sha256": "ab6cd472737c9cf5706ec0878eb5e92fee697311e222a380917bfa1a99affa3f"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/reports/attribute_local_20261025/attribute_rank_control_ledger.csv",
+      "bytes": 2526,
+      "sha256": "f1ad58e8c887eced043ec3ac9f20ee8c417bfcc466bf7be0a4f0fbb1f756dc9a"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/reports/attribute_local_20261025/FROZEN_CANDIDATES_AND_TEST_PROTOCOL.json",
+      "bytes": 8003,
+      "sha256": "9c059a8cace668628088ef44d4827ba14d38a042bdfb98f518304c35045a728a"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/reports/attribute_local_20261025/prototype_fit_ledger.csv",
+      "bytes": 4418,
+      "sha256": "a8676c47efaef79c5d278cca638c59338a1e4ccca21e6140879f5de0b1cfd71c"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/reports/attribute_local_20261025/rank_latency_samples.csv",
+      "bytes": 40621,
+      "sha256": "42830706ba81ccea62be3f535b8afc1c4222a5bacccec4b2b1bf5e1a39619289"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/reports/attribute_local_20261025/rank_latency_status.json",
+      "bytes": 200,
+      "sha256": "f905af51ebc53da60bdbc6f1f2803cc53238902c1bb9f8c9cab138a7d7be7637"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/reports/attribute_local_20261025/rank_latency_summary.csv",
+      "bytes": 1193,
+      "sha256": "0d44ed9fff814b122578e2e7355d4e3371513cd8778795c1b2b61b278f9fe153"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/reports/attribute_local_20261025/runtime_environment.json",
+      "bytes": 1001,
+      "sha256": "a9a818d58e405e0d1066de85207dcd52fba89266d48c7a324a347f75a7c2c979"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/reports/final_test_preflight_20261027/test_analysis/analysis_plan.json",
+      "bytes": 2530,
+      "sha256": "933df717256e240be7c5317c235910c889a237190cd32d6e18724982753ef081"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/reports/final_test_preflight_20261027/test_analysis/analysis_status.json",
+      "bytes": 1702,
+      "sha256": "558bb066c020d69be061970d520e0ae067e99fd04b01905ee10daaf22cf213d7"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/outputs/strict_rot_exclusion_v2/exclusion_summary.json",
+      "bytes": 1419,
+      "sha256": "9af99c797e62085d54d8cf20494ed803e6ec767daabcadc104297ce9340bd485"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/review/three_person_audit_v1/04_审核结果汇总/audit_summary.json",
+      "bytes": 4645,
+      "sha256": "55d824d31bd7e4c5a956f763d8b83b45657b7f74d526322d775c993658de2326"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/review/three_person_audit_v1/04_审核结果汇总/README.md.txt",
+      "bytes": 933,
+      "sha256": "07099af0a1fc367c1b37ec8aa57d6033f6f420fd5440f57c93f33b08c37ab64d"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/review/three_person_audit_v1/README_分工总览.md.txt",
+      "bytes": 979,
+      "sha256": "5fe5fd6e12da50c05dd1fa58016160d86a07560116ef3af7a8d2392cf82d9b88"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/analyze_final_test_20261027.py",
+      "bytes": 12322,
+      "sha256": "5952fd068481bdea9b987bd039be53e57cba751d3275c43b9b6eb41a10e552a4"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/analyze_r1_ap_bootstrap.py",
+      "bytes": 6616,
+      "sha256": "75265e2da4a2c7886748145e3ad2d8dee68f9f8825de279738ab86d858c5829d"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/analyze_val_instance_errors.py",
+      "bytes": 48919,
+      "sha256": "335799a4d91d3a121e5649ecf52e6589add5b36072145d6a51f60f33a76d9925"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/attribute_local_cache_20261025.py",
+      "bytes": 5142,
+      "sha256": "db44b0d57a135fc26deddbf24e0df682dd33708717f7f058a4d439bacbf328a2"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/attribute_local_proto_cache_20261025.py",
+      "bytes": 8194,
+      "sha256": "1660882c0a90a2f16d3060688d0087c248da0c5d78d22e5cd4d23ebf8714a8a4"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/attribute_local_proto_evaluate_20261025.py",
+      "bytes": 5481,
+      "sha256": "29094e23763541625ec330d470384fa63f9a7ba1fb15d69622355c150feb5daf"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/attribute_local_proto_fit_20261025.py",
+      "bytes": 7630,
+      "sha256": "6cec9cd945d93791198e51c97a0634f11e28a46c7efb5c51067521931c956922"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/attribute_local_rank_20261025.py",
+      "bytes": 11876,
+      "sha256": "2c170b4af7fbb763ad9b367ecdb1875e9d7571debfeee71ef47453f59578aa36"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/attribute_local_rank_controls_20261025.py",
+      "bytes": 3665,
+      "sha256": "4abfb66fada5941dc27eee9db5feb61baf9abc804d8e48e0c1a0103a076ef303"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/attribute_local_rank_latency_20261025.py",
+      "bytes": 4879,
+      "sha256": "ad131a179d13ed1ddcf578fee1970e02b55fd9b32015f305ab04fee9318cf228"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/attribute_local_runtime_20261025.py",
+      "bytes": 12457,
+      "sha256": "63f031e0f5e4cc3e077e08dfc3b332c5655dee73cef0e673c09b5831a2323993"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/audit_materials_additional_20261028.py",
+      "bytes": 3254,
+      "sha256": "06e15d0f146a5bff864b4367bdfb1a58bdc52f147dbd7e13592eba7df7a1980f"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/audit_materials_sources_20261028.py",
+      "bytes": 15071,
+      "sha256": "1972e65d3036949c84a8906d98c57223aa7f3ec2605ad2f20012231a36f76655"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/build_dataset.ps1",
+      "bytes": 11294,
+      "sha256": "3e6f25218a32183013eb5cc7b1e19692929f981c127b0c63d9a18525d3ec2a57"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/build_four_class_dataset.py",
+      "bytes": 24073,
+      "sha256": "357fee6dbd0478abb2bdcf77896f96f26b3a9680ed5b244330d37d57f737cd13"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/build_grading_scheme_candidates.py",
+      "bytes": 32924,
+      "sha256": "3ce0aca19189eca7a6dea57cc6f83ce91ed7d3a7d2aad455fe56181f61e1f97c"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/build_methods_material_pack_20261028.py",
+      "bytes": 117197,
+      "sha256": "4450b38a16ede69c6fffbc0400dabb26126178e6abf5b1579734c9b72aee4ae1"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/build_post_review_candidate_manifest.py",
+      "bytes": 6786,
+      "sha256": "fa45deee716d4cca2b15ab82c838cf1065c3e8b0b57c8ca2b415e0b01288fe9c"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/build_r1_multitask_targets.py",
+      "bytes": 23686,
+      "sha256": "f183598ae54dc3675de39d27b37b0dc64f3a667866229b908d136a261d7fc104"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/build_size_priority_package.py",
+      "bytes": 31657,
+      "sha256": "aae3601cd9146debf11c1ca24cfd6c71c8143caed27342b537e91a3bc06cc045"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/direction_experiments_20261023.py",
+      "bytes": 19152,
+      "sha256": "cbb9b946203b81fcd311375a21061558db2530c5711bfff6d0f59d275218d523"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/direction_native_inference_20261023.py",
+      "bytes": 2033,
+      "sha256": "f14efddb20b677a302ed6f90c7922d1659f4dd1f560aa362c7c7cf99b72a65b5"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/extract_features.py",
+      "bytes": 40663,
+      "sha256": "cf8214db193171f16f01d45e52d0e959e9a881306dcf29d4fc10c98a55546ed3"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/final_test_evaluation_20261027.py",
+      "bytes": 15650,
+      "sha256": "e3ad28dd1125a2d643c2c0f06f0d519d437de0db6fca9ac59e992fbb021dbd74"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/final_test_preflight_20261027.py",
+      "bytes": 11384,
+      "sha256": "cc9d70b89e5a895cd95a1aedc32689acb48bbfb0384beb1883c74e1742d21266"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/finalize_manual_grading_standard.py",
+      "bytes": 37108,
+      "sha256": "262397ea5b65ad0f2b6d75d85b07c2266375aaf75b9cb117386a88e0217d2b6e"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/joint_pipeline_capture_20261024.py",
+      "bytes": 7044,
+      "sha256": "04b4b411289471af50f41928306218127f723a593c15f9b1ab3557a0bcedb93b"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/joint_pipeline_evaluate_20261024.py",
+      "bytes": 4903,
+      "sha256": "99895d4dc78c81cf4a6f5f2896d0db7c431a49ccb3879b754d8a8c710acfd76c"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/joint_pipeline_policy_20261024.py",
+      "bytes": 5378,
+      "sha256": "8182e2450cdcc38ab57a7efafce0cef5ccb8064e45d09a0932bad5a81e006981"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/joint_pipeline_rank_fit_20261024.py",
+      "bytes": 12603,
+      "sha256": "7e447688fe1612effaa3ee3ed9d83f71e328c34b5914f763e4649c3318e8b313"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/joint_pipeline_runtime_20261024.py",
+      "bytes": 4470,
+      "sha256": "07ca8d115789eec11ffd9b0038a7b2ae326b2aaf6957cd6f5d417d4e10d46e40"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/r1_qualified_runtime.py",
+      "bytes": 902,
+      "sha256": "00e5fc4a86063d4140fa8360783e1b2dffa302231de197fe31e201d38cb8149e"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/r1_research_runtime.py",
+      "bytes": 3881,
+      "sha256": "5e8f1dfb5ce740a154d434271a77e85102293c20666aac1a8ff960bd86dc4bd2"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/refine_residual_runtime.py",
+      "bytes": 3356,
+      "sha256": "6cb89b89df0f917712d23bd7573fc13632458e8e3f2cbcfd5664ae6fd0db02e5"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/refine_rule_anchored_residual.py",
+      "bytes": 15311,
+      "sha256": "f6fd4b1a8da4f5d0b845fd3e5a161992b0607c3a674d76b75174dd79304e282a"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/refine_rule_reliability.py",
+      "bytes": 12423,
+      "sha256": "acc1d0fb7b4cb322e4765d829a5c6f271ae8fb0f28c281c781a3d649868c57e7"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/refine_rule_runtime.py",
+      "bytes": 6207,
+      "sha256": "fd942bf759c915a37a1eeb23f28758d38f9b2caf9aebec706b00e99e0e44915c"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/refine_score_residual_ablation.py",
+      "bytes": 9633,
+      "sha256": "6d8e7484584301b55f466920fef5132144a5ac69b283a8e0534841d43a63beae"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/report_frozen_offlineaug_e200.py",
+      "bytes": 5675,
+      "sha256": "46847d3d4962712020a12d5cefcc4017effdd392286764f05250d45e837ba396"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/run_r0_fixed_prediction_replay.py",
+      "bytes": 46669,
+      "sha256": "68441b66ae909e397cc3454bc135a09783bd3e8a9b57852c2f47175e3a31becd"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/train_frozen_offlineaug_e200.py",
+      "bytes": 8418,
+      "sha256": "c46c697b329f7a2b2bde132eb92d62100021f14544865fd0fb05cf1fb38d5738"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/train_r1a_hierarchical_grader.py",
+      "bytes": 35390,
+      "sha256": "57c22233e8458dede2899b872b0303d9123c213fa0912f2d518a297cb81c0811"
+    },
+    {
+      "path": "08_证据索引与待补充问题/关键证据副本/scripts/validate_r1_closure_runtime.py",
+      "bytes": 14092,
+      "sha256": "faeeb93e28471efc509a6c295eefd7f622f1305bc0852fe5fc1fde3e88755f8e"
+    },
+    {
+      "path": "08_证据索引与待补充问题/安装库与补丁摘录索引.csv",
+      "bytes": 1400,
+      "sha256": "9c849cf278c269097160c4fea9144a979b5399cd09d7fce6a7f9988f9e6991a9"
+    },
+    {
+      "path": "08_证据索引与待补充问题/安装库函数摘录/loss__E2ELoss.txt",
+      "bytes": 2167,
+      "sha256": "fd9ac6bdf64b9efc724a8fa0ac50aa4c5d51a6695e2788276a44070788fddcb5"
+    },
+    {
+      "path": "08_证据索引与待补充问题/安装库函数摘录/loss__v8SegmentationLoss.txt",
+      "bytes": 9815,
+      "sha256": "4a8022e95d3899221fc9a7ea346cad41e278a838afcfa3ab6e2acac8cdfc2514"
+    },
+    {
+      "path": "08_证据索引与待补充问题/安装库函数摘录/metrics__ap_per_class.txt",
+      "bytes": 5944,
+      "sha256": "e50e58788588f6be0a65b1fad3e8d680110930670924623d506fbc3429c34f27"
+    },
+    {
+      "path": "08_证据索引与待补充问题/安装库函数摘录/metrics__compute_ap.txt",
+      "bytes": 1881,
+      "sha256": "8cedfede2fbebc42dcab9f309bb8a217761848c0bbe708e23d2b768c47ac0010"
+    },
+    {
+      "path": "08_证据索引与待补充问题/安装库函数摘录/ops__process_mask_native.txt",
+      "bytes": 1961,
+      "sha256": "8db4e705b1923fba02a69309db1948e214137cdc73d965713dd947d3dc1cd53d"
+    },
+    {
+      "path": "08_证据索引与待补充问题/安装库函数摘录/validator__match_predictions.txt",
+      "bytes": 2754,
+      "sha256": "ad2ff228bafa92febc827d6a03ab31f38c7f873fde7e64cfe5a948d80980f34c"
+    },
+    {
+      "path": "08_证据索引与待补充问题/待补充问题与责任人.csv",
+      "bytes": 2472,
+      "sha256": "5701dd3a5e5e72a2374ca389a31df578915b5a8ff5fb88a50ab671498b770107"
+    },
+    {
+      "path": "08_证据索引与待补充问题/证据索引.csv",
+      "bytes": 35701,
+      "sha256": "777e7990c13a17141499ef7223a6770397a78d50c0dd3fe31e7d1277a709c225"
+    },
+    {
+      "path": "08_证据索引与待补充问题/证据索引与使用限制.md",
+      "bytes": 1432,
+      "sha256": "3133bcd65b6d012d07ea44f6ff2b74ca018c95ef85e4b13bc3a6ec1778a93684"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3420,
+      "sha256": "00205ad1d5f48ce9d7de90965023fb969de6c2bb09e88db9cd84e8d803b4d844"
+    }
+  ],
+  "scope": "不包含本清单自身"
+}

@@ -1,0 +1,22 @@
+{
+  "CPU": "Intel(R) Core(TM) Ultra 9 275HX",
+  "RAM_bytes": 33751425024,
+  "OS": "Windows-11-10.0.26200-SP0",
+  "Python": "3.12.14",
+  "torch": "2.13.0+cu130",
+  "torch_compiled_cuda": "13.0",
+  "GPU": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "GPU_memory_bytes": 8546484224,
+  "logical_CPUs": 24,
+  "software": {
+    "torch": "2.13.0+cu130",
+    "torchvision": "0.28.0+cu130",
+    "ultralytics": "8.4.117",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "opencv-python": "5.0.0.93",
+    "Pillow": "12.3.0"
+  },
+  "scope": "Current environment on 2026-10-28; historical training configs retain their own recorded versions."
+}

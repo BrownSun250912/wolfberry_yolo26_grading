@@ -1,0 +1,11 @@
+﻿项目,有效参数/规则,来源
+候选池,raw conf=.001，max_det=300，imgsz640，retina_masks=True，FP32,scripts/attribute_local_runtime_20261025.py
+正式后处理,最终类相同且boxIoU≥.7删除；raw≥.25优先、rank降序、原行索引稳定,scripts/joint_pipeline_policy_20261024.py::keep_indices
+邻域证据,同图boxIoU≥.85；最大该原类别raw conf，不依赖GT,scripts/joint_pipeline_policy_20261024.py::evidence
+AP匹配,逐IoU阈值类别相容；IoU降序greedy，先预测去重再GT去重；.50:.05:.95,analyze_r1_ap_bootstrap.py::pure_match / BaseValidator.match_predictions
+AP积分,当前Ultralytics ap_per_class→compute_ap；101点插值，PR单调包络，trapezoid积分,本包安装库摘录/源码SHA
+工作点匹配,保留预测中原raw≥.25；不看类别，IoU≥.5；linear_sum_assignment最大化Σvalid(1+IoU),analyze_val_instance_errors.py::optimal_match
+类别汇总,AP4类宏平均；operating F1按4类等权，micro与macro分开,joint_pipeline_evaluate_20261024.py / final_test_evaluation_20261027.py
+终测重采样,129原图，4编号组内保留各组大小有放回；5臂共享multiplicity，2000，seed20261027,analyze_final_test_20261027.py
+区间,2.5/97.5百分位95%点态描述区间；不作多重比较校正，不报显著性p,analysis_plan.json
+延迟,24图×3重复×10调用图=720记录；warmup3图/臂；CUDA sync夹perf_counter,attribute_local_rank_latency_20261025.py

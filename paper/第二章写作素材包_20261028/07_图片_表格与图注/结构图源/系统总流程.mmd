@@ -1,0 +1,25 @@
+flowchart TD
+ I[整图RGB/BGR] --> Y[冻结YOLO26n-seg M0]
+ Y --> C[框 原类 raw_conf 原mask]
+ C --> R[冻结R1属性编码器 M1]
+ C --> G[冻结ECDF规则几何]
+ R --> F[融合256 缺梗概率 原缺陷logit]
+ G --> S[规则锚定残差 M2 仅小头已训练]
+ F --> S
+ S --> D[邻域证据与分层决策 M3]
+ C --> D
+ D --> Q[原缺陷信息质量排序 M4 仅小头已训练]
+ F --> Q
+ Q --> N[同最终类真实NMS M5]
+ D --> N
+ C --> P[可选 soft+prototype边界细化 M6]
+ P --> O[原mask用于分级 细化mask仅用于输出]
+ N --> K[统一keep索引切片]
+ O --> K
+ K --> Z[框 类 分数 rank mask 保留索引]
+ classDef frozen fill:#dceaf7,stroke:#0072b2;
+ classDef trained fill:#d9f0e5,stroke:#009e73;
+ classDef optional fill:#f6e4ef,stroke:#cc79a7,stroke-dasharray:5 3;
+ class Y,R,G frozen;
+ class S,Q trained;
+ class P,O optional;

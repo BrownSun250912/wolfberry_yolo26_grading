@@ -1,0 +1,110 @@
+{
+  "boundary_total": 60,
+  "boundary_eligible": 44,
+  "boundary_eligible_splits": {
+    "train": 41,
+    "val": 3
+  },
+  "boundary_all_splits": {
+    "train": 56,
+    "val": 4
+  },
+  "formal_duplicate_bbox_counts": {
+    "train": {
+      "instances": 4277,
+      "duplicate_bboxes": 0
+    },
+    "val": {
+      "instances": 518,
+      "duplicate_bboxes": 0
+    },
+    "test": {
+      "instances": 576,
+      "duplicate_bboxes": 0
+    }
+  },
+  "retained_image_instance_changes": [
+    {
+      "image_id": "wb_000371",
+      "split": "train",
+      "raw_instances": 4,
+      "formal_instances": 3
+    },
+    {
+      "image_id": "wb_000240",
+      "split": "test",
+      "raw_instances": 5,
+      "formal_instances": 3
+    },
+    {
+      "image_id": "wb_000331",
+      "split": "test",
+      "raw_instances": 5,
+      "formal_instances": 4
+    },
+    {
+      "image_id": "wb_000356",
+      "split": "test",
+      "raw_instances": 6,
+      "formal_instances": 5
+    },
+    {
+      "image_id": "wb_000370",
+      "split": "test",
+      "raw_instances": 5,
+      "formal_instances": 4
+    },
+    {
+      "image_id": "wb_000415",
+      "split": "test",
+      "raw_instances": 5,
+      "formal_instances": 4
+    }
+  ],
+  "sample_candidates": [
+    {
+      "image_id": "wb_000002",
+      "original_source": "F:\\wolfberry\\photo_library\\new\\002_Color.png",
+      "split": "train",
+      "original_number": "2"
+    },
+    {
+      "image_id": "wb_000151",
+      "original_source": "F:\\wolfberry\\photo_library\\new\\152_Color.png",
+      "split": "train",
+      "original_number": "152"
+    },
+    {
+      "image_id": "wb_000501",
+      "original_source": "F:\\wolfberry\\photo_library\\new\\503_Color.png",
+      "split": "val",
+      "original_number": "503"
+    },
+    {
+      "image_id": "wb_000911",
+      "original_source": "F:\\wolfberry\\photo_library\\new\\923_Color.png",
+      "split": "test",
+      "original_number": "923"
+    }
+  ],
+  "hold_raw_instances": 374,
+  "feature_manifest_counts": {
+    "rows": 5088,
+    "manual_rot_label": {
+      "NOT_ROT": 1823,
+      "NOT_IN_REVIEW_QUEUE": 2820,
+      "ROT": 445
+    },
+    "manual_rot_exclude": {
+      "False": 4643,
+      "True": 445
+    },
+    "splits": {
+      "train": 4523,
+      "val": 565
+    }
+  },
+  "saved_test_network_input_shapes": {
+    "(384, 640)": 129
+  }
+}

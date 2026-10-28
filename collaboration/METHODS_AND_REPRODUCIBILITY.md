@@ -7,3 +7,7 @@
 写作与数值检查不需要GPU：最终指标在[test_replay/metrics.csv](../outputs/reports/final_test_preflight_20261027/test_replay/metrics.csv)，按实例结果和混淆矩阵在[details.json](../outputs/reports/final_test_preflight_20261027/test_replay/details.json)。[test_analysis](../outputs/reports/final_test_preflight_20261027/test_analysis/)包含2000次重采样结果、区间、分析方案与匹配改变说明。开发集主表、计时、压力和原图几何数据在[证据索引](EVIDENCE_INDEX.md)。
 
 本次搬迁仅改Markdown路径和增加协作说明，未重跑模型、修改实验数字、权重或标签。旧核验JSON中的源码/文件哈希是原实验时点的哈希；Markdown搬迁后的发布哈希另记。Word/PDF只作已核对终测数字的阅读快照，未重新排版或重新认证布局。
+
+## 材料与方法的细节素材
+
+[第二章写作素材包](../paper/第二章写作素材包_20261028/README.md)补充实际原始数据核验、分级公式、训练阶段参数、安装库关键函数/补丁摘录及少量代表性图像。全量RGB数据/新模型权重/PT缓存仍未包含；包内原始样图和增强样图只是写作示例。各小文件副本保持字节，来源与SHA在包内证据索引登记。原采集信息、完整历史命令和实物果独立性等缺口明确列出。

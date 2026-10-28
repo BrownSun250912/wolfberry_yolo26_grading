@@ -1,0 +1,12 @@
+{
+  "kind": "rule_base_residual",
+  "seed": 20261022,
+  "held_MAE": 1.9509705305099487,
+  "held_RMSE": 3.1316237449645996,
+  "best_epoch": 19,
+  "epochs": 31,
+  "budget_partial": false,
+  "wall_seconds": 3.25,
+  "checkpoint_sha256": "c95edfe7a7e0ce914d861cdea9abddadb9c1e341f68250466a72722bc61dcd91",
+  "test_accessed": false
+}

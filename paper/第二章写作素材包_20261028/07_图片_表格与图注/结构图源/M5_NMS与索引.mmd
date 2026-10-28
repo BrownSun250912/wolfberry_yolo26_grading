@@ -1,0 +1,5 @@
+flowchart LR
+ I[N行框 最终类 rank raw_scope] --> S[scope优先 rank降序 原索引稳定]
+ S --> D[同类boxIoU>=.7 真删除]
+ D --> K[保留索引按原序返回 K<=N]
+ K --> O[所有字段与两套mask共享keep]

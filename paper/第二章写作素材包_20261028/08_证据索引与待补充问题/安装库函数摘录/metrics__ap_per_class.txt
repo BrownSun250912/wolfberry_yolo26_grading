@@ -1,0 +1,103 @@
+来源: .venv/Lib/site-packages/ultralytics/utils/metrics.py
+源文件SHA256: 974116d855398c48cd4cb30919b5ee424f8eaf555198086d7d5dc3068bc71ce2
+行号: 792–889
+此摘录来自本机安装版本，不保证与官方发行包字节相同。
+
+00792: def ap_per_class(
+00793:     tp: np.ndarray,
+00794:     conf: np.ndarray,
+00795:     pred_cls: np.ndarray,
+00796:     target_cls: np.ndarray,
+00797:     plot: bool = False,
+00798:     on_plot=None,
+00799:     save_dir: Path = Path(),
+00800:     names: dict[int, str] | None = None,
+00801:     eps: float = 1e-16,
+00802:     prefix: str = "",
+00803: ) -> tuple:
+00804:     """Compute the average precision per class for object detection evaluation.
+00805: 
+00806:     Args:
+00807:         tp (np.ndarray): Binary array indicating whether the detection is correct (True) or not (False).
+00808:         conf (np.ndarray): Array of confidence scores of the detections.
+00809:         pred_cls (np.ndarray): Array of predicted classes of the detections.
+00810:         target_cls (np.ndarray): Array of true classes of the targets.
+00811:         plot (bool, optional): Whether to plot PR curves or not.
+00812:         on_plot (callable, optional): A callback to pass plots path and data when they are rendered.
+00813:         save_dir (Path, optional): Directory to save the PR curves.
+00814:         names (dict[int, str], optional): Dictionary of class names to plot PR curves.
+00815:         eps (float, optional): A small value to avoid division by zero.
+00816:         prefix (str, optional): A prefix string for saving the plot files.
+00817: 
+00818:     Returns:
+00819:         tp (np.ndarray): True positive counts at threshold given by max F1 metric for each class.
+00820:         fp (np.ndarray): False positive counts at threshold given by max F1 metric for each class.
+00821:         p (np.ndarray): Precision values at threshold given by max F1 metric for each class.
+00822:         r (np.ndarray): Recall values at threshold given by max F1 metric for each class.
+00823:         f1 (np.ndarray): F1-score values at threshold given by max F1 metric for each class.
+00824:         ap (np.ndarray): Average precision for each class at different IoU thresholds.
+00825:         unique_classes (np.ndarray): An array of unique classes that have data.
+00826:         p_curve (np.ndarray): Precision curves for each class.
+00827:         r_curve (np.ndarray): Recall curves for each class.
+00828:         f1_curve (np.ndarray): F1-score curves for each class.
+00829:         x (np.ndarray): X-axis values for the curves.
+00830:         prec_values (np.ndarray): Precision values at mAP@0.5 for each class.
+00831:     """
+00832:     names = names if names is not None else {}
+00833:     # Sort by objectness
+00834:     i = np.argsort(-conf)
+00835:     tp, conf, pred_cls = tp[i], conf[i], pred_cls[i]
+00836: 
+00837:     # Find unique classes
+00838:     unique_classes, nt = np.unique(target_cls, return_counts=True)
+00839:     nc = unique_classes.shape[0]  # number of classes, number of detections
+00840: 
+00841:     # Create Precision-Recall curve and compute AP for each class
+00842:     x, prec_values = np.linspace(0, 1, 1000), []
+00843: 
+00844:     # Average precision, precision and recall curves
+00845:     ap, p_curve, r_curve = np.zeros((nc, tp.shape[1])), np.zeros((nc, 1000)), np.zeros((nc, 1000))
+00846:     for ci, c in enumerate(unique_classes):
+00847:         i = pred_cls == c
+00848:         n_l = nt[ci]  # number of labels
+00849:         n_p = i.sum()  # number of predictions
+00850:         if n_p == 0 or n_l == 0:
+00851:             prec_values.append(np.zeros_like(x))  # keep one row per class, aligned with `ap` and `names`
+00852:             continue
+00853: 
+00854:         # Accumulate FPs and TPs
+00855:         fpc = (1 - tp[i]).cumsum(0)
+00856:         tpc = tp[i].cumsum(0)
+00857: 
+00858:         # Recall
+00859:         recall = tpc / (n_l + eps)  # recall curve
+00860:         r_curve[ci] = np.interp(-x, -conf[i], recall[:, 0], left=0)  # negative x, xp because xp decreases
+00861: 
+00862:         # Precision
+00863:         precision = tpc / (tpc + fpc)  # precision curve
+00864:         p_curve[ci] = np.interp(-x, -conf[i], precision[:, 0], left=1)  # p at pr_score
+00865: 
+00866:         # AP from recall-precision curve
+00867:         for j in range(tp.shape[1]):
+00868:             ap[ci, j], mpre, mrec = compute_ap(recall[:, j], precision[:, j])
+00869:             if j == 0:
+00870:                 prec_values.append(np.interp(x, mrec, mpre))  # precision at mAP@0.5
+00871: 
+00872:     prec_values = np.array(prec_values) if prec_values else np.zeros((1, 1000))  # (nc, 1000)
+00873: 
+00874:     # Compute F1 (harmonic mean of precision and recall)
+00875:     f1_curve = 2 * p_curve * r_curve / (p_curve + r_curve + eps)
+00876:     names = {i: names[k] for i, k in enumerate(unique_classes) if k in names}  # dict: only classes that have data
+00877:     if plot:
+00878:         plot_pr_curve(x, prec_values, ap, save_dir / f"{prefix}PR_curve.png", names, on_plot=on_plot)
+00879:         plot_mc_curve(x, f1_curve, save_dir / f"{prefix}F1_curve.png", names, ylabel="F1", on_plot=on_plot)
+00880:         plot_mc_curve(x, p_curve, save_dir / f"{prefix}P_curve.png", names, ylabel="Precision", on_plot=on_plot)
+00881:         plot_mc_curve(x, r_curve, save_dir / f"{prefix}R_curve.png", names, ylabel="Recall", on_plot=on_plot)
+00882: 
+00883:     i = smooth(f1_curve.mean(0), 0.1).argmax()  # max F1 index
+00884:     p, r, f1 = p_curve[:, i], r_curve[:, i], f1_curve[:, i]  # max-F1 precision, recall, F1 values
+00885:     tp = (r * nt).round()  # true positives
+00886:     fp = (tp / (p + eps) - tp).round()  # false positives
+00887:     return tp, fp, p, r, f1, ap, unique_classes.astype(int), p_curve, r_curve, f1_curve, x, prec_values
+00888: 
+00889: 

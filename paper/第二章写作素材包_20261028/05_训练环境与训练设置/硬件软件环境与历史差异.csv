@@ -1,0 +1,22 @@
+﻿阶段,字段,值,来源,历史解释
+本轮2026-10-28探测,CPU,"""Intel(R) Core(TM) Ultra 9 275HX""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,RAM_bytes,33751425024,current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,OS,"""Windows-11-10.0.26200-SP0""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,Python,"""3.12.14""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,torch,"""2.13.0+cu130""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,torch_compiled_cuda,"""13.0""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,GPU,"""NVIDIA GeForce RTX 5070 Laptop GPU""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,GPU_memory_bytes,8546484224,current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,logical_CPUs,24,current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,software.torch,"""2.13.0+cu130""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,software.torchvision,"""0.28.0+cu130""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,software.ultralytics,"""8.4.117""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,software.numpy,"""2.5.2""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,software.pandas,"""3.0.5""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,software.scipy,"""1.18.1""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,software.opencv-python,"""5.0.0.93""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,software.Pillow,"""12.3.0""",current_hardware_software.json,不能代替所有历史run环境
+本轮2026-10-28探测,scope,"""Current environment on 2026-10-28; historical training configs retain their own recorded versions.""",current_hardware_software.json,不能代替所有历史run环境
+初始环境报告,Python,3.12.13,environment/ENVIRONMENT_REPORT.md,与后期3.12.14并列
+e200运行时记录,Python/torch/ultralytics/GPU,3.12.14 / 2.13.0+cu130 / 8.4.117 / RTX5070 Laptop 8151MiB,docs/YOLO26_OFFLINEAUG_E200_FROZEN_PROTOCOL_20260918.md,历史运行报告，非仅当前探测
+离线增强生成环境,Python/NumPy/Pillow,3.13.5 / 2.1.3 / 11.1.0,segmentation_augmentation_config.json.versions,单独生成环境

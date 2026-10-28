@@ -2,6 +2,7 @@
 
 当前主稿位于[manuscript_20261025](manuscript_20261025/README_初稿说明.md)，已补入2026-10-27最终测试。
 
+- [第二章：材料与方法写作素材包](第二章写作素材包_20261028/README.md)：先核实事实、参数、标签版本、图注和缺口，再撰写方法。
 - [中文可编辑稿](manuscript_20261025/MANUSCRIPT_ZH.md) · [英文可编辑稿](manuscript_20261025/MANUSCRIPT_EN.md)
 - [中文Word](manuscript_20261025/MANUSCRIPT_ZH.docx) · [中文PDF](manuscript_20261025/MANUSCRIPT_ZH.pdf) · [英文PDF](manuscript_20261025/MANUSCRIPT_EN.pdf)
 - [给共同作者的结果口径](EXPERIMENT_UPDATE_20261027.md)

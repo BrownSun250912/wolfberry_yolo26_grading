@@ -1,0 +1,19 @@
+﻿特征,定义,单位,最终规则作用,来源
+major_axis,椭圆长轴，失败用最小旋转矩形长边,px,未直接加权,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+minor_axis,椭圆短轴，失败用最小旋转矩形短边,px,ECDF权重.10,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+area,geometry mask非零像素数,px²,ECDF权重.70,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+aspect_ratio,major_axis/minor_axis,无量纲,shape内变换后权重.30,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+circularity,4π连续轮廓面积/周长²,无量纲,shape内权重.20,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+solidity,连续轮廓面积/凸包面积,无量纲,shape内权重.50,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+eccentricity,sqrt(1−(minor_axis/major_axis)²),无量纲,无最终grade权重,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+L_mean,非高光有效果体CIELAB L*均值,0–100,0,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+L_std,上述L*标准差,0–100,0,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+a_mean,非高光有效果体a*均值,近似−128–127,0,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+a_std,上述a*标准差,CIELAB,0,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+b_mean,非高光有效果体b*均值,近似−128–127,0,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+b_std,上述b*标准差,CIELAB,0,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+S_mean,非高光果体HSV饱和度均值,0–1,0,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+V_mean,非高光果体HSV亮度均值,0–1,0,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+dark_ratio,暗区候选面积/损伤有效区域像素数,0–1,0；疑似区域非人工缺陷GT,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+abnormal_color_ratio,稳健Lab异常色面积/损伤有效区域像素数,0–1,0；疑似区域非人工缺陷GT,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json
+max_damage_ratio,暗区与异常色并集最大连通区面积/geometry mask面积,0–1,0；疑似区域非人工缺陷GT,docs/FEATURE_DEFINITIONS.md；configs/feature_extraction_frozen_v1_val.yaml；grading_standard_config.json

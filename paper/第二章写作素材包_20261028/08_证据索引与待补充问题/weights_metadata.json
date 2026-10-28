@@ -1,0 +1,1723 @@
+{
+  "detector": {
+    "path": "models\\experiments\\yolo26n_seg_offlineaug_e200_mask50_seed20260915\\weights\\best.pt",
+    "sha256": "6a63c81d901755f4f0282331323c4863416708b6d073bf47f8343b214a02a779",
+    "bytes": 6549469,
+    "keys": [
+      "date",
+      "version",
+      "license",
+      "docs",
+      "epoch",
+      "best_fitness",
+      "model",
+      "ema",
+      "updates",
+      "optimizer",
+      "scaler",
+      "train_args",
+      "train_metrics",
+      "train_results",
+      "git"
+    ],
+    "epoch": -1,
+    "version": "8.4.117",
+    "date": "2026-09-18T18:05:12.086275+08:00",
+    "train_args": {
+      "task": "segment",
+      "mode": "train",
+      "model": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\pretrained\\yolo26n-seg.pt",
+      "data": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\configs\\grading_four_class_v3_augmented_delivery_local.yaml",
+      "epochs": 200,
+      "time": null,
+      "patience": 0,
+      "batch": 8,
+      "imgsz": 640,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 4,
+      "project": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\models\\experiments",
+      "name": "yolo26n_seg_offlineaug_e200_mask50_seed20260915",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "AdamW",
+      "verbose": true,
+      "seed": 20260915,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": false,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "end2end": true,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "keras": false,
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "nms": false,
+      "lr0": 0.00125,
+      "lrf": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.0,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 64,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": "randaugment",
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml"
+    },
+    "model_type": "ultralytics.nn.tasks.SegmentationModel",
+    "parameters": 3054420,
+    "yaml": {
+      "nc": 4,
+      "end2end": true,
+      "reg_max": 1,
+      "scales": {
+        "n": [
+          0.5,
+          0.25,
+          1024
+        ],
+        "s": [
+          0.5,
+          0.5,
+          1024
+        ],
+        "m": [
+          0.5,
+          1.0,
+          512
+        ],
+        "l": [
+          1.0,
+          1.0,
+          512
+        ],
+        "x": [
+          1.0,
+          1.5,
+          512
+        ]
+      },
+      "backbone": [
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            64,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            128,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            1024,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            1024,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "SPPF",
+          [
+            1024,
+            5,
+            3,
+            true
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C2PSA",
+          [
+            1024
+          ]
+        ]
+      ],
+      "head": [
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            6
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            13
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            10
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          1,
+          "C3k2",
+          [
+            1024,
+            true,
+            0.5,
+            true
+          ]
+        ],
+        [
+          [
+            16,
+            19,
+            22
+          ],
+          1,
+          "Segment26",
+          [
+            "nc",
+            32,
+            256
+          ]
+        ]
+      ],
+      "scale": "n",
+      "yaml_file": "yolo26n-seg.yaml",
+      "channels": 3
+    },
+    "names": {
+      "0": "unqualified",
+      "1": "grade_1",
+      "2": "grade_2",
+      "3": "grade_3"
+    },
+    "stride": {
+      "shape": [
+        3
+      ],
+      "dtype": "torch.float32",
+      "values": [
+        8.0,
+        16.0,
+        32.0
+      ]
+    },
+    "end2end": true,
+    "head_attributes": {
+      "nc": 4,
+      "nm": 32,
+      "npr": 64,
+      "reg_max": 1,
+      "max_det": 300,
+      "nl": 3,
+      "end2end": true,
+      "legacy": false
+    }
+  },
+  "attribute_encoder": {
+    "path": "models\\experiments\\r1a_hierarchical_grader_e200_resume_epoch150_seed20260929\\best.pt",
+    "sha256": "45fb45ec8724629c6bebccc44924946551adae067c39772273fcb358506e3b9a",
+    "bytes": 36895064,
+    "keys": [
+      "schema_version",
+      "model_state",
+      "optimizer_state",
+      "scheduler_state",
+      "epoch",
+      "config",
+      "geometry_names",
+      "geometry_mean",
+      "geometry_std",
+      "thresholds",
+      "val_metrics"
+    ],
+    "epoch": 131,
+    "config": {
+      "seed": 20260929,
+      "epochs": 150,
+      "patience": 20,
+      "batch_size": 64,
+      "image_size": 160,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "lambda_stem": 1.0,
+      "lambda_score": 1.0,
+      "num_workers": 0,
+      "amp": true,
+      "device": "cuda:0"
+    },
+    "geometry_mean": [
+      8.570891380310059,
+      4.424424171447754,
+      4.429472923278809,
+      4.883517742156982,
+      4.8838677406311035,
+      0.30794772505760193
+    ],
+    "geometry_std": [
+      0.24705567955970764,
+      0.20342153310775757,
+      0.19758154451847076,
+      0.16596731543540955,
+      0.16502951085567474,
+      0.025343166664242744
+    ],
+    "model_state_shapes": {
+      "visual.0.0.weight": [
+        32,
+        4,
+        3,
+        3
+      ],
+      "visual.0.1.weight": [
+        32
+      ],
+      "visual.0.1.bias": [
+        32
+      ],
+      "visual.0.1.running_mean": [
+        32
+      ],
+      "visual.0.1.running_var": [
+        32
+      ],
+      "visual.0.1.num_batches_tracked": [],
+      "visual.0.3.block.0.weight": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "visual.0.3.block.1.weight": [
+        32
+      ],
+      "visual.0.3.block.1.bias": [
+        32
+      ],
+      "visual.0.3.block.1.running_mean": [
+        32
+      ],
+      "visual.0.3.block.1.running_var": [
+        32
+      ],
+      "visual.0.3.block.1.num_batches_tracked": [],
+      "visual.0.3.block.3.weight": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "visual.0.3.block.4.weight": [
+        32
+      ],
+      "visual.0.3.block.4.bias": [
+        32
+      ],
+      "visual.0.3.block.4.running_mean": [
+        32
+      ],
+      "visual.0.3.block.4.running_var": [
+        32
+      ],
+      "visual.0.3.block.4.num_batches_tracked": [],
+      "visual.1.0.weight": [
+        64,
+        32,
+        3,
+        3
+      ],
+      "visual.1.1.weight": [
+        64
+      ],
+      "visual.1.1.bias": [
+        64
+      ],
+      "visual.1.1.running_mean": [
+        64
+      ],
+      "visual.1.1.running_var": [
+        64
+      ],
+      "visual.1.1.num_batches_tracked": [],
+      "visual.1.3.block.0.weight": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "visual.1.3.block.1.weight": [
+        64
+      ],
+      "visual.1.3.block.1.bias": [
+        64
+      ],
+      "visual.1.3.block.1.running_mean": [
+        64
+      ],
+      "visual.1.3.block.1.running_var": [
+        64
+      ],
+      "visual.1.3.block.1.num_batches_tracked": [],
+      "visual.1.3.block.3.weight": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "visual.1.3.block.4.weight": [
+        64
+      ],
+      "visual.1.3.block.4.bias": [
+        64
+      ],
+      "visual.1.3.block.4.running_mean": [
+        64
+      ],
+      "visual.1.3.block.4.running_var": [
+        64
+      ],
+      "visual.1.3.block.4.num_batches_tracked": [],
+      "visual.2.0.weight": [
+        128,
+        64,
+        3,
+        3
+      ],
+      "visual.2.1.weight": [
+        128
+      ],
+      "visual.2.1.bias": [
+        128
+      ],
+      "visual.2.1.running_mean": [
+        128
+      ],
+      "visual.2.1.running_var": [
+        128
+      ],
+      "visual.2.1.num_batches_tracked": [],
+      "visual.2.3.block.0.weight": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "visual.2.3.block.1.weight": [
+        128
+      ],
+      "visual.2.3.block.1.bias": [
+        128
+      ],
+      "visual.2.3.block.1.running_mean": [
+        128
+      ],
+      "visual.2.3.block.1.running_var": [
+        128
+      ],
+      "visual.2.3.block.1.num_batches_tracked": [],
+      "visual.2.3.block.3.weight": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "visual.2.3.block.4.weight": [
+        128
+      ],
+      "visual.2.3.block.4.bias": [
+        128
+      ],
+      "visual.2.3.block.4.running_mean": [
+        128
+      ],
+      "visual.2.3.block.4.running_var": [
+        128
+      ],
+      "visual.2.3.block.4.num_batches_tracked": [],
+      "visual.3.0.weight": [
+        192,
+        128,
+        3,
+        3
+      ],
+      "visual.3.1.weight": [
+        192
+      ],
+      "visual.3.1.bias": [
+        192
+      ],
+      "visual.3.1.running_mean": [
+        192
+      ],
+      "visual.3.1.running_var": [
+        192
+      ],
+      "visual.3.1.num_batches_tracked": [],
+      "visual.3.3.block.0.weight": [
+        192,
+        192,
+        3,
+        3
+      ],
+      "visual.3.3.block.1.weight": [
+        192
+      ],
+      "visual.3.3.block.1.bias": [
+        192
+      ],
+      "visual.3.3.block.1.running_mean": [
+        192
+      ],
+      "visual.3.3.block.1.running_var": [
+        192
+      ],
+      "visual.3.3.block.1.num_batches_tracked": [],
+      "visual.3.3.block.3.weight": [
+        192,
+        192,
+        3,
+        3
+      ],
+      "visual.3.3.block.4.weight": [
+        192
+      ],
+      "visual.3.3.block.4.bias": [
+        192
+      ],
+      "visual.3.3.block.4.running_mean": [
+        192
+      ],
+      "visual.3.3.block.4.running_var": [
+        192
+      ],
+      "visual.3.3.block.4.num_batches_tracked": [],
+      "visual.4.0.weight": [
+        256,
+        192,
+        3,
+        3
+      ],
+      "visual.4.1.weight": [
+        256
+      ],
+      "visual.4.1.bias": [
+        256
+      ],
+      "visual.4.1.running_mean": [
+        256
+      ],
+      "visual.4.1.running_var": [
+        256
+      ],
+      "visual.4.1.num_batches_tracked": [],
+      "visual.4.3.block.0.weight": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "visual.4.3.block.1.weight": [
+        256
+      ],
+      "visual.4.3.block.1.bias": [
+        256
+      ],
+      "visual.4.3.block.1.running_mean": [
+        256
+      ],
+      "visual.4.3.block.1.running_var": [
+        256
+      ],
+      "visual.4.3.block.1.num_batches_tracked": [],
+      "visual.4.3.block.3.weight": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "visual.4.3.block.4.weight": [
+        256
+      ],
+      "visual.4.3.block.4.bias": [
+        256
+      ],
+      "visual.4.3.block.4.running_mean": [
+        256
+      ],
+      "visual.4.3.block.4.running_var": [
+        256
+      ],
+      "visual.4.3.block.4.num_batches_tracked": [],
+      "geometry.0.weight": [
+        32,
+        6
+      ],
+      "geometry.0.bias": [
+        32
+      ],
+      "geometry.2.weight": [
+        32,
+        32
+      ],
+      "geometry.2.bias": [
+        32
+      ],
+      "fusion.0.weight": [
+        256,
+        288
+      ],
+      "fusion.0.bias": [
+        256
+      ],
+      "defect_head.weight": [
+        1,
+        256
+      ],
+      "defect_head.bias": [
+        1
+      ],
+      "stem_head.weight": [
+        1,
+        256
+      ],
+      "stem_head.bias": [
+        1
+      ],
+      "score_head.weight": [
+        1,
+        256
+      ],
+      "score_head.bias": [
+        1
+      ]
+    },
+    "model_state_elements": 3071250
+  },
+  "RR22_residual": {
+    "path": "models\\experiments\\refine_module_20261022\\rule_anchored_residual\\rule_base_residual_seed20261022\\best.pt",
+    "sha256": "c95edfe7a7e0ce914d861cdea9abddadb9c1e341f68250466a72722bc61dcd91",
+    "bytes": 40817,
+    "keys": [
+      "state",
+      "config",
+      "kind",
+      "seed",
+      "held",
+      "epoch",
+      "plan"
+    ],
+    "epoch": 19,
+    "seed": 20261022,
+    "config": {
+      "head": "mlp32",
+      "bound": 0.05,
+      "ordinal": 0.1
+    },
+    "kind": "rule_base_residual",
+    "held": {
+      "MAE": 1.9509705305099487,
+      "RMSE": 3.1316237449645996,
+      "n": 761,
+      "abs_gt10": 5
+    },
+    "state_shapes": {
+      "mean": [
+        256
+      ],
+      "std": [
+        256
+      ],
+      "head.0.weight": [
+        32,
+        256
+      ],
+      "head.0.bias": [
+        32
+      ],
+      "head.2.weight": [
+        1,
+        32
+      ],
+      "head.2.bias": [
+        1
+      ]
+    },
+    "state_elements": 8769
+  },
+  "old_defect_rank": {
+    "path": "models\\experiments\\attribute_local_20261025\\attribute_rank_fits\\RR22_original_defect_independent_multi_iou_seed20261025\\best.pt",
+    "sha256": "e2d846ecf4a09bd861e51983e3cdc03e4f3c65e9c232fcf5ea3b5d76d69e52b5",
+    "bytes": 4543,
+    "keys": [
+      "state",
+      "mean",
+      "std",
+      "extra",
+      "target",
+      "seed",
+      "epoch",
+      "policy",
+      "held_BCE"
+    ],
+    "epoch": 109,
+    "seed": 20261025,
+    "extra": "original_defect",
+    "target": "independent_multi_iou",
+    "policy": "RR22",
+    "held_BCE": 0.199323371052742,
+    "state_shapes": {
+      "net.0.weight": [
+        16,
+        22
+      ],
+      "net.0.bias": [
+        16
+      ],
+      "net.2.weight": [
+        1,
+        16
+      ],
+      "net.2.bias": [
+        1
+      ]
+    },
+    "state_elements": 385
+  },
+  "prototype_output_refiner": {
+    "path": "models\\experiments\\attribute_local_20261025\\prototype_fits\\soft_prototype_seed20261025\\best.pt",
+    "sha256": "cd1d5186385ebfe2ed4c603358bd4e66ac7717456ff0d79e76035178d7d880fe",
+    "bytes": 9841,
+    "keys": [
+      "state",
+      "soft",
+      "prototype",
+      "seed",
+      "epoch",
+      "held_native_metrics"
+    ],
+    "epoch": 27,
+    "seed": 20261025,
+    "held_native_metrics": {
+      "IoU": 0.9252474996134579,
+      "relative_area": 0.039670043969815744
+    },
+    "state_shapes": {
+      "net.0.weight": [
+        32,
+        36,
+        1,
+        1
+      ],
+      "net.0.bias": [
+        32
+      ],
+      "net.2.weight": [
+        16,
+        32,
+        1,
+        1
+      ],
+      "net.2.bias": [
+        16
+      ],
+      "net.4.weight": [
+        1,
+        16,
+        1,
+        1
+      ],
+      "net.4.bias": [
+        1
+      ]
+    },
+    "state_elements": 1729
+  },
+  "legacy_geometry_score": {
+    "path": "models\\experiments\\r1_score_refined_geometry_20261008_artifactfix\\refined_only_seed20261007\\refined_only_seed20261007_best.pt",
+    "sha256": "1bac120aac94c5e90b049a1e5ed035f38d8ba530c0ea42fd40e7a72e8e7a536d",
+    "bytes": 172405,
+    "keys": [
+      "head_state",
+      "geometry_names",
+      "mean",
+      "std",
+      "record",
+      "seed",
+      "inputs",
+      "requires_frozen_R1_features",
+      "thresholds",
+      "zero_R1_features",
+      "geometry_preprocessing",
+      "transform",
+      "geometry_cache_sha256"
+    ],
+    "seed": 20261007,
+    "head_state_shapes": {
+      "geometry_encoder.0.weight": [
+        16,
+        8
+      ],
+      "geometry_encoder.0.bias": [
+        16
+      ],
+      "geometry_encoder.2.weight": [
+        16,
+        16
+      ],
+      "geometry_encoder.2.bias": [
+        16
+      ],
+      "score_mlp.0.weight": [
+        128,
+        272
+      ],
+      "score_mlp.0.bias": [
+        128
+      ],
+      "score_mlp.2.weight": [
+        32,
+        128
+      ],
+      "score_mlp.2.bias": [
+        32
+      ],
+      "score_mlp.4.weight": [
+        1,
+        32
+      ],
+      "score_mlp.4.bias": [
+        1
+      ]
+    },
+    "head_state_elements": 39521
+  },
+  "legacy_learned_residual": {
+    "path": "models\\experiments\\refine_module_20261022\\score_direction\\control_seed20261022\\best.pt",
+    "sha256": "31172d0c85fb876097aef645c56513acfba123c1e0ea3d8fa2ed5d7f13a37e27",
+    "bytes": 6844893,
+    "keys": [
+      "kind",
+      "seed",
+      "state",
+      "binding",
+      "held",
+      "epoch"
+    ],
+    "epoch": 19,
+    "seed": 20261022,
+    "kind": "control",
+    "held": {
+      "MAE": 2.0027384757995605,
+      "RMSE": 3.0761160850524902,
+      "abs_gt10": 4,
+      "n": 761
+    },
+    "state_shapes": {
+      "mean": [
+        256
+      ],
+      "std": [
+        256
+      ],
+      "tail.4.0.weight": [
+        256,
+        192,
+        3,
+        3
+      ],
+      "tail.4.1.weight": [
+        256
+      ],
+      "tail.4.1.bias": [
+        256
+      ],
+      "tail.4.1.running_mean": [
+        256
+      ],
+      "tail.4.1.running_var": [
+        256
+      ],
+      "tail.4.1.num_batches_tracked": [],
+      "tail.4.3.block.0.weight": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "tail.4.3.block.1.weight": [
+        256
+      ],
+      "tail.4.3.block.1.bias": [
+        256
+      ],
+      "tail.4.3.block.1.running_mean": [
+        256
+      ],
+      "tail.4.3.block.1.running_var": [
+        256
+      ],
+      "tail.4.3.block.1.num_batches_tracked": [],
+      "tail.4.3.block.3.weight": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "tail.4.3.block.4.weight": [
+        256
+      ],
+      "tail.4.3.block.4.bias": [
+        256
+      ],
+      "tail.4.3.block.4.running_mean": [
+        256
+      ],
+      "tail.4.3.block.4.running_var": [
+        256
+      ],
+      "tail.4.3.block.4.num_batches_tracked": [],
+      "geometry.0.weight": [
+        32,
+        6
+      ],
+      "geometry.0.bias": [
+        32
+      ],
+      "geometry.2.weight": [
+        32,
+        32
+      ],
+      "geometry.2.bias": [
+        32
+      ],
+      "fusion.0.weight": [
+        256,
+        288
+      ],
+      "fusion.0.bias": [
+        256
+      ],
+      "delta.0.weight": [
+        32,
+        256
+      ],
+      "delta.0.bias": [
+        32
+      ],
+      "delta.2.weight": [
+        1,
+        32
+      ],
+      "delta.2.bias": [
+        1
+      ]
+    },
+    "state_elements": 1709124
+  },
+  "legacy_rank_loaded": {
+    "path": "models\\experiments\\r1_ap_followup_20261008\\mlp_confidence_seed20261008\\best.pt",
+    "sha256": "a23075139d92ce9cd75abb4fe44faf17f0c72cb5ca1fa401932f538a739b84c2",
+    "bytes": 4351,
+    "keys": [
+      "family",
+      "seed",
+      "head_state",
+      "mean",
+      "std",
+      "feature_names",
+      "best_epoch",
+      "epochs_completed",
+      "holdout_bce",
+      "policy",
+      "selection_data",
+      "script_sha256"
+    ],
+    "seed": 20261008,
+    "family": "mlp_confidence",
+    "policy": "score+stem only conf>=.25; class0 and its confidence unchanged",
+    "head_state_shapes": {
+      "net.0.weight": [
+        16,
+        14
+      ],
+      "net.0.bias": [
+        16
+      ],
+      "net.2.weight": [
+        1,
+        16
+      ],
+      "net.2.bias": [
+        1
+      ]
+    },
+    "head_state_elements": 257
+  },
+  "pretrained": {
+    "path": "models\\pretrained\\yolo26n-seg.pt",
+    "sha256": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f",
+    "bytes": 6719965,
+    "keys": [
+      "date",
+      "version",
+      "license",
+      "docs",
+      "epoch",
+      "best_fitness",
+      "model",
+      "ema",
+      "updates",
+      "optimizer",
+      "scaler",
+      "train_args",
+      "train_metrics",
+      "train_results",
+      "git"
+    ],
+    "epoch": -1,
+    "version": "8.3.222",
+    "date": "2026-01-03T12:45:42.594574",
+    "train_args": {
+      "task": "segment",
+      "mode": "train",
+      "model": "yolo26n-objv1-seg.pt",
+      "data": "/home/lq/codes/ultralytics/ultralytics/cfg/datasets/coco.yaml",
+      "epochs": 245,
+      "time": null,
+      "patience": 100,
+      "batch": 128,
+      "imgsz": 640,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "6,7",
+      "workers": 8,
+      "project": "YOLO26",
+      "name": "yolo26n-best-hyp-seg-1p",
+      "exist_ok": false,
+      "pretrained": true,
+      "optimizer": "MuSGD",
+      "verbose": true,
+      "seed": 0,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 10,
+      "resume": false,
+      "amp": true,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": false,
+      "compile": false,
+      "semseg_loss": true,
+      "overlap_mask": true,
+      "mask_ratio": 1,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": true,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "half": false,
+      "dnn": false,
+      "plots": true,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "keras": false,
+      "optimize": false,
+      "int8": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "nms": false,
+      "lr0": 0.0054,
+      "lrf": 0.05,
+      "momentum": 0.937,
+      "weight_decay": 0.00064,
+      "warmup_epochs": 1,
+      "warmup_momentum": 0.6576,
+      "warmup_bias_lr": 0.08114,
+      "o2m": 1.0,
+      "muon_w": 0.52782,
+      "sgd_w": 0.6737,
+      "cls_w": 2.7371,
+      "stride_ratio": 1.0,
+      "topk": 8,
+      "hungarian": false,
+      "box": 5.62767,
+      "cls": 0.56099,
+      "dfl": 9.03871,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "nbs": 64,
+      "hsv_h": 0.01373,
+      "hsv_s": 0.64481,
+      "hsv_v": 0.56565,
+      "degrees": 0.0,
+      "translate": 0.07105,
+      "scale": 0.56232,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.60571,
+      "bgr": 0.0,
+      "mosaic": 0.90863,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.07504,
+      "copy_paste_mode": "flip",
+      "auto_augment": "randaugment",
+      "erasing": 0.4,
+      "cfg": null,
+      "tracker": "botsort.yaml"
+    },
+    "model_type": "ultralytics.nn.tasks.SegmentationModel",
+    "parameters": 3126280,
+    "yaml": {
+      "nc": 80,
+      "end2end": true,
+      "reg_max": 1,
+      "scales": {
+        "n": [
+          0.5,
+          0.25,
+          1024
+        ],
+        "s": [
+          0.5,
+          0.5,
+          1024
+        ],
+        "m": [
+          0.5,
+          1.0,
+          512
+        ],
+        "l": [
+          1.0,
+          1.0,
+          512
+        ],
+        "x": [
+          1.0,
+          1.5,
+          512
+        ]
+      },
+      "backbone": [
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            64,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            128,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            1024,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            1024,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "SPPF",
+          [
+            1024,
+            5,
+            3,
+            true
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C2PSA",
+          [
+            1024
+          ]
+        ]
+      ],
+      "head": [
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            6
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            13
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            10
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          1,
+          "C3k2",
+          [
+            1024,
+            true,
+            0.5,
+            true
+          ]
+        ],
+        [
+          [
+            16,
+            19,
+            22
+          ],
+          1,
+          "Segment26",
+          [
+            "nc",
+            32,
+            256
+          ]
+        ]
+      ],
+      "scale": "n",
+      "yaml_file": "yolo26n-seg.yaml",
+      "channels": 3
+    },
+    "names": {
+      "0": "person",
+      "1": "bicycle",
+      "2": "car",
+      "3": "motorcycle",
+      "4": "airplane",
+      "5": "bus",
+      "6": "train",
+      "7": "truck",
+      "8": "boat",
+      "9": "traffic light",
+      "10": "fire hydrant",
+      "11": "stop sign",
+      "12": "parking meter",
+      "13": "bench",
+      "14": "bird",
+      "15": "cat",
+      "16": "dog",
+      "17": "horse",
+      "18": "sheep",
+      "19": "cow",
+      "20": "elephant",
+      "21": "bear",
+      "22": "zebra",
+      "23": "giraffe",
+      "24": "backpack",
+      "25": "umbrella",
+      "26": "handbag",
+      "27": "tie",
+      "28": "suitcase",
+      "29": "frisbee",
+      "30": "skis",
+      "31": "snowboard",
+      "32": "sports ball",
+      "33": "kite",
+      "34": "baseball bat",
+      "35": "baseball glove",
+      "36": "skateboard",
+      "37": "surfboard",
+      "38": "tennis racket",
+      "39": "bottle",
+      "40": "wine glass",
+      "41": "cup",
+      "42": "fork",
+      "43": "knife",
+      "44": "spoon",
+      "45": "bowl",
+      "46": "banana",
+      "47": "apple",
+      "48": "sandwich",
+      "49": "orange",
+      "50": "broccoli",
+      "51": "carrot",
+      "52": "hot dog",
+      "53": "pizza",
+      "54": "donut",
+      "55": "cake",
+      "56": "chair",
+      "57": "couch",
+      "58": "potted plant",
+      "59": "bed",
+      "60": "dining table",
+      "61": "toilet",
+      "62": "tv",
+      "63": "laptop",
+      "64": "mouse",
+      "65": "remote",
+      "66": "keyboard",
+      "67": "cell phone",
+      "68": "microwave",
+      "69": "oven",
+      "70": "toaster",
+      "71": "sink",
+      "72": "refrigerator",
+      "73": "book",
+      "74": "clock",
+      "75": "vase",
+      "76": "scissors",
+      "77": "teddy bear",
+      "78": "hair drier",
+      "79": "toothbrush"
+    },
+    "stride": {
+      "shape": [
+        3
+      ],
+      "dtype": "torch.float32",
+      "values": [
+        8.0,
+        16.0,
+        32.0
+      ]
+    },
+    "end2end": true,
+    "head_attributes": {
+      "nc": 80,
+      "nm": 32,
+      "npr": 64,
+      "reg_max": 1,
+      "max_det": 300,
+      "nl": 3,
+      "end2end": true,
+      "legacy": false
+    }
+  }
+}

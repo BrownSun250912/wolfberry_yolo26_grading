@@ -1,0 +1,51 @@
+{
+  "review_workbook": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\review\\rot_review_v1\\rot_review_strict_completed_2026-09-02.xlsx",
+  "frozen_features_source": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\feature_analysis_frozen_v1\\features.csv",
+  "policy": {
+    "y": "ROT and excluded",
+    "n": "NOT_ROT and retained",
+    "uncertain": "excluded under strict policy",
+    "not_in_review_queue": "retained; not treated as manual NOT_ROT truth"
+  },
+  "review_rows": 2278,
+  "review_label_counts": {
+    "NOT_ROT": 1831,
+    "ROT": 447
+  },
+  "frozen_feature_rows": 5088,
+  "merged_label_counts": {
+    "NOT_IN_REVIEW_QUEUE": 2820,
+    "NOT_ROT": 1823,
+    "ROT": 445
+  },
+  "excluded_rot_rows": 445,
+  "qualified_rows": 4643,
+  "review_ids_not_in_frozen_features": 10,
+  "comparison": {
+    "shared_instance_count": 2268,
+    "categorical_mismatches": {
+      "image_id": 0,
+      "split": 0
+    },
+    "numeric_feature_mismatches": {
+      "major_axis": 0,
+      "minor_axis": 0,
+      "area": 0,
+      "aspect_ratio": 0,
+      "L_mean": 0,
+      "L_std": 0,
+      "a_mean": 0,
+      "a_std": 0,
+      "b_mean": 0,
+      "b_std": 0,
+      "S_mean": 0,
+      "V_mean": 0,
+      "circularity": 0,
+      "solidity": 0,
+      "eccentricity": 0,
+      "dark_ratio": 0,
+      "abnormal_color_ratio": 0,
+      "max_damage_ratio": 0
+    }
+  }
+}

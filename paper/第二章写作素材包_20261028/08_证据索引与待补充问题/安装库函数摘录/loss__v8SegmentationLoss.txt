@@ -1,0 +1,167 @@
+来源: .venv/Lib/site-packages/ultralytics/utils/loss.py
+源文件SHA256: dbda30466bcef7f2513699c7a187c4210eb1961d33e3072e3b83ed7206b1d349
+行号: 489–650
+此摘录来自本机安装版本，不保证与官方发行包字节相同。
+
+00489: class v8SegmentationLoss(v8DetectionLoss):
+00490:     """Criterion class for computing training losses for YOLOv8 segmentation."""
+00491: 
+00492:     def __init__(
+00493:         self, model: torch.nn.Module, tal_topk: int = 10, tal_topk2: int | None = None
+00494:     ):  # model must be de-paralleled
+00495:         """Initialize the v8SegmentationLoss class with model parameters and mask overlap setting."""
+00496:         super().__init__(model, tal_topk, tal_topk2)
+00497:         self.loss_names = ("box_loss", "seg_loss", *self.loss_names[1:], "sem_loss")
+00498:         self.overlap = model.args.overlap_mask
+00499:         self.bcedice_loss = BCEDiceLoss(weight_bce=0.5, weight_dice=0.5)
+00500: 
+00501:     def loss(
+00502:         self, preds: dict[str, torch.Tensor], batch: dict[str, torch.Tensor]
+00503:     ) -> tuple[torch.Tensor, dict[str, torch.Tensor]]:
+00504:         """Calculate and return the combined loss for detection and segmentation."""
+00505:         pred_masks, proto = preds["mask_coefficient"].permute(0, 2, 1).contiguous(), preds["proto"]
+00506:         loss = torch.zeros(5, device=self.device)  # box, seg, cls, dfl, semantic
+00507:         if isinstance(proto, tuple) and len(proto) == 2:
+00508:             proto, pred_semantic = proto
+00509:         else:
+00510:             pred_semantic = None
+00511:         (fg_mask, target_gt_idx, target_bboxes, _, _), det_loss, _ = self.get_assigned_targets_and_loss(preds, batch)
+00512:         # NOTE: re-assign index for consistency for now. Need to be removed in the future.
+00513:         loss[0], loss[2], loss[3] = det_loss[0], det_loss[1], det_loss[2]
+00514: 
+00515:         batch_size, _, mask_h, mask_w = proto.shape  # batch size, number of masks, mask height, mask width
+00516:         if fg_mask.sum():
+00517:             # Masks loss
+00518:             masks = batch["masks"].to(self.device).float()
+00519:             if tuple(masks.shape[-2:]) != (mask_h, mask_w):  # downsample
+00520:                 # masks = F.interpolate(masks[None], (mask_h, mask_w), mode="nearest")[0]
+00521:                 proto = F.interpolate(proto, masks.shape[-2:], mode="bilinear", align_corners=False)
+00522: 
+00523:             imgsz = (
+00524:                 torch.tensor(preds["feats"][0].shape[2:], device=self.device, dtype=pred_masks.dtype) * self.stride[0]
+00525:             )
+00526:             loss[1] = self.calculate_segmentation_loss(
+00527:                 fg_mask,
+00528:                 masks,
+00529:                 target_gt_idx,
+00530:                 target_bboxes,
+00531:                 batch["batch_idx"].view(-1, 1),
+00532:                 proto,
+00533:                 pred_masks,
+00534:                 imgsz,
+00535:             )
+00536:             if pred_semantic is not None:
+00537:                 sem_idx = batch["sem_masks"].to(self.device).long().unsqueeze(1)  # Nx1xHxW
+00538:                 if self.overlap:
+00539:                     present = masks != 0  # NxHxW
+00540:                 else:
+00541:                     batch_idx = batch["batch_idx"].view(-1)  # [total_instances]
+00542:                     present = torch.zeros(batch_size, *masks.shape[-2:], dtype=torch.bool, device=self.device)
+00543:                     for i in range(batch_size):
+00544:                         instance_mask_i = masks[batch_idx == i]  # [num_instances_i, H, W]
+00545:                         if len(instance_mask_i):
+00546:                             present[i] = instance_mask_i.sum(dim=0) != 0
+00547:                 # One-hot targets zeroed at uncovered pixels, without F.one_hot's int64 NxHxWxC intermediate
+00548:                 sem_masks = torch.zeros(sem_idx.shape[0], self.nc, *sem_idx.shape[2:], device=self.device)
+00549:                 sem_masks.scatter_(1, sem_idx, present.unsqueeze(1).float())  # NxCxHxW
+00550: 
+00551:                 loss[4] = self.bcedice_loss(pred_semantic, sem_masks)
+00552:                 loss[4] *= self.hyp.box  # seg gain
+00553: 
+00554:         # WARNING: lines below prevent Multi-GPU DDP 'unused gradient' PyTorch errors, do not remove
+00555:         else:
+00556:             loss[1] += (proto * 0).sum() + (pred_masks * 0).sum()  # inf sums may lead to nan loss
+00557:             if pred_semantic is not None:
+00558:                 loss[4] += (pred_semantic * 0).sum()
+00559: 
+00560:         loss[1] *= self.hyp.box  # seg gain
+00561:         return loss * batch_size, dict(zip(self.loss_names, loss.detach()))  # loss(box, seg, cls, dfl, semantic)
+00562: 
+00563:     @staticmethod
+00564:     def single_mask_loss(
+00565:         gt_mask: torch.Tensor, pred: torch.Tensor, proto: torch.Tensor, xyxy: torch.Tensor, area: torch.Tensor
+00566:     ) -> torch.Tensor:
+00567:         """Compute the instance segmentation loss for a single image.
+00568: 
+00569:         Args:
+00570:             gt_mask (torch.Tensor): Ground truth mask of shape (N, H, W), where N is the number of objects.
+00571:             pred (torch.Tensor): Predicted mask coefficients of shape (N, 32).
+00572:             proto (torch.Tensor): Prototype masks of shape (32, H, W).
+00573:             xyxy (torch.Tensor): Ground truth bounding boxes in xyxy format, normalized to [0, 1], of shape (N, 4).
+00574:             area (torch.Tensor): Area of each ground truth bounding box of shape (N,).
+00575: 
+00576:         Returns:
+00577:             (torch.Tensor): The calculated mask loss for a single image.
+00578: 
+00579:         Notes:
+00580:             The function uses the equation pred_mask = torch.einsum('in,nhw->ihw', pred, proto) to produce the
+00581:             predicted masks from the prototype masks and predicted mask coefficients.
+00582:         """
+00583:         pred_mask = torch.einsum("in,nhw->ihw", pred, proto)  # (n, 32) @ (32, 80, 80) -> (n, 80, 80)
+00584:         loss = F.binary_cross_entropy_with_logits(pred_mask, gt_mask, reduction="none")
+00585:         return (crop_mask(loss, xyxy).mean(dim=(1, 2)) / area).sum()
+00586: 
+00587:     def calculate_segmentation_loss(
+00588:         self,
+00589:         fg_mask: torch.Tensor,
+00590:         masks: torch.Tensor,
+00591:         target_gt_idx: torch.Tensor,
+00592:         target_bboxes: torch.Tensor,
+00593:         batch_idx: torch.Tensor,
+00594:         proto: torch.Tensor,
+00595:         pred_masks: torch.Tensor,
+00596:         imgsz: torch.Tensor,
+00597:     ) -> torch.Tensor:
+00598:         """Calculate the loss for instance segmentation.
+00599: 
+00600:         Args:
+00601:             fg_mask (torch.Tensor): A binary tensor of shape (BS, N_anchors) indicating which anchors are positive.
+00602:             masks (torch.Tensor): Ground truth masks, shape (BS, H, W) if `overlap` else (N_instances_in_batch, H, W).
+00603:             target_gt_idx (torch.Tensor): Indexes of ground truth objects for each anchor of shape (BS, N_anchors).
+00604:             target_bboxes (torch.Tensor): Ground truth bounding boxes for each anchor of shape (BS, N_anchors, 4).
+00605:             batch_idx (torch.Tensor): Batch indices of shape (N_labels_in_batch, 1).
+00606:             proto (torch.Tensor): Prototype masks of shape (BS, 32, H, W).
+00607:             pred_masks (torch.Tensor): Predicted masks for each anchor of shape (BS, N_anchors, 32).
+00608:             imgsz (torch.Tensor): Size of the input image as a tensor of shape (2), i.e., (H, W).
+00609: 
+00610:         Returns:
+00611:             (torch.Tensor): The calculated loss for instance segmentation.
+00612: 
+00613:         Notes:
+00614:             The batch loss can be computed for improved speed at higher memory usage.
+00615:             For example, pred_mask can be computed as follows:
+00616:                 pred_mask = torch.einsum('in,nhw->ihw', pred, proto)  # (i, 32) @ (32, 160, 160) -> (i, 160, 160)
+00617:         """
+00618:         _, _, mask_h, mask_w = proto.shape
+00619:         loss = 0
+00620: 
+00621:         # Normalize to 0-1
+00622:         target_bboxes_normalized = target_bboxes / imgsz[[1, 0, 1, 0]]
+00623: 
+00624:         # Areas of target bboxes
+00625:         marea = xyxy2xywh(target_bboxes_normalized)[..., 2:].prod(2)
+00626: 
+00627:         # Normalize to mask size
+00628:         mxyxy = target_bboxes_normalized * torch.tensor([mask_w, mask_h, mask_w, mask_h], device=proto.device)
+00629: 
+00630:         for i, single_i in enumerate(zip(fg_mask, target_gt_idx, pred_masks, proto, mxyxy, marea)):
+00631:             fg_mask_i, target_gt_idx_i, pred_masks_i, proto_i, mxyxy_i, marea_i = single_i
+00632:             if fg_mask_i.any():
+00633:                 mask_idx = target_gt_idx_i[fg_mask_i]
+00634:                 if self.overlap:
+00635:                     gt_mask = masks[i] == (mask_idx + 1).view(-1, 1, 1)
+00636:                     gt_mask = gt_mask.float()
+00637:                 else:
+00638:                     gt_mask = masks[batch_idx.view(-1) == i][mask_idx]
+00639: 
+00640:                 loss += self.single_mask_loss(
+00641:                     gt_mask, pred_masks_i[fg_mask_i], proto_i, mxyxy_i[fg_mask_i], marea_i[fg_mask_i]
+00642:                 )
+00643: 
+00644:             # WARNING: lines below prevents Multi-GPU DDP 'unused gradient' PyTorch errors, do not remove
+00645:             else:
+00646:                 loss += (proto * 0).sum() + (pred_masks * 0).sum()  # inf sums may lead to nan loss
+00647: 
+00648:         return loss / fg_mask.sum()
+00649: 
+00650: 

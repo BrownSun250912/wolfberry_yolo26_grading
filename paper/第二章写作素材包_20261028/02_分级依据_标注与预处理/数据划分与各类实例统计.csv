@@ -1,0 +1,7 @@
+﻿版本,集合,图像数,实例数,class0,class1,class2,class3
+grading_four_class_v3,train,966,4277,372,945,1138,1822
+grading_four_class_v3,val,116,518,54,115,151,198
+grading_four_class_v3,test,129,576,25,126,167,258
+grading_four_class_v3_valfix_20261006,val,116,518,54,109,150,205
+augmented_delivery,train,2898,12831,1116,2835,3414,5466
+augmented_delivery,val,116,518,54,115,151,198

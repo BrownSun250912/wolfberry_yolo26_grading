@@ -1,0 +1,11 @@
+﻿编号,主题,公式,符号/单位/限制,来源
+F01,像素/形态,A=Σ1[M>0]；circularity=4πA_contour/P²；solidity=A_contour/A_convexhull,A为掩膜非零像素；轮廓面积与像素面积有离散差异；轴长px,configs/feature_extraction_frozen_v1_val.yaml；docs/FEATURE_DEFINITIONS.md
+F02,ECDF,p_f(x)=(Σ1[r<x]+0.5Σ1[r=x])/2649,"r为冻结参考特征；p∈[0,1]；原分布通过历史锚点恢复",scripts/run_r0_fixed_prediction_replay.py
+F03,规则分数,"T=clip(1−2|p_AR−.5|,0,1)；H=100(.5p_solidity+.3T+.2p_circularity)；S=100(.7p_area+.1p_minor)+.2H",分数0–100，无长度单位,outputs/grading_standard_manual_v4_final/grading_standard_config.json
+F04,残差,"δ=.05tanh(MLP((f−μ)/σ))；S*=100clip(S/100+δ,0,1)",f融合256；μσ仅fit；δ归一化分数±.05,scripts/refine_score_residual_ablation.py
+F05,邻域证据,"e_ic=max({raw_j:IoU_box(b_i,b_j)≥.85,origclass_j=c}∪{1e−4})；l_ic=log(e_ic/(1−e_ic))",clip e≤1−1e−4；4列独立证据不归一，不是同候选完整softmax分布,scripts/joint_pipeline_policy_20261024.py
+F06,边界margin,m12=S*−HIGH+1.5exp(−.5((S*−HIGH)/2.5)²)tanh((l_i1−l_i2)/3)；m23同理LOW和l_i2−l_i3,HIGH=65.62684031710077；LOW=37.40298225745565；S与σ单位为分,scripts/joint_pipeline_policy_20261024.py
+F07,缺梗margin,"missing=1[logit(p_stem)+.5(l_i3−max(l_i1,l_i2))≥0]",p_stem为缺梗概率；原class0优先；missing→3；否则m12≥0→1，m23≥0→2，否则3,scripts/joint_pipeline_policy_20261024.py
+F08,rank软目标,"y_i=(1/10)Σ_{τ=.50,.55,…,.95}1[max_{g:class_g=final_i}IoU_mask(g,i)≥τ]",无相容GT时0；每个候选独立，无一对一竞争,scripts/joint_pipeline_rank_fit_20261024.py
+F09,rank输出,q_i=sigmoid(MLP22→16→1(z_i))；rank_i=raw_i q_i (final_i≠0)，否则raw_i,排序置信分不作概率校准解释；operating scope仍看raw_i≥.25,scripts/attribute_local_rank_20261025.py
+F10,可选边界,B=dilate9(M)−erode9(M)；Mout=1[(2M−1)·2+resize(6tanh(head))·B>0],native band半径4px；mask原生坐标；无物理标尺,scripts/attribute_local_proto_fit_20261025.py

@@ -1,0 +1,7 @@
+﻿源文件,函数/类,起始行,末行,源SHA256,摘录
+.venv/Lib/site-packages/ultralytics/utils/ops.py,process_mask_native,540,567,79426eed013e1bb36936b52943c3c158b838e442843438d6fb811a624a039a92,08_证据索引与待补充问题/安装库函数摘录/ops__process_mask_native.txt
+.venv/Lib/site-packages/ultralytics/utils/metrics.py,compute_ap,760,791,974116d855398c48cd4cb30919b5ee424f8eaf555198086d7d5dc3068bc71ce2,08_证据索引与待补充问题/安装库函数摘录/metrics__compute_ap.txt
+.venv/Lib/site-packages/ultralytics/utils/metrics.py,ap_per_class,792,889,974116d855398c48cd4cb30919b5ee424f8eaf555198086d7d5dc3068bc71ce2,08_证据索引与待补充问题/安装库函数摘录/metrics__ap_per_class.txt
+.venv/Lib/site-packages/ultralytics/engine/validator.py,match_predictions,318,356,b0d3c7496b38df086ecb0e829fe7946a3f9b82079045914808abf71a824bce6f,08_证据索引与待补充问题/安装库函数摘录/validator__match_predictions.txt
+.venv/Lib/site-packages/ultralytics/utils/loss.py,E2ELoss,1293,1327,dbda30466bcef7f2513699c7a187c4210eb1961d33e3072e3b83ed7206b1d349,08_证据索引与待补充问题/安装库函数摘录/loss__E2ELoss.txt
+.venv/Lib/site-packages/ultralytics/utils/loss.py,v8SegmentationLoss,489,650,dbda30466bcef7f2513699c7a187c4210eb1961d33e3072e3b83ed7206b1d349,08_证据索引与待补充问题/安装库函数摘录/loss__v8SegmentationLoss.txt

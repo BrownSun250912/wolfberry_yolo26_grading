@@ -1,0 +1,870 @@
+{
+  "original_manifest": {
+    "images": 1285,
+    "images_per_split": {
+      "test": 129,
+      "train": 1028,
+      "val": 128
+    },
+    "instances_per_split": {
+      "test": 582,
+      "train": 4593,
+      "val": 577
+    },
+    "instances": 5752,
+    "resolutions": {
+      "1280x720": 1285
+    },
+    "source_groups": {
+      "001-150": 149,
+      "151-500": 349,
+      "501-900": 390,
+      "901-1300": 397
+    },
+    "physical_independence_verified": false
+  },
+  "raw_actual_files": {
+    "images": 1285,
+    "JSON_versions": {
+      "4.0.0-beta.13": 50,
+      "4.0.2": 789,
+      "2.1.0": 68,
+      "4.0.0-beta.9": 378
+    },
+    "shape_labels": {
+      "wolfberry": 5752
+    },
+    "shape_types": {
+      "polygon": 5752
+    },
+    "TXT_instances": 5752,
+    "duplicate_bbox_rows_exact_normalized": 35,
+    "png_info_key_counts": {},
+    "EXIF_tag_counts": {},
+    "exact_image_duplicate_groups": [],
+    "cross_split_exact_duplicate_groups": []
+  },
+  "label_counts_actual": {
+    "grading_four_class_v3": {
+      "train": {
+        "images": 966,
+        "instances": 4277,
+        "class_counts": {
+          "0": 372,
+          "1": 945,
+          "2": 1138,
+          "3": 1822
+        }
+      },
+      "val": {
+        "images": 116,
+        "instances": 518,
+        "class_counts": {
+          "0": 54,
+          "1": 115,
+          "2": 151,
+          "3": 198
+        }
+      },
+      "test": {
+        "images": 129,
+        "instances": 576,
+        "class_counts": {
+          "0": 25,
+          "1": 126,
+          "2": 167,
+          "3": 258
+        }
+      }
+    },
+    "grading_four_class_v3_valfix_20261006": {
+      "val": {
+        "images": 116,
+        "instances": 518,
+        "class_counts": {
+          "0": 54,
+          "1": 109,
+          "2": 150,
+          "3": 205
+        }
+      }
+    }
+  },
+  "build_summary": {
+    "input_images": 1156,
+    "image_status_counts": {
+      "EXPORT": 1082,
+      "HOLD": 74
+    },
+    "hold_reasons": {
+      "original_polygon_count_differs_from_graded_instances": 73,
+      "json_txt_geometry_mismatch": 1
+    },
+    "export_split_counts": {
+      "train": 966,
+      "val": 116
+    },
+    "near_duplicate_pairs": 0,
+    "exact_duplicate_polygons": 1,
+    "original_test_images_reserved": 129,
+    "test_available": true,
+    "built": true,
+    "validated": true,
+    "created_utc": "2026-09-06T08:27:39.227993+00:00",
+    "instances": 4795,
+    "class_counts": {
+      "grade_3": 2020,
+      "grade_2": 1289,
+      "grade_1": 1060,
+      "unqualified": 426
+    },
+    "split_instance_counts": {
+      "train": 4277,
+      "val": 518
+    },
+    "qc_images": 36,
+    "inputs": {
+      "candidate_manifest": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_post_review_v5\\four_class_instance_manifest.csv",
+        "sha256": "9281920dd2ab1e6337668f083cfd2da7b2c4b86d0c3cfb0b6b3c35a19f121880"
+      },
+      "all_features": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\strict_rot_exclusion_v2\\features_with_manual_rot.csv",
+        "sha256": "43b4f0d13dbd188c6e690f1e0d46f878d1f218cf535f9d0b17e5edd33eb5fc91"
+      },
+      "source_manifest": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\manifests\\dataset_manifest.csv",
+        "sha256": "65d6e4cc403e542ae9301420d56867ec4628440d8829bcb01ec26d99e1059a61"
+      },
+      "boundary_audit": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\audit\\boundary_review_audit.csv",
+        "sha256": "65687aea9e4f916b8c42fa06c103a1c274effe63d95a6895217a0e2ba0a84879"
+      },
+      "export_config": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\configs\\grading_dataset_v3.yaml",
+        "sha256": "1e08c0026b74eada506d08d91d85c44f97b900a31db5ec25a4dd549c6543168c"
+      },
+      "grading_standard": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\outputs\\grading_standard_manual_v4_final\\grading_standard_config.json",
+        "sha256": "ab6cd472737c9cf5706ec0878eb5e92fee697311e222a380917bfa1a99affa3f"
+      },
+      "test_final_labels": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\review\\three_person_audit_v1\\04_审核结果汇总\\test_final_labels.json",
+        "sha256": "eed46bf057120b121359394fb42f383a5d08b836987cc9d28db870f55883d240"
+      },
+      "test_polygon_deduplication": {
+        "path": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\data\\grading_four_class_v3\\audit\\test_polygon_deduplication.json",
+        "sha256": "af5a7f1c6a254d488c6a05167131b24577c144186cf686d5c4809bcc5dac08fa"
+      }
+    },
+    "label_policy": "human polygons + manual rot/stem review + frozen interpretable grade rule + double-reviewed test",
+    "test_graded": true,
+    "test_images": 129,
+    "test_instances": 576,
+    "total_images_with_test": 1211,
+    "total_instances_with_test": 5371,
+    "test_class_counts": {
+      "grade_1": 126,
+      "grade_2": 167,
+      "grade_3": 258,
+      "unqualified": 25
+    },
+    "test_duplicate_polygons_removed": 6
+  },
+  "val_overlay_version": {
+    "version": "grading_four_class_v3_valfix_20261006",
+    "generated_utc": "2026-10-06T12:07:29.067491+00:00",
+    "parent_dataset": "data/grading_four_class_v3",
+    "kind": "validation-only label overlay, not a standalone training dataset",
+    "corrected_instances": 7,
+    "reviewer_count": 1,
+    "second_reviewer": false,
+    "training_changed": false,
+    "training_performed": false,
+    "test_accessed_this_run": false,
+    "images_polygons_scores_splits_unchanged": true,
+    "targets": {
+      "path": "data/grading_four_class_v3_valfix_20261006/audit/r1_multitask_targets.csv",
+      "sha256": "f0514e910b2ac5f3b740094911e72a922b83992944d8b0036ef711e512badec8",
+      "parent_sha256": "4eabbf572d0c0fd3cde70514d9b70536007790f0dc496343aab9c519798381e2"
+    },
+    "predictions_recomputed": false,
+    "paired_vs_r0": {
+      "both_correct": 426,
+      "reference_only_correct": 1,
+      "candidate_only_correct": 17,
+      "both_wrong": 74,
+      "net_correct_change": 16
+    },
+    "stem_task_metrics": {
+      "population": "448 localized qualified validation GT; missing is positive",
+      "missing_targets": 66,
+      "h1_learned": {
+        "tp": 60,
+        "fp": 7,
+        "fn": 6,
+        "tn": 375,
+        "precision": 0.8955223880597015,
+        "recall": 0.9090909090909091,
+        "f1": 0.9022556390977443
+      },
+      "r0_rule": {
+        "tp": 41,
+        "fp": 1,
+        "fn": 25,
+        "tn": 381,
+        "precision": 0.9761904761904762,
+        "recall": 0.6212121212121212,
+        "f1": 0.7592592592592593
+      }
+    },
+    "interpretation": "Post-hoc user-authorized validation label correction; compare all variants on the same revised GT. This is not training improvement or independent test evidence. Checkpoint selection still used the old validation labels.",
+    "report": "outputs/reports/h1_valfix_replay_20261006"
+  },
+  "hold_source_polygons": 374,
+  "image_audit_fields": [
+    "image_id",
+    "original_split",
+    "candidate_instances",
+    "original_manifest_instances",
+    "source_unique_polygons",
+    "status",
+    "reason",
+    "match_min_iou",
+    "match_min_margin",
+    "duplicate_group",
+    "boundary_review_used",
+    "dataset_split"
+  ],
+  "image_audit_status": {
+    "EXPORT": 1082,
+    "HOLD": 74
+  },
+  "test_label_sources": {
+    "double_review_agreement": 302,
+    "lead_manual_adjudication_missing_stem_or_other_manual_decision": 51,
+    "frozen_base_rule_per_user_instruction": 223
+  },
+  "multitask_targets": {
+    "rows": 4795,
+    "columns": [
+      "instance_id",
+      "image_id",
+      "split",
+      "source_group",
+      "image_path",
+      "label_path",
+      "source_polygon_row",
+      "crop_path",
+      "mask_path",
+      "crop_sha256",
+      "mask_sha256",
+      "crop_x1",
+      "crop_y1",
+      "crop_x2",
+      "crop_y2",
+      "final_class_id",
+      "final_class_name",
+      "defect_target",
+      "defect_target_available",
+      "stem_target",
+      "stem_target_available",
+      "score_target",
+      "score_target_available",
+      "rule_reconstructed_class",
+      "manual_boundary_override",
+      "final_label_source",
+      "stem_label_source",
+      "target_lineage"
+    ],
+    "splits": {
+      "train": 4277,
+      "val": 518
+    },
+    "missing": {
+      "defect_target": 0,
+      "defect_target_available": 0,
+      "stem_target": 426,
+      "stem_target_available": 0,
+      "score_target": 426,
+      "score_target_available": 0,
+      "target_lineage": 0
+    },
+    "availability": {
+      "defect_target_available": {
+        "1": 4795
+      },
+      "stem_target_available": {
+        "1": 4369,
+        "0": 426
+      },
+      "score_target_available": {
+        "1": 4369,
+        "0": 426
+      }
+    }
+  },
+  "augmentation_config": {
+    "approved_pilot_directory": "E:\\gouqi\\grading_four_class_v3\\offline_aug_seg_pilot_20260915_102112",
+    "approved_pilot_result": "PILOT_PASS",
+    "aug01": {
+      "blur_probability": 0.075,
+      "blur_radius": [
+        0.1,
+        0.4
+      ],
+      "brightness": [
+        0.96,
+        1.04
+      ],
+      "contrast": [
+        0.96,
+        1.04
+      ],
+      "gamma": [
+        0.98,
+        1.02
+      ],
+      "horizontal_flip": true,
+      "noise_and_blur_mutually_exclusive": true,
+      "noise_probability": 0.075,
+      "noise_sigma_255": [
+        0.25,
+        1.5
+      ]
+    },
+    "aug02": {
+      "blur_probability": 0.1,
+      "blur_radius": [
+        0.1,
+        0.5
+      ],
+      "brightness": [
+        0.95,
+        1.05
+      ],
+      "contrast": [
+        0.95,
+        1.05
+      ],
+      "gamma": [
+        0.97,
+        1.03
+      ],
+      "geometric_operations": [],
+      "noise_probability": 0.15,
+      "noise_sigma_255": [
+        0.25,
+        2.0
+      ]
+    },
+    "command": "D:\\www\\python.exe offline_augment_yolo_seg.py --project-root . --manifest stage1_output_20260914_231717_544981_1\\train_manifest.csv --source-images stage1_output_20260914_231717_544981_1\\images\\train --source-labels labels\\train --output offline_aug_seg_train --seed 20260914 --execute",
+    "copies_per_image": 2,
+    "disk_space": {
+      "available_bytes_before_run": 363345326080,
+      "estimated_output_bytes": 3786153101,
+      "pilot_augmented_to_original_average_ratio": 0.7284280520523227,
+      "required_with_25_percent_margin_bytes": 4732691376,
+      "source_image_bytes": 1518445536,
+      "source_label_bytes": 1850306
+    },
+    "full_source_count": 966,
+    "global_seed": 20260914,
+    "mode": "execute-full",
+    "pilot_configuration_match": true,
+    "pilot_count": 0,
+    "script_path": "E:\\gouqi\\grading_four_class_v3\\offline_augment_yolo_seg.py",
+    "script_sha256": "99520993f8f3908c7fcd4f1acfb842cb90b4c347b24f8e25415dc5e925423681",
+    "task_type": "yolo_instance_segmentation",
+    "versions": {
+      "Pillow": "11.1.0",
+      "numpy": "2.1.3",
+      "python": "3.13.5"
+    }
+  },
+  "augmentation_manifest": {
+    "rows": 2898,
+    "columns": [
+      "record_type",
+      "original_catalog_index",
+      "original_filename",
+      "output_filename",
+      "output_relative_path",
+      "label_output_relative_path",
+      "augmentation_index",
+      "random_seed",
+      "operations",
+      "operation_parameters_json",
+      "width",
+      "height",
+      "image_mode",
+      "original_image_sha256",
+      "output_image_sha256",
+      "pixel_sha256",
+      "original_label_sha256",
+      "output_label_sha256",
+      "original_instance_count",
+      "output_instance_count",
+      "class_0_count",
+      "class_1_count",
+      "class_2_count",
+      "class_3_count",
+      "original_total_vertices",
+      "output_total_vertices",
+      "validation_status",
+      "warning",
+      "error"
+    ],
+    "record_types": {
+      "original": 966,
+      "augmented": 1932
+    },
+    "first_three": [
+      {
+        "record_type": "original",
+        "original_catalog_index": "0001",
+        "original_filename": "wb_000002.png",
+        "output_filename": "wb_000002.png",
+        "output_relative_path": "images/train/wb_000002.png",
+        "label_output_relative_path": "labels/train/wb_000002.txt",
+        "augmentation_index": "0",
+        "random_seed": "",
+        "operations": "copy2",
+        "operation_parameters_json": "{}",
+        "width": "1280",
+        "height": "720",
+        "image_mode": "RGB",
+        "original_image_sha256": "7e31d8c0e91e0e67e2e9109872a9a883e128420cde8b8a3b1251f409bf0d7a06",
+        "output_image_sha256": "7e31d8c0e91e0e67e2e9109872a9a883e128420cde8b8a3b1251f409bf0d7a06",
+        "pixel_sha256": "cbe71d53ca81d3aa66ff2d021789cf78b4d5170101ffb3160f7a248603a63ced",
+        "original_label_sha256": "58976835ead951afbae4157cfd623d833d1a39e1ac91ff3c8724292dab956129",
+        "output_label_sha256": "58976835ead951afbae4157cfd623d833d1a39e1ac91ff3c8724292dab956129",
+        "original_instance_count": "4",
+        "output_instance_count": "4",
+        "class_0_count": "0",
+        "class_1_count": "4",
+        "class_2_count": "0",
+        "class_3_count": "0",
+        "original_total_vertices": "25",
+        "output_total_vertices": "25",
+        "validation_status": "OK",
+        "warning": "",
+        "error": ""
+      },
+      {
+        "record_type": "augmented",
+        "original_catalog_index": "0001",
+        "original_filename": "wb_000002.png",
+        "output_filename": "wb_000002__aug01.png",
+        "output_relative_path": "images/train/wb_000002__aug01.png",
+        "label_output_relative_path": "labels/train/wb_000002__aug01.txt",
+        "augmentation_index": "1",
+        "random_seed": "5872841561848776499",
+        "operations": "horizontal_flip+brightness+contrast+gamma",
+        "operation_parameters_json": "{\"blur_radius\":0.0,\"brightness\":1.0052965841827193,\"contrast\":1.0381780811976236,\"gamma\":1.008391016649569,\"horizontal_flip\":true,\"noise_sigma_255\":0.0}",
+        "width": "1280",
+        "height": "720",
+        "image_mode": "RGB",
+        "original_image_sha256": "7e31d8c0e91e0e67e2e9109872a9a883e128420cde8b8a3b1251f409bf0d7a06",
+        "output_image_sha256": "be082f33bc8b4f32afd92bfde1695566ae95cc1f9f9acf7085e01d1f42cab01e",
+        "pixel_sha256": "00179c4269df1be2e5c843c4caf837ab1e203fd4b5e29b5b090741a52db02c01",
+        "original_label_sha256": "58976835ead951afbae4157cfd623d833d1a39e1ac91ff3c8724292dab956129",
+        "output_label_sha256": "1159f2ed52e204803a17ea8d821f0072cfe5e45932de84fbe3c48533d83079c9",
+        "original_instance_count": "4",
+        "output_instance_count": "4",
+        "class_0_count": "0",
+        "class_1_count": "4",
+        "class_2_count": "0",
+        "class_3_count": "0",
+        "original_total_vertices": "25",
+        "output_total_vertices": "25",
+        "validation_status": "OK",
+        "warning": "",
+        "error": ""
+      },
+      {
+        "record_type": "augmented",
+        "original_catalog_index": "0001",
+        "original_filename": "wb_000002.png",
+        "output_filename": "wb_000002__aug02.png",
+        "output_relative_path": "images/train/wb_000002__aug02.png",
+        "label_output_relative_path": "labels/train/wb_000002__aug02.txt",
+        "augmentation_index": "2",
+        "random_seed": "8308740635219814260",
+        "operations": "brightness+contrast+gamma",
+        "operation_parameters_json": "{\"blur_radius\":0.0,\"brightness\":0.9886558661958891,\"contrast\":0.952443192564822,\"gamma\":0.9816707887395162,\"horizontal_flip\":false,\"noise_sigma_255\":0.0}",
+        "width": "1280",
+        "height": "720",
+        "image_mode": "RGB",
+        "original_image_sha256": "7e31d8c0e91e0e67e2e9109872a9a883e128420cde8b8a3b1251f409bf0d7a06",
+        "output_image_sha256": "9ee9220139da5387c68bae32be0498b66aa955e278c8dc5ab2ef096e0bcd97d3",
+        "pixel_sha256": "5a8bffee3d1df576536b26a42e08ca3c5d94f3969750f9f6811b5bdd2d15aebf",
+        "original_label_sha256": "58976835ead951afbae4157cfd623d833d1a39e1ac91ff3c8724292dab956129",
+        "output_label_sha256": "58976835ead951afbae4157cfd623d833d1a39e1ac91ff3c8724292dab956129",
+        "original_instance_count": "4",
+        "output_instance_count": "4",
+        "class_0_count": "0",
+        "class_1_count": "4",
+        "class_2_count": "0",
+        "class_3_count": "0",
+        "original_total_vertices": "25",
+        "output_total_vertices": "25",
+        "validation_status": "OK",
+        "warning": "",
+        "error": ""
+      }
+    ]
+  },
+  "augmented_actual": {
+    "train": {
+      "images": 2898,
+      "instances": 12831,
+      "class_counts": {
+        "1": 2835,
+        "2": 3414,
+        "3": 5466,
+        "0": 1116
+      }
+    },
+    "val": {
+      "images": 116,
+      "instances": 518,
+      "class_counts": {
+        "1": 115,
+        "3": 198,
+        "2": 151,
+        "0": 54
+      }
+    }
+  },
+  "internal_roles": {
+    "images": 966,
+    "counts": {
+      "head_fit": 773,
+      "head_holdout": 193
+    },
+    "columns": [
+      "image_id",
+      "role",
+      "source_group"
+    ]
+  },
+  "prototype_population": {
+    "instances": 4186,
+    "by_role": {
+      "head_fit": 3349,
+      "head_holdout": 837
+    }
+  },
+  "rank_population": {
+    "fit": 8764,
+    "held": 2226
+  },
+  "grading_config": {
+    "schema_version": 1,
+    "scheme_version": "grading_standard_manual_v4_latest_rot",
+    "status": "candidate_only_not_final_commercial_truth",
+    "inputs": {
+      "candidate_csv": "outputs/size_priority_stem_rule_v3/size_priority_stem_rule_candidates.csv",
+      "candidate_sha256": "0af06532ea2fdfb9c4ec169ae9447431014cc6c84d7e634c99d44c1942439798",
+      "boundary_review": "outputs/size_priority_v1/boundary_review.xlsx",
+      "boundary_review_sha256": "b185fc8a716b46caca301f99e053c60f6fb4b6b907aa9f9a486f844b6f352239",
+      "stem_review": "outputs/size_priority_stem_rule_v2/stem_review.xlsx",
+      "stem_review_sha256": "ad0f5f1d505f82e8c98c29905822c18c5136a49b44893a03e52718d42fb693d2",
+      "all_features_csv": "outputs/strict_rot_exclusion_v2/features_with_manual_rot.csv",
+      "all_features_sha256": "43b4f0d13dbd188c6e690f1e0d46f878d1f218cf535f9d0b17e5edd33eb5fc91"
+    },
+    "instances": 4643,
+    "manual_review_audit": {
+      "boundary_rows": 60,
+      "boundary_complete": 60,
+      "boundary_calibration_eligible": 44,
+      "boundary_stem_rule_rows": 12,
+      "boundary_measurement_error_rows": 4,
+      "stem_rows": 426,
+      "stem_complete": 426
+    },
+    "score_formula": {
+      "formula": "100*(w_area*pct_area + w_minor*pct_minor_axis) + w_shape*shape_score",
+      "weights": {
+        "pct_area": 0.7,
+        "pct_minor_axis": 0.1,
+        "shape_score": 0.2,
+        "color_uniformity_score": 0.0
+      },
+      "color_policy": "Color-uniformity features are retained but receive zero grade weight because the manual boundary audit contained no color-based decisions and illumination varied across days.",
+      "weight_selection": "Transparent 5-percentage-point grid search; maximize mean balanced accuracy over the two manually reviewed boundaries; ties favor greater total size weight and then area weight."
+    },
+    "thresholds": {
+      "grade3_to_2": 37.40298225745565,
+      "grade2_to_1": 65.62684031710077,
+      "rule_grade_1": "score >= 65.626840",
+      "rule_grade_2": "37.402982 <= score < 65.626840",
+      "rule_grade_3": "score < 37.402982"
+    },
+    "boundary_fit": {
+      "grade1_2": {
+        "threshold": 65.62684031710077,
+        "balanced_accuracy": 0.75,
+        "accuracy": 0.7916666666666666,
+        "sensitivity": 0.8333333333333334,
+        "specificity": 0.6666666666666666,
+        "tp": 15,
+        "tn": 4,
+        "fp": 2,
+        "fn": 3,
+        "n": 24
+      },
+      "grade2_3": {
+        "threshold": 37.40298225745565,
+        "balanced_accuracy": 0.9,
+        "accuracy": 0.85,
+        "sensitivity": 0.8,
+        "specificity": 1.0,
+        "tp": 12,
+        "tn": 5,
+        "fp": 0,
+        "fn": 3,
+        "n": 20
+      },
+      "eligible_rows": 44,
+      "eligible_manual_grade_counts": {
+        "1": 18,
+        "2": 21,
+        "3": 5
+      }
+    },
+    "stem_review": {
+      "confirmed_missing_distinct": 445,
+      "unreviewed_auto_missing_accepted": 85,
+      "confirmed_present_distinct": 70,
+      "auto_present_accepted_with_qc_flag": 3197,
+      "unresolved": 931,
+      "auto_missing_review_agreement": 0.9797687861271677,
+      "sampled_auto_present_review_agreement": 0.95,
+      "uncertain_reviewed_manual_counts": {
+        "YES": 25,
+        "NO": 15
+      }
+    },
+    "output_counts": {
+      "ready_candidate": 3709,
+      "held_for_stem_review": 930,
+      "excluded_measurement_error": 4,
+      "confirmed_missing_stem_grade3_overrides": 219,
+      "recommended_grade_counts_all": {
+        "1": 1224,
+        "2": 1468,
+        "3": 1951
+      },
+      "recommended_grade_counts_ready": {
+        "1": 919,
+        "2": 1157,
+        "3": 1633
+      },
+      "complete_images_for_four_class_dataset": 519,
+      "images_with_pending_or_excluded_instances": 637,
+      "four_class_manifest_instances": 2175,
+      "four_class_manifest_counts": {
+        "GRADE_1": 502,
+        "GRADE_2": 652,
+        "GRADE_3": 818,
+        "UNQUALIFIED": 203
+      }
+    },
+    "software": {
+      "python": "3.12.13",
+      "pandas": "3.0.5",
+      "numpy": "2.5.2"
+    }
+  },
+  "boundary_audit": {
+    "rows": 60,
+    "columns": [
+      "review_id",
+      "candidate_group",
+      "image_id",
+      "instance_id",
+      "manual_expected_grade",
+      "review_comment",
+      "manual_stem_missing_comment",
+      "manual_measurement_error",
+      "calibration_eligible",
+      "manual_calibrated_score",
+      "automatic_base_grade_v3",
+      "rule_matches_manual_grade",
+      "pct_area",
+      "pct_minor_axis",
+      "shape_score",
+      "size_priority_score"
+    ],
+    "split_counts": {
+      "": 60
+    }
+  },
+  "frozen_candidate_reference": {
+    "rows": 4643,
+    "columns": [
+      "image_id",
+      "instance_id",
+      "split",
+      "source_group",
+      "recommended_candidate_grade",
+      "label_readiness",
+      "label_hold_reason",
+      "label_source_v3",
+      "manual_calibrated_score",
+      "automatic_base_grade_v3",
+      "automatic_rule_grade_v3",
+      "stem_decision",
+      "stem_confirmed_missing",
+      "stem_unresolved",
+      "stem_rule_applied_v3",
+      "manual_expected_grade",
+      "boundary_review_id",
+      "stem_review_id",
+      "candidate_label_status_v3",
+      "grading_scheme_version",
+      "candidate_label_status",
+      "base_candidate_grade",
+      "provisional_grade_after_stem_rule",
+      "stem_rule_applied",
+      "needs_stem_review",
+      "stem_rule_status",
+      "stem_auto_status",
+      "stem_evidence_score",
+      "stem_outward_length_px",
+      "stem_outside_area_px",
+      "stem_component_area_px",
+      "stem_axis_alignment_cosine",
+      "stem_slenderness",
+      "stem_selected_tip",
+      "stem_tip_selection_reason",
+      "stem_calyx_pixels_selected_tip",
+      "size_priority_score",
+      "candidate_grade",
+      "size_score",
+      "shape_score",
+      "color_uniformity_score",
+      "pct_area",
+      "pct_minor_axis",
+      "pct_solidity",
+      "pct_aspect_ratio",
+      "aspect_typicality",
+      "pct_circularity",
+      "uniformity_L_std",
+      "uniformity_a_std",
+      "uniformity_b_std",
+      "uniformity_max_damage_ratio",
+      "major_axis",
+      "minor_axis",
+      "area",
+      "aspect_ratio",
+      "L_mean",
+      "L_std",
+      "a_mean",
+      "a_std",
+      "b_mean",
+      "b_std",
+      "S_mean",
+      "V_mean",
+      "circularity",
+      "solidity",
+      "eccentricity",
+      "dark_ratio",
+      "abnormal_color_ratio",
+      "max_damage_ratio",
+      "original_number",
+      "original_stem",
+      "image_path",
+      "mask_source",
+      "model_path",
+      "model_sha256",
+      "confidence",
+      "image_width",
+      "image_height",
+      "roi_x1",
+      "roi_y1",
+      "roi_x2",
+      "roi_y2",
+      "centroid_x",
+      "centroid_y",
+      "touches_image_edge",
+      "component_count",
+      "removed_component_area",
+      "geometry_refinement_status",
+      "border_removed_area",
+      "border_removed_ratio",
+      "border_candidate_area",
+      "border_candidate_ratio",
+      "contour_area",
+      "axis_method",
+      "axis_center_x",
+      "axis_center_y",
+      "major_angle_deg",
+      "minor_angle_deg",
+      "major_x1",
+      "major_y1",
+      "major_x2",
+      "major_y2",
+      "minor_x1",
+      "minor_y1",
+      "minor_x2",
+      "minor_y2",
+      "highlight_ratio",
+      "highlight_static_ratio",
+      "highlight_relative_ratio",
+      "calyx_candidate_ratio",
+      "edge_abnormal_ratio",
+      "color_mask_pixel_count",
+      "valid_color_pixel_count",
+      "damage_eligible_pixel_count",
+      "major_axis_mm",
+      "minor_axis_mm",
+      "area_mm2",
+      "calibration_id",
+      "shape_success",
+      "color_success",
+      "damage_success",
+      "processing_success",
+      "error_reason",
+      "warning_reason",
+      "raw_mask_path",
+      "mask_path",
+      "border_removed_mask_path",
+      "crop_path",
+      "contour_path",
+      "color_mask_path",
+      "highlight_mask_path",
+      "calyx_mask_path",
+      "edge_abnormal_mask_path",
+      "damage_eligible_mask_path",
+      "damage_mask_path",
+      "manual_rot_raw",
+      "manual_rot_label",
+      "manual_rot_exclude",
+      "manual_label_policy",
+      "rot_reviewed",
+      "grade_analysis_eligible",
+      "grade_analysis_exclusion_reason",
+      "stem_attachment_tipness",
+      "stem_background_L",
+      "stem_candidate_a_limit",
+      "stem_candidate_L_limit",
+      "stem_other_tip_outward_length_px",
+      "stem_other_tip_outside_area_px",
+      "stem_detection_warning",
+      "manual_stem_present",
+      "stem_review_group",
+      "stem_review_comment",
+      "boundary_stem_review_id",
+      "stem_manual_source",
+      "manual_measurement_error",
+      "boundary_review_comment"
+    ],
+    "split_counts": {
+      "train": 4134,
+      "val": 509
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "images": 24,
+  "repeats": 3,
+  "arms": 10,
+  "rows": 720,
+  "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "torch": "2.13.0+cu130",
+  "test_accessed": false
+}
