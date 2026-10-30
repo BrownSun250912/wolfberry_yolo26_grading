@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "mode": "initial_handoff_snapshot",
+  "files": 555,
+  "local_markdown_links_checked": 323,
+  "potential_credential_files": [],
+  "errors": [],
+  "scope": "Local navigation, bytes and frozen headline endpoints; not scientific peer review, model inference, or external URL availability."
+}

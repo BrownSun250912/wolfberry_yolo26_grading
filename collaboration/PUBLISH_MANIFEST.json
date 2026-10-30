@@ -2,8 +2,8 @@
   "schema": 2,
   "date": "2026-10-30",
   "purpose": "Coauthor manuscripts/evidence plus a source-verified Materials and Methods writing resource; no experiment rerun.",
-  "file_count": 554,
-  "total_bytes": 44963977,
+  "file_count": 555,
+  "total_bytes": 44967153,
   "note": "Source hashes describe original local artifacts. Markdown links/status notes are relocated for GitHub; published hashes describe these copies. CSV/JSON/figures/code/export bytes are otherwise preserved.",
   "excluded": "Full RGB datasets, new PT weights and per-image PT caches, third-party paper PDFs, credentials and local environments. A few explicitly indexed PNG examples are included in the methods pack.",
   "files": [
@@ -3906,9 +3906,17 @@
     {
       "path": "paper/第二章补充说明_20261030/README.md",
       "source": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\paper\\第二章补充说明_20261030\\README.md",
-      "source_sha256": "f95878866ddef0aef786f76c58df56a29629c088255fb44e7a241568a7af5742",
-      "published_sha256": "f95878866ddef0aef786f76c58df56a29629c088255fb44e7a241568a7af5742",
-      "bytes": 5218,
+      "source_sha256": "9064d95e68f9b7b70bf10177dd9d64e6c7d11c46e0c012d3e347b9aa31cae698",
+      "published_sha256": "9064d95e68f9b7b70bf10177dd9d64e6c7d11c46e0c012d3e347b9aa31cae698",
+      "bytes": 5421,
+      "markdown_links_relocated": false
+    },
+    {
+      "path": "paper/第二章补充说明_20261030/标注规范补充_已确认.md",
+      "source": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\paper\\第二章补充说明_20261030\\标注规范补充_已确认.md",
+      "source_sha256": "b2bc92e02185d0a1a0fae99ba52f29145e2fb436b319d3ca4f9f8c0d1a85f8f9",
+      "published_sha256": "b2bc92e02185d0a1a0fae99ba52f29145e2fb436b319d3ca4f9f8c0d1a85f8f9",
+      "bytes": 2973,
       "markdown_links_relocated": false
     },
     {
@@ -4440,7 +4448,7 @@
       "markdown_links_relocated": false
     }
   ],
-  "prior_publication_commit": "1de72ed1ed087cad9b8b279ddf3d83c6d876f5d1",
+  "prior_publication_commit": "b3be933c57cbf5c753d703209105845c0908ce3f",
   "methods_supplement": {
     "path": "paper/第二章写作素材包_20261028",
     "date": "2026-10-28",
@@ -4453,6 +4461,17 @@
   "methods_note_20261030": {
     "path": "paper/第二章补充说明_20261030",
     "provenance": "Collection facts supplied by project executor on 2026-10-30; label counts rechecked from actual TXT. Original 2026-10-28 material pack preserved.",
+    "new_training": 0,
+    "new_inference": 0
+  },
+  "annotation_confirmation_20261030": {
+    "source": "Project executor reply in current conversation, 2026-10-30",
+    "facts": [
+      "Thin pedicel excluded from fruit polygon",
+      "Invisible occluded body not completed",
+      "Occlusion and severe blur described as uncommon, without quantitative frequency"
+    ],
+    "not_confirmed": "A universal inclusion/exclusion policy or numerical threshold for severe blur/occlusion",
     "new_training": 0,
     "new_inference": 0
   }
