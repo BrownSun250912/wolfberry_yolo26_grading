@@ -45,3 +45,5 @@
 已有训练代码和历史标签继续保留。最新训练RGB图像、模型权重、训练运行缓存及第三方论文全文不在本次交接范围；方法代码快照用于审阅，不代表clone后即可重跑完整模型。原始实验JSON中可能保留本机路径与原始哈希，发布副本的校验值见[发布清单](collaboration/PUBLISH_MANIFEST.json)。Word/PDF是当前阅读快照，后续以Markdown为协作主版本。
 
 历史入口：[9月README原文](docs/history/README_before_paper_handoff_20261028.txt) · [9月HANDOFF原文](docs/history/HANDOFF_before_paper_handoff_20261028.txt) · [原始数据交接](DATASET.md)。
+
+最新方法补充：[验证集采用口径、表2-1及采集信息（2026-10-30）](paper/第二章补充说明_20261030/README.md)。

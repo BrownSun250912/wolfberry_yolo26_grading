@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-30",
+  "old": {
+    "images": 116,
+    "instances": 518,
+    "classes": [
+      54,
+      115,
+      151,
+      198
+    ]
+  },
+  "revised": {
+    "images": 116,
+    "instances": 518,
+    "classes": [
+      54,
+      109,
+      150,
+      205
+    ]
+  },
+  "geometry_changes": [],
+  "class_changes": [
+    {
+      "image_id": "wb_000043",
+      "instance_row": 4,
+      "old_class": 1,
+      "revised_class": 3
+    },
+    {
+      "image_id": "wb_000206",
+      "instance_row": 2,
+      "old_class": 1,
+      "revised_class": 3
+    },
+    {
+      "image_id": "wb_000470",
+      "instance_row": 3,
+      "old_class": 1,
+      "revised_class": 3
+    },
+    {
+      "image_id": "wb_000532",
+      "instance_row": 2,
+      "old_class": 1,
+      "revised_class": 3
+    },
+    {
+      "image_id": "wb_000534",
+      "instance_row": 5,
+      "old_class": 1,
+      "revised_class": 3
+    },
+    {
+      "image_id": "wb_000558",
+      "instance_row": 2,
+      "old_class": 2,
+      "revised_class": 3
+    },
+    {
+      "image_id": "wb_001037",
+      "instance_row": 2,
+      "old_class": 1,
+      "revised_class": 3
+    }
+  ],
+  "class_change_counts": {
+    "1->3": 6,
+    "2->3": 1
+  },
+  "same_image_membership": true,
+  "overlay_has_images": false,
+  "new_training": 0,
+  "new_inference": 0,
+  "suggested_table": [
+    {
+      "集合": "训练集",
+      "图像数": 966,
+      "不合格": 372,
+      "一级": 945,
+      "二级": 1138,
+      "三级": 1822,
+      "实例总数": 4277
+    },
+    {
+      "集合": "验证集（修订标签）",
+      "图像数": 116,
+      "不合格": 54,
+      "一级": 109,
+      "二级": 150,
+      "三级": 205,
+      "实例总数": 518
+    },
+    {
+      "集合": "测试集",
+      "图像数": 129,
+      "不合格": 25,
+      "一级": 126,
+      "二级": 167,
+      "三级": 258,
+      "实例总数": 576
+    },
+    {
+      "集合": "合计",
+      "图像数": 1211,
+      "不合格": 451,
+      "一级": 1180,
+      "二级": 1455,
+      "三级": 2285,
+      "实例总数": 5371
+    }
+  ]
+}

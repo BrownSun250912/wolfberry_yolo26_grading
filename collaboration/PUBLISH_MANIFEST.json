@@ -1,9 +1,9 @@
 {
   "schema": 2,
-  "date": "2026-10-28",
+  "date": "2026-10-30",
   "purpose": "Coauthor manuscripts/evidence plus a source-verified Materials and Methods writing resource; no experiment rerun.",
-  "file_count": 549,
-  "total_bytes": 44955034,
+  "file_count": 554,
+  "total_bytes": 44963977,
   "note": "Source hashes describe original local artifacts. Markdown links/status notes are relocated for GitHub; published hashes describe these copies. CSV/JSON/figures/code/export bytes are otherwise preserved.",
   "excluded": "Full RGB datasets, new PT weights and per-image PT caches, third-party paper PDFs, credentials and local environments. A few explicitly indexed PNG examples are included in the methods pack.",
   "files": [
@@ -49,10 +49,10 @@
     },
     {
       "path": "README.md",
-      "source": "generated repository navigation; methods supplement 2026-10-28",
+      "source": "generated navigation for methods note 2026-10-30",
       "source_sha256": null,
-      "published_sha256": "a8a805b9ae3be1850622827e9e47a62dba5861f607640e7c25bd73dba53e3b65",
-      "bytes": 3927,
+      "published_sha256": "7d82150f64d4edadeb99d5596f0bb2ff55c8e9c94e050845a25915b866e690eb",
+      "bytes": 4064,
       "markdown_links_relocated": false
     },
     {
@@ -81,10 +81,10 @@
     },
     {
       "path": "collaboration/START_HERE.md",
-      "source": "generated repository navigation; methods supplement 2026-10-28",
+      "source": "generated navigation for methods note 2026-10-30",
       "source_sha256": null,
-      "published_sha256": "33a5d417f8caede8d20c44c67f5c86941a1e4b028d67b88173bff2d1d368d73f",
-      "bytes": 4393,
+      "published_sha256": "37ad4fd44b1947ae3fe07d43f37251469f06bf1a00a81450df3facd3eb79a15b",
+      "bytes": 4743,
       "markdown_links_relocated": false
     },
     {
@@ -2217,10 +2217,10 @@
     },
     {
       "path": "paper/README.md",
-      "source": "generated repository navigation; methods supplement 2026-10-28",
+      "source": "generated navigation for methods note 2026-10-30",
       "source_sha256": null,
-      "published_sha256": "a616efa771a755ae97cb4a1836bd3438460227dd529c6ad9d08f706ce0f34307",
-      "bytes": 1198,
+      "published_sha256": "fc401ccc7a9e472c1f22a51a19314ccfc08d0bac25f4d8e0c3b3cf8ebaa5ccc7",
+      "bytes": 1452,
       "markdown_links_relocated": false
     },
     {
@@ -3904,6 +3904,46 @@
       "markdown_links_relocated": false
     },
     {
+      "path": "paper/第二章补充说明_20261030/README.md",
+      "source": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\paper\\第二章补充说明_20261030\\README.md",
+      "source_sha256": "f95878866ddef0aef786f76c58df56a29629c088255fb44e7a241568a7af5742",
+      "published_sha256": "f95878866ddef0aef786f76c58df56a29629c088255fb44e7a241568a7af5742",
+      "bytes": 5218,
+      "markdown_links_relocated": false
+    },
+    {
+      "path": "paper/第二章补充说明_20261030/核验记录.json",
+      "source": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\paper\\第二章补充说明_20261030\\核验记录.json",
+      "source_sha256": "449f97d2947802588a37fc724e064a002263bb78b7ded97bb8687e5de975e742",
+      "published_sha256": "449f97d2947802588a37fc724e064a002263bb78b7ded97bb8687e5de975e742",
+      "bytes": 2182,
+      "markdown_links_relocated": false
+    },
+    {
+      "path": "paper/第二章补充说明_20261030/表2-1_当前正式评价数据分布.csv",
+      "source": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\paper\\第二章补充说明_20261030\\表2-1_当前正式评价数据分布.csv",
+      "source_sha256": "6907145910fec4c5f6c21211a304f6bc691ddbbcf8c034c7c92e14a4e1bb398a",
+      "published_sha256": "6907145910fec4c5f6c21211a304f6bc691ddbbcf8c034c7c92e14a4e1bb398a",
+      "bytes": 226,
+      "markdown_links_relocated": false
+    },
+    {
+      "path": "paper/第二章补充说明_20261030/采集信息_执行者确认与待补.csv",
+      "source": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\paper\\第二章补充说明_20261030\\采集信息_执行者确认与待补.csv",
+      "source_sha256": "29e27bff06a611f0cd3dd78fb6f97e19524b907e6e47ce18473393f76ebdb6a6",
+      "published_sha256": "29e27bff06a611f0cd3dd78fb6f97e19524b907e6e47ce18473393f76ebdb6a6",
+      "bytes": 407,
+      "markdown_links_relocated": false
+    },
+    {
+      "path": "paper/第二章补充说明_20261030/验证集七条类别修订.csv",
+      "source": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\paper\\第二章补充说明_20261030\\验证集七条类别修订.csv",
+      "source_sha256": "b1c5c1a5402dee7da5ea3cbeb0d8c61416995f76ef1f8e06c224fe5c3124ba49",
+      "published_sha256": "b1c5c1a5402dee7da5ea3cbeb0d8c61416995f76ef1f8e06c224fe5c3124ba49",
+      "bytes": 169,
+      "markdown_links_relocated": false
+    },
+    {
       "path": "research_code/frozen_20261027/analyze_final_test_20261027.py",
       "source": "scripts/analyze_final_test_20261027.py",
       "source_sha256": "5952fd068481bdea9b987bd039be53e57cba751d3275c43b9b6eb41a10e552a4",
@@ -4400,7 +4440,7 @@
       "markdown_links_relocated": false
     }
   ],
-  "prior_publication_commit": "8439e1968e0af859b1d8e94720a05106deada7a5",
+  "prior_publication_commit": "1de72ed1ed087cad9b8b279ddf3d83c6d876f5d1",
   "methods_supplement": {
     "path": "paper/第二章写作素材包_20261028",
     "date": "2026-10-28",
@@ -4409,5 +4449,11 @@
     "primary_source_files": 113,
     "new_model_inference": 0,
     "new_training": 0
+  },
+  "methods_note_20261030": {
+    "path": "paper/第二章补充说明_20261030",
+    "provenance": "Collection facts supplied by project executor on 2026-10-30; label counts rechecked from actual TXT. Original 2026-10-28 material pack preserved.",
+    "new_training": 0,
+    "new_inference": 0
   }
 }
