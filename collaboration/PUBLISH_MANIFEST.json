@@ -3,7 +3,7 @@
   "date": "2026-10-30",
   "purpose": "Coauthor manuscripts/evidence plus a source-verified Materials and Methods writing resource; no experiment rerun.",
   "file_count": 555,
-  "total_bytes": 44967153,
+  "total_bytes": 44968621,
   "note": "Source hashes describe original local artifacts. Markdown links/status notes are relocated for GitHub; published hashes describe these copies. CSV/JSON/figures/code/export bytes are otherwise preserved.",
   "excluded": "Full RGB datasets, new PT weights and per-image PT caches, third-party paper PDFs, credentials and local environments. A few explicitly indexed PNG examples are included in the methods pack.",
   "files": [
@@ -3906,17 +3906,17 @@
     {
       "path": "paper/第二章补充说明_20261030/README.md",
       "source": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\paper\\第二章补充说明_20261030\\README.md",
-      "source_sha256": "9064d95e68f9b7b70bf10177dd9d64e6c7d11c46e0c012d3e347b9aa31cae698",
-      "published_sha256": "9064d95e68f9b7b70bf10177dd9d64e6c7d11c46e0c012d3e347b9aa31cae698",
-      "bytes": 5421,
+      "source_sha256": "7193557c14beaca83a01e5b60952bc396d6f7e1a2b5d2ac6c901a62597db46d5",
+      "published_sha256": "7193557c14beaca83a01e5b60952bc396d6f7e1a2b5d2ac6c901a62597db46d5",
+      "bytes": 5511,
       "markdown_links_relocated": false
     },
     {
       "path": "paper/第二章补充说明_20261030/标注规范补充_已确认.md",
       "source": "F:\\wolfberry\\photo_library\\wolfberry_yolo26_cv\\paper\\第二章补充说明_20261030\\标注规范补充_已确认.md",
-      "source_sha256": "b2bc92e02185d0a1a0fae99ba52f29145e2fb436b319d3ca4f9f8c0d1a85f8f9",
-      "published_sha256": "b2bc92e02185d0a1a0fae99ba52f29145e2fb436b319d3ca4f9f8c0d1a85f8f9",
-      "bytes": 2973,
+      "source_sha256": "56705ae45ab1f3f5d424e1bb6ff9e2764d46a9413b01eca4368c10c9103ad4cb",
+      "published_sha256": "56705ae45ab1f3f5d424e1bb6ff9e2764d46a9413b01eca4368c10c9103ad4cb",
+      "bytes": 4351,
       "markdown_links_relocated": false
     },
     {
@@ -4448,7 +4448,7 @@
       "markdown_links_relocated": false
     }
   ],
-  "prior_publication_commit": "b3be933c57cbf5c753d703209105845c0908ce3f",
+  "prior_publication_commit": "f38fd184f96833fb06662f47681e2cb925fadf44",
   "methods_supplement": {
     "path": "paper/第二章写作素材包_20261028",
     "date": "2026-10-28",
@@ -4473,6 +4473,7 @@
     ],
     "not_confirmed": "A universal inclusion/exclusion policy or numerical threshold for severe blur/occlusion",
     "new_training": 0,
-    "new_inference": 0
+    "new_inference": 0,
+    "terminology_clarification": "Executor identifies the grading recognition target as the green fruit calyx region. Do not conflate it with the thin pedicel excluded from the fruit polygon. Existing scalar stem fields remain unchanged."
   }
 }
